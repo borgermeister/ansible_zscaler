@@ -1,0 +1,8 @@
+# Zscaler Provider Connection Parameters
+zscaler_zpa:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_id") | default(omit) }}'
+  client_secret:   '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_secret") | default(omit) }}'
+  customer_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/customer_id") | default(omit) }}'
+  cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/cloud") | default(omit) }}'
+
+# This role does not have any other default variables

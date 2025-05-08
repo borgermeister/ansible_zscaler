@@ -1,0 +1,10 @@
+---
+
+- name: Create Segment Group
+  zscaler.zpacloud.zpa_segment_group:
+    provider: "{{ zscaler_zpa }}"
+    name: '{{ item.name }}'
+    description: '{{ item.description }}'
+    enabled: true
+    state: '{{ item.state | default("present") }}'
+  loop: '{{ zpa_segment_groups }}'

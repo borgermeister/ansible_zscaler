@@ -1,0 +1,11 @@
+---
+
+- name: Create Server Group
+  zscaler.zpacloud.zpa_server_group:
+    provider: "{{ zscaler_zpa }}"
+    name: '{{ item.name }}'
+    description: '{{ item.description }}'
+    dynamic_discovery: '{{ item.dynamic_discovery }}'
+    app_connector_group_ids: '{{ item.app_connector_group_ids }}'
+    state: '{{ item.state | default("present") }}'
+  loop: '{{ zpa_server_groups }}'

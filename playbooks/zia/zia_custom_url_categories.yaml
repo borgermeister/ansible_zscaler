@@ -1,0 +1,115 @@
+---
+
+# Dictionary of custom URL categories used for bypassing TLS inspection in Zscaler Internet Access.
+custom_url_categories:
+  - name: 'TLS Inspection Bypass - Apple General'
+    description: 'This category is for bypassing TLS inspection to Apple general services.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - configuration.apple.com
+      - courier.push.apple.com
+      - init.push.apple.com
+      - gsp-ssl-ls.apple.com
+      - gdmf.apple.com
+      - .cfn-apple.com
+      - mesu.apple.com
+  - name: 'TLS Inspection Bypass - Apple Music'
+    description: 'This category is for bypassing TLS inspection to Apple Music.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - .music.apple.com
+      - .mzstatic.com
+      - .itunes.apple.com
+  - name: 'TLS Inspection Bypass - Facebook'
+    description: 'This category is for bypassing TLS inspection to Facebook services.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - edge-mqtt.facebook.com
+      - edge-mqtt-fallback.facebook.com
+      - gateway.facebook.com
+      - gateway-fallback.facebook.com
+  - name: 'TLS Inspection Bypass - FittenCode'
+    description: 'This category is for bypassing TLS inspection to FittenCode AI Assistant.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - fc.fittenlab.cn
+      - fc.fittentech.com
+  - name: 'TLS Inspection Bypass - GitHub'
+    description: 'This category is for bypassing TLS inspection to GitHub.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - github.com
+      - api.github.com
+      - .individual.githubcopilot.com
+  - name: 'TLS Inspection Bypass - Gitlab'
+    description: 'This category is for bypassing TLS inspection to Gitlab.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - gitlab.com
+  - name: 'TLS Inspection Bypass - NixOS'
+    description: 'This category is for bypassing TLS inspection to NixOS.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - cache.nixos.org
+      - channels.nixos.org
+  - name: 'TLS Inspection Bypass - PyPI'
+    description: 'This category is for bypassing TLS inspection to PyPI.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - pypi.org
+  - name: 'TLS Inspection Bypass - Ring.com'
+    description: 'This category is for bypassing TLS inspection to Ring.com.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - api.ring.com
+      - oauth.ring.com
+      - prd-api-us.prd.rings.solutions
+      - nh-mobile-config.ring.com
+      - neighbors-api.ring.com
+      - api.prod.signalling.ring.devices.a2z.com
+      - eventstream.ring.com
+      - app-snaps.ring.com
+  - name: 'TLS Inspection Bypass - Snapchat'
+    description: 'This category is for bypassing TLS inspection to Snapchat.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - app-analytics-v2.snapchat.com
+      - .api.snapchat.com
+      - aws.duplex.snapchat.com
+      - .sc-cdn.net
+  - name: 'TLS Inspection Bypass - Tesla'
+    description: 'This category is for bypassing TLS inspection to Tesla.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - auth.tesla.com
+      - sentry-api.ops.na.vn.cloud.tesla.com
+      - owner-api.teslamotors.com
+  - name: 'TLS Inspection Bypass - Vipps'
+    description: 'This category is for bypassing TLS inspection to Vipps.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - api.vipps.no

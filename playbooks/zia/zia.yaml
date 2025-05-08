@@ -1,0 +1,31 @@
+---
+
+- name: URL Categories
+  hosts: localhost
+
+  tasks:
+
+    # - name: Activate ZIA Configuration
+    #   zscaler.ziacloud.zia_activation_status:
+    #     provider: '{{ zscaler_zia }}'
+    #     status: 'ACTIVE'
+
+    - name: Gather Information Details of all URL Categories
+      zscaler.ziacloud.zia_url_categories_info:
+        provider: '{{ zscaler_zia }}'
+        name: 'TLS Inspection Bypass - Apple General'
+        #id: "OTHER_ADULT_MATERIAL"
+
+    - name: Configure custom URL Category
+      zscaler.ziacloud.zia_url_categories:
+        provider: '{{ zscaler_zia }}'
+        configured_name: 'Ansible'
+        description: 'This is a custom URL category created by Ansible'
+        custom_category: true
+        super_category: 'USER_DEFINED'
+        type: 'URL_CATEGORY'
+        state: present
+        db_categorized_urls:
+          - vg.no
+        urls:
+          - digi.no

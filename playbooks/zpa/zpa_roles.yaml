@@ -1,0 +1,11 @@
+---
+
+- name: Playbook to configure Zscaler Private Access
+  hosts: localhost
+
+  roles:
+    - role: zscaler_zpa/zpa_server_group
+    - role: zscaler_zpa/zpa_segment_group
+    - role: zscaler_zpa/zpa_application_segment
+
+...

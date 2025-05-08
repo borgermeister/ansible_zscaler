@@ -1,0 +1,17 @@
+---
+
+# Zscaler Provider Connection Parameters
+zscaler_zpa:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_id") | default(omit) }}'
+  client_secret:   '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_secret") | default(omit) }}'
+  customer_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/customer_id") | default(omit) }}'
+  cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/cloud") | default(omit) }}'
+
+# Default variables for zscaler_zpa_server_group role
+zpa_segment_groups:
+  - name: Ansible
+    description: Created with Ansible
+    state: present
+  - name: Ansible2
+    description: Created with Ansible
+    state: present

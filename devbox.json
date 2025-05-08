@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
+  "packages": [
+    "python@3.12",
+    "locale@latest",
+    "poetry@latest",
+    "gnupg@latest",
+    "pinentry-gtk2@latest",
+    "git@latest",
+    "go-task@latest",
+    "neovim@latest",
+    "gopass@latest",
+    "btop@latest",
+    "pass@latest",
+  ],
+  "env": {
+    "LANG":               "nb_NO.UTF-8",
+    "LC_ALL":             "nb_NO.UTF-8",
+    "EDITOR":             "nvim",
+    "VISUAL":             "nvim",
+    "PASSWORD_STORE_DIR": "~/.password-store",
+    "GPG_DEFAULT_USER":   "bvborge@gmail.com",
+  },
+  "shell": {
+    "init_hook": [
+      "poetry install --no-root",
+      "source .venv/bin/activate",
+      "ansible-galaxy collection install -r requirements.yaml",
+    ],
+    "scripts": {
+      "wgetrc": ["echo 'inet4_only = on' >> ~/.wgetrc"],
+      "curlrc": ["echo ipv4 >> ~/.curlrc"],
+    },
+  },
+}

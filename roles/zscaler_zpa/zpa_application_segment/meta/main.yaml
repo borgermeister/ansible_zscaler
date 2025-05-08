@@ -1,0 +1,22 @@
+---
+
+galaxy_info:
+  author: 'Bjørn-Vegar Borge'
+  description: 'Zscaler Private Access - Create Application Segments'
+  company: 'Netsecurity'
+
+  license: 'GLWTPL'
+
+  min_ansible_version: '2.1'
+
+  galaxy_tags:
+    - 'zscaler'
+    - 'zpa'
+    - 'zscaler private access'
+    - 'ztna'
+    - 'zero trust network access'
+    - 'security'
+
+dependencies:
+  - zpa_segment_group_info
+  - zpa_server_group_info

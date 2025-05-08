@@ -1,0 +1,21 @@
+---
+
+- name: Get Server Group Info for all groups
+  zscaler.zpacloud.zpa_server_group_info:
+    provider: "{{ zscaler_zpa }}"
+  register: server_group
+
+- name: Register each server group ID as a separate variable
+  set_fact:
+    server_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+  loop: "{{ server_group.groups }}"
+
+- name: Display all registered variables
+  debug:
+    msg: |
+      Server Group Name: {{ item.name }}
+      New Server Group Name: server_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
+      Server Group ID: {{ item.id }}
+  loop: "{{ server_group.groups }}"
+  loop_control:
+    label: "{{ item.name }}"

@@ -1,0 +1,55 @@
+---
+
+# Zscaler Provider Connection Parameters
+zscaler_zpa:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_id") | default(omit) }}'
+  client_secret:   '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_secret") | default(omit) }}'
+  customer_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/customer_id") | default(omit) }}'
+  cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/cloud") | default(omit) }}'
+
+# Default variables for zscaler_zpa_server_group role
+zpa_app_segments:
+  - name: Ansible
+    description: Created with Ansible
+    enabled: true
+    health_reporting: ON_ACCESS
+    bypass_type: NEVER
+    is_cname_enabled: true
+    icmp_access_type: true
+    ip_anchored: false
+    tcp_port_range:
+      - from: 22
+        to: 22
+      - from: 80
+        to: 80
+      - from: 443
+        to: 443
+    # udp_port_range:
+    #   - from: null
+    #     to: null
+    domain_names:
+      - test.home.borgermeister.cloud
+    segment_group_id: '{{ segment_group_id_ansible }}'
+    server_group_ids: '{{ server_group_id_ansible }}'
+    state: present
+  - name: Ansible2
+    description: Created with Ansible
+    enabled: true
+    health_reporting: ON_ACCESS
+    bypass_type: NEVER
+    is_cname_enabled: true
+    icmp_access_type: true
+    ip_anchored: false
+    tcp_port_range:
+      - from: 22
+        to: 22
+      - from: 443
+        to: 443
+    # udp_port_range:
+    #   - from: null
+    #     to: null
+    domain_names:
+      - test2.home.borgermeister.cloud
+    segment_group_id: '{{ segment_group_id_borgermeisterhomefirewalls }}'
+    server_group_ids: '{{ server_group_id_borgermeisterhome }}'
+    state: present

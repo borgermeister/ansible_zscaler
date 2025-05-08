@@ -1,0 +1,83 @@
+---
+
+- name: Zscaler Private Acces
+  hosts: localhost
+  module_defaults:
+    zscaler.zpacloud.zpa_segment_group_info:
+        provider: "{{ zscaler_zpa }}"
+
+  tasks:
+
+### APP CONNECTOR GROUPS ###
+
+    - name: Get App Connector Group Info for all groups
+      zscaler.zpacloud.zpa_app_connector_group_info:
+        provider: "{{ zscaler_zpa }}"
+      register: app_connector_group
+
+    - name: Register each app connector group ID as a separate variable
+      set_fact:
+        app_connector_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+      loop: "{{ app_connector_group.groups }}"
+
+### SERVER GROUPS ###
+
+    - name: Create Server Group
+      zscaler.zpacloud.zpa_server_group:
+        provider: "{{ zscaler_zpa }}"
+        name: '{{ item.name }}'
+        description: '{{ item.description }}'
+        dynamic_discovery: '{{ item.dynamic_discovery }}'
+        app_connector_group_ids: '{{ item.app_connector_group_ids }}'
+      loop: '{{ zpa_server_groups }}'
+
+    - name: Get Server Group Info for all groups
+      zscaler.zpacloud.zpa_server_group_info:
+        provider: "{{ zscaler_zpa }}"
+      register: server_group
+
+    - name: Register each server group ID as a separate variable
+      set_fact:
+        server_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+      loop: "{{ server_group.groups }}"
+      # when: item.name is defined
+
+### SEGMENT GROUPS ###
+
+    - name: Create Segment Group
+      zscaler.zpacloud.zpa_segment_group:
+        provider: "{{ zscaler_zpa }}"
+        name: '{{ item.name }}'
+        description: '{{ item.description }}'
+        enabled: true
+      loop: '{{ zpa_segment_groups }}'
+
+    - name: Get Segment Group Info for all groups
+      zscaler.zpacloud.zpa_segment_group_info:
+        provider: "{{ zscaler_zpa }}"
+      register: segment_group
+
+    - name: Register each segment group ID as a separate variable
+      set_fact:
+        segment_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+      loop: "{{ segment_group.groups }}"
+
+### APPLICATION SEGMENTS ###
+
+    - name: Create Application Segment
+      zscaler.zpacloud.zpa_application_segment:
+        provider: "{{ zscaler_zpa }}"
+        name: '{{ item.name }}'
+        description: '{{ item.description }}'
+        enabled: '{{ item.enabled }}'
+        domain_names: '{{ item.domain_names }}'
+        tcp_port_range: '{{ item.tcp_port_range | default(omit) }}'
+        udp_port_range: '{{ item.udp_port_range | default(omit) }}'
+        bypass_type: '{{ item.bypass_type | default(omit) }}'
+        health_reporting: '{{ item.health_reporting | default(omit) }}'
+        icmp_access_type: '{{ item.icmp_access_type | default(omit) }}'
+        is_cname_enabled: '{{ item.is_cname_enabled | default(omit) }}'
+        ip_anchored: '{{ item.ip_anchored | default(omit) }}'
+        segment_group_id: '{{ item.segment_group_id }}'
+        server_group_ids: '{{ item.server_group_ids }}'
+      loop: '{{ zpa_app_segments }}'

@@ -1,0 +1,21 @@
+---
+
+- name: Get Segment Group Info for all groups
+  zscaler.zpacloud.zpa_segment_group_info:
+    provider: "{{ zscaler_zpa }}"
+  register: segment_group
+
+- name: Register each segment group ID as a separate variable
+  set_fact:
+    segment_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+  loop: "{{ segment_group.groups }}"
+
+- name: Display all registered variables
+  debug:
+    msg: |
+      Segment Group Name: {{ item.name }}
+      New Segment Group Name: segment_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
+      Segment Group ID: {{ item.id }}
+  loop: "{{ segment_group.groups }}"
+  loop_control:
+    label: "{{ item.name }}"

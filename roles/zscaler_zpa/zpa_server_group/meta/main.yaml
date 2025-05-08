@@ -1,0 +1,21 @@
+---
+
+galaxy_info:
+  author: 'Bjørn-Vegar Borge'
+  description: 'Zscaler Private Access - Create Server Groups'
+  company: 'Netsecurity'
+
+  license: 'GLWTPL'
+
+  min_ansible_version: '2.1'
+
+  galaxy_tags:
+    - 'zscaler'
+    - 'zpa'
+    - 'zscaler private access'
+    - 'ztna'
+    - 'zero trust network access'
+    - 'security'
+
+dependencies:
+  - zpa_app_connector_group_info

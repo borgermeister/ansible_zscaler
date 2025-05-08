@@ -1,0 +1,20 @@
+---
+
+- name: Create Application Segment
+  zscaler.zpacloud.zpa_application_segment:
+    provider: "{{ zscaler_zpa }}"
+    name: '{{ item.name }}'
+    description: '{{ item.description }}'
+    enabled: '{{ item.enabled }}'
+    domain_names: '{{ item.domain_names }}'
+    tcp_port_range: '{{ item.tcp_port_range | default(omit) }}'
+    udp_port_range: '{{ item.udp_port_range | default(omit) }}'
+    bypass_type: '{{ item.bypass_type | default(omit) }}'
+    health_reporting: '{{ item.health_reporting | default(omit) }}'
+    icmp_access_type: '{{ item.icmp_access_type | default(omit) }}'
+    is_cname_enabled: '{{ item.is_cname_enabled | default(omit) }}'
+    ip_anchored: '{{ item.ip_anchored | default(omit) }}'
+    segment_group_id: '{{ item.segment_group_id }}'
+    server_group_ids: '{{ item.server_group_ids }}'
+    state: '{{ item.state | default("present") }}'
+  loop: '{{ zpa_app_segments }}'

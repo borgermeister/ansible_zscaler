@@ -1,0 +1,13 @@
+# There are several ways to securely store sensitive data use by Ansible.
+# This example uses [Pass](https://www.passwordstore.org) to store credentials used to authenticate with Zscaler ZIA and ZPA.
+zscaler_zia:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") | default(omit) }}'
+  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") | default(omit) }}'
+  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") | default(omit) }}'
+  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'
+
+zscaler_zpa:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_id") | default(omit) }}'
+  client_secret:   '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_secret") | default(omit) }}'
+  customer_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/customer_id") | default(omit) }}'
+  cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/cloud") | default(omit) }}'
