@@ -1,0 +1,10 @@
+---
+
+- name: Playbook to configure Zscaler Internet Access
+  hosts: localhost
+
+  roles:
+    - role: zscaler_zia/zia_custom_url_categories_info
+    - role: zscaler_zia/zia_custom_url_categories
+
+...
