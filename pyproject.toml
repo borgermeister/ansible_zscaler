@@ -22,7 +22,7 @@ passlib = "~1"
 requests = "~2"
 requests_toolbelt = "~1"
 xmltodict = "~0"
-zscaler-sdk-python = "~1
+zscaler-sdk-python = "~1"
 
 [build-system]
 requires = ["poetry-core"]
