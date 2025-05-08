@@ -1,0 +1,24 @@
+# Zscaler Provider Connection Parameters
+zscaler_zia:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") | default(omit) }}'
+  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") | default(omit) }}'
+  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") | default(omit) }}'
+  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'
+
+# Default variables for zscaler_zia_custom_url_categories role
+custom_url_categories:
+  - name: 'TLS Inspection Bypass - Example'
+    description: 'This category is for bypassing TLS inspection.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - configuration.apple.com
+      - courier.push.apple.com
+      - init.push.apple.com
+      - gsp-ssl-ls.apple.com
+      - gdmf.apple.com
+      - .cfn-apple.com
+      - mesu.apple.com
+    #urls: # Custom URLs that will override the 'URLs Retaining Parent Category'
+    state: present

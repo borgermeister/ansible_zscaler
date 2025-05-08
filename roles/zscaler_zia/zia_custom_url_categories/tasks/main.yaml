@@ -1,0 +1,14 @@
+---
+
+- name: Configure custom URL Category
+  zscaler.ziacloud.zia_url_categories:
+    provider: '{{ zscaler_zia }}'
+    configured_name: '{{ item.name }}'
+    description: '{{ item.description }}'
+    custom_category: '{{ item.custom_category | default(true) }}'
+    super_category: '{{ item.super_category | default("USER_DEFINED") }}'
+    type: '{{ item.type | default("URL_CATEGORY") }}'
+    db_categorized_urls: '{{ item.db_categorized_urls | default([]) }}'
+    urls: '{{ item.urls | default(omit) }}'  # Custom URLs that will override the 'URLs Retaining Parent Category'
+    state: '{{ item.state | default("present") }}'
+  loop: '{{ custom_url_categories }}'
