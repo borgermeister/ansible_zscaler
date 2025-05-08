@@ -1,0 +1,5 @@
+---
+
+- name: Gather Information Details for all URL Categories
+  zscaler.ziacloud.zia_url_categories_info:
+    provider: '{{ zscaler_zia }}'
