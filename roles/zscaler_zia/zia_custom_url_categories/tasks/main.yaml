@@ -11,4 +11,4 @@
     db_categorized_urls: '{{ item.db_categorized_urls | default([]) }}'
     urls: '{{ item.urls | default(omit) }}'  # Custom URLs that will override the 'URLs Retaining Parent Category'
     state: '{{ item.state | default("present") }}'
-  loop: '{{ custom_url_categories }}'
+  loop: '{{ zia_custom_url_categories }}'

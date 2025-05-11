@@ -11,3 +11,12 @@ zscaler_zpa:
   client_secret:   '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_secret") | default(omit) }}'
   customer_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/customer_id") | default(omit) }}'
   cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/cloud") | default(omit) }}'
+
+# Another way to securely store sensitive data is to use environment variables.
+# This example uses environment variables to store credentials used to authenticate with Zscaler OneAPI.
+# To use this method, you will need to rename the key 'zscaler_zia_env' to 'zscaler_zia'.
+zscaler_zia_env:
+  client_id: "{{ lookup('ansible.builtin.env', 'ZSCALER_CLIENT_ID') }}"
+  client_secret: "{{ lookup('ansible.builtin.env', 'ZSCALER_CLIENT_SECRET') }}"
+  vanity_domain: "{{ lookup('ansible.builtin.env', 'ZSCALER_VANITY_DOMAIN') }}"
+  cloud: "{{ lookup('ansible.builtin.env', 'ZSCALER_CLOUD') | default(omit) }}"

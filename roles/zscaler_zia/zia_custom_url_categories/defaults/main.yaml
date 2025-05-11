@@ -6,7 +6,7 @@ zscaler_zia:
   # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'
 
 # Default variables for zscaler_zia_custom_url_categories role
-custom_url_categories:
+zia_custom_url_categories:
   - name: 'TLS Inspection Bypass - Example'
     description: 'This category is for bypassing TLS inspection.'
     custom_category: true
