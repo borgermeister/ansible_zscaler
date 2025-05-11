@@ -1,0 +1,34 @@
+---
+
+- name: Create SSL Inspection Rules
+  zscaler.ziacloud.zia_ssl_inspection_rules:
+    provider: '{{ zscaler_zia }}'
+    order: '{{ item.order }}'
+    name: '{{ item.name }}'
+    description: '{{ item.description }}'
+    enabled: '{{ item.enabled }}'
+    groups: '{{ item.groups | default(omit) }}'
+    url_categories: '{{ item.url_categories | default(omit) }}'
+    cloud_applications: '{{ item.cloud_applications | default(omit) }}'
+    action:
+      type: '{{ item.action.type }}'
+      override_default_certificate: '{{ item.action.override_default_certificate | default(false) }}'
+      show_eun: '{{ item.action.show_eun | default(false) }}'
+      show_eunatp: '{{ item.action.show_eunatp | default(false) }}'
+      decrypt_sub_actions:
+        block_ssl_traffic_with_no_sni_enabled: '{{ item.action.decrypt_sub_actions.block_ssl_traffic_with_no_sni_enabled | default(omit) }}'
+        block_undecrypt: '{{ item.action.decrypt_sub_actions.block_undecrypt | default(omit) }}'
+        http2_enabled: '{{ item.action.decrypt_sub_actions.http2_enabled | default(omit) }}'
+        min_client_tls_version: '{{ item.action.decrypt_sub_actions.min_client_tls_version | default(omit) }}'
+        min_server_tls_version: '{{ item.action.decrypt_sub_actions.min_server_tls_version | default(omit) }}'
+        ocsp_check: '{{ item.action.decrypt_sub_actions.ocsp_check | default(omit) }}'
+        server_certificates: '{{ item.action.decrypt_sub_actions.server_certificates | default(omit) }}'
+      # do_not_decrypt_sub_actions:
+      #   block_ssl_traffic_with_no_sni_enabled: '{{ item.action.do_not_decrypt_sub_actions.block_ssl_traffic_with_no_sni_enabled | default(omit) }}'
+      #   bypass_other_policies: '{{ item.action.do_not_decrypt_sub_actions.bypass_other_policies | default(omit) }}'
+      #   min_tls_version: '{{ item.action.do_not_decrypt_sub_actions.min_tls_version | default(omit) }}'
+      #   ocsp_check: '{{ item.action.do_not_decrypt_sub_actions.ocsp_check | default(omit) }}'
+      #   server_certificates: '{{ item.action.do_not_decrypt_sub_actions.server_certificates | default(omit) }}'
+    road_warrior_for_kerberos: '{{ item.action.road_warrior_for_kerberos | default(false) }}'
+    state: '{{ item.state }}'
+  loop: '{{ zia_ssl_inspection_rules }}'

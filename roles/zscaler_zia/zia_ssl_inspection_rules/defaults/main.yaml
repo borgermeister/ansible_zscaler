@@ -1,0 +1,38 @@
+# Zscaler Provider Connection Parameters
+zscaler_zia:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") | default(omit) }}'
+  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") | default(omit) }}'
+  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") | default(omit) }}'
+  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'
+
+zia_ssl_inspection_rules:
+  - name: 'SSL Inspection Rule'
+    order: 13
+    description: 'Useful description'
+    enabled: true
+    # groups:
+    #   - 'Borgermeister'
+    url_categories:
+      - PROFESSIONAL_SERVICES
+    cloud_applications:
+      - MSLOGINSERVICES
+    action:
+      type: DECRYPT  # Options: BLOCK, DECRYPT, DO_NOT_DECRYPT
+      override_default_certificate: false
+      show_eun: false
+      show_eunatp: false
+      decrypt_sub_actions:
+        block_ssl_traffic_with_no_sni_enabled: true
+        block_undecrypt: true
+        http2_enabled: true
+        min_client_tls_version: CLIENT_TLS_1_2
+        min_server_tls_version: SERVER_TLS_1_2
+        ocsp_check: true
+        server_certificates: BLOCK  # Options: ALLOW, BLOCK, PASS_THRU
+      # do_not_decrypt_sub_actions:
+      #   block_ssl_traffic_with_no_sni_enabled: true
+      #   bypass_other_policies: false
+      #   min_tls_version: SERVER_TLS_1_2
+      #   ocsp_check: true
+      #   server_certificates: BLOCK  # Options: ALLOW, BLOCK
+    state: present
