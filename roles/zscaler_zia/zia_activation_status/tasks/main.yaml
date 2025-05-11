@@ -1,0 +1,7 @@
+---
+
+- name: Activate Zscaler Internet Access Configuration
+  zscaler.ziacloud.zia_activation_status:
+    provider: '{{ zscaler_zia }}'
+    status: ACTIVE
+  when: activation_status["data"]["status"] == 'PENDING'
