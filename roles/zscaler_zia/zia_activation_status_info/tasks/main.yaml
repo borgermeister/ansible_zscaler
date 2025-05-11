@@ -1,0 +1,7 @@
+---
+
+- name: Check for pending Zscaler Internet Access Configuration
+  zscaler.ziacloud.zia_activation_status_info:
+    provider: '{{ zscaler_zia }}'
+    status: ACTIVE
+  register: activation_status
