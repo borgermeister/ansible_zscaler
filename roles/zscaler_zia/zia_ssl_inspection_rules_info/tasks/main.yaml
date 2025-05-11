@@ -1,0 +1,5 @@
+---
+
+- name: Gather Information Details for all SSL Inspection Rules
+  zscaler.ziacloud.zia_ssl_inspection_rules_info:
+    provider: '{{ zscaler_zia }}'
