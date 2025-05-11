@@ -18,3 +18,5 @@ There are several ways you can install Ansible on your system. One way is to use
 In this example I have chosen to install Ansible using [Devbox](https://www.jetify.com/devbox) along with [Poetry](https://python-poetry.org/).
 
 ## Secrets Management
+
+Describe using Password Store or Environment Variables for storing Zscaler OneAPI credentials.
