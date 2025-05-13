@@ -37,3 +37,18 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 
 Pass will be installed as soon as you run the DevBox virtual environment. [Gopass](https://www.gopass.pw) is a more modern and intuitive way to manage the Password Store, and will also be installed as part of the DevBox installation.
 The file `./inventory/host_vars/localhost/zscaler_provider.yaml` contains a few different ways to provide the Zscaler API credentials to Ansible.
+
+## Activating the virtual environment
+
+DevBox creates a virtual environment for each project you work on. To activate the virtual environment for this project you need torun the following command:
+
+```shell
+# Activate the virtual environment
+devbox shell
+```
+
+This will install Ansible and all the required dependencies in the virtual environment.
+
+## Using Ansible roles
+
+All Ansible roles contains default variables which are only ment as an example. You can override these variables by running the simple bash script `copy_default_vars.sh` which copies the default variables to the `./inventory/host_vars/localhost` directory.
