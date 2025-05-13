@@ -1,0 +1,20 @@
+---
+
+galaxy_info:
+  author: 'Bjørn-Vegar Borge'
+  description: 'Zscaler Internet Access - Gather information about all URL Filtering Rules'
+  company: 'Netsecurity'
+
+  license: 'GLWTPL'
+
+  min_ansible_version: '2.1'
+
+  galaxy_tags:
+    - 'zscaler'
+    - 'zia'
+    - 'zscaler internet access'
+    - 'ztna'
+    - 'zero trust network access'
+    - 'security'
+
+dependencies: []
