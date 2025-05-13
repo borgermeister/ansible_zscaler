@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Zscaler automation with Ansible"
-version = "1.0"
+version = "1.2"
 description = "Collection of Ansible playbooks for Zscaler ZIA and ZPA"
 authors = ["Bjorn-Vegar Borge <bvborge@gmail.com>"]
 license = "MIT"
@@ -9,14 +9,14 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 ansible-core = "~2.18"
-ansible-lint = {version = "~24", markers = "platform_system !='Windows'"}
+ansible-lint = "~25"
 ansible-pylibssh = "~1"
 dnspython = "~2"
 jmespath = "~1"
 jsondiff = "~2"
 ncclient = "~0"
 ntc-templates = "~7"
-packaging = "~23"
+packaging = "~25"
 paramiko = "~3"
 passlib = "~1"
 requests = "~2"
