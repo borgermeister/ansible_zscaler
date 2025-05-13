@@ -4,10 +4,16 @@
   hosts: localhost
 
   roles:
+    # - role: zscaler_zia/zia_location_management_info
+    # - role: zscaler_zia/zia_location_groups_info
+    # - role: zscaler_zia/zia_user_management_groups_info
+    # - role: zscaler_zia/zia_user_management_department_info
     # - role: zscaler_zia/zia_custom_url_categories_info
     # - role: zscaler_zia/zia_custom_url_categories
-    - role: zscaler_zia/zia_ssl_inspection_rules_info
+    # - role: zscaler_zia/zia_ssl_inspection_rules_info
     - role: zscaler_zia/zia_ssl_inspection_rules
+    # - role: zscaler_zia/zia_url_filtering_rule_info
+    - role: zscaler_zia/zia_url_filtering_rules
     # - role: zscaler_zia/zia_activation_status
 
 ...

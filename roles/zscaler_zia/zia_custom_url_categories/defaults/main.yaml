@@ -1,9 +1,9 @@
 # Zscaler Provider Connection Parameters
 zscaler_zia:
-  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") | default(omit) }}'
-  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") | default(omit) }}'
-  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") | default(omit) }}'
-  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") }}'
+  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") }}'
+  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") }}'
+  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'  # The cloud key is optional and only required when authenticating to other environments i.e beta
 
 # Default variables for zscaler_zia_custom_url_categories role
 zia_custom_url_categories:

@@ -2,7 +2,7 @@
 
 galaxy_info:
   author: 'Bjørn-Vegar Borge'
-  description: 'Zscaler Internet Access - Create SSL Inspection Rules'
+  description: 'Zscaler Internet Access - Gather information about all SSL Inspection Rules'
   company: 'Netsecurity'
 
   license: 'GLWTPL'
