@@ -1,0 +1,57 @@
+# Zscaler Provider Connection Parameters
+zscaler_zia:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") }}'
+  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") }}'
+  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") }}'
+  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'  # The cloud key is optional and only required when authenticating to other environments i.e beta
+
+zia_url_filtering_rules:
+  - name: 'URL Filtering Rule'
+    order: 6
+    description: 'Give a useful description'
+    enabled: true
+    url_categories:
+      - PROFESSIONAL_SERVICES
+    groups:
+      - '{{ group_borgermeister }}'
+    departments:
+      - '{{ department_borgermeisterit }}'
+    locations:
+      - '{{ location_borgermeisterhome }}'
+    location_groups:
+      - '{{ location_group_borgermeisterlocations }}'
+    devices: []
+    device_groups: []
+    device_trust_levels:  # Options: ANY, LOW_TRUST, MEDIUM_TRUST, HIGH_TRUST, UNKNOWN_DEVICETRUSTLEVEL
+      - UNKNOWN_DEVICETRUSTLEVEL
+    labels: []
+    request_methods:  # Options: OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, OTHER, PROPFIND, PROPPATCH, MOVE, MKCOL, LOCK, COPY, UNLOCK, PATCH
+      - GET
+      - HEAD
+      - POST
+      - PUT
+      - DELETE
+      - TRACE
+      - CONNECT
+      - OTHER
+      - PROPFIND
+      - PROPPATCH
+      - MOVE
+      - MKCOL
+      - LOCK
+      - COPY
+      - UNLOCK
+      - PATCH
+    protocols:  # Options: WEBSOCKETSSL_RULE, WEBSOCKET_RULE, DOHTTPS_RULE, TUNNELSSL_RULE, HTTP_PROXY, FOHTTP_RULE, FTP_RULE, HTTPS_RULE, HTTP_RULE, SSL_RULE, TUNNEL_RULE
+      - HTTP_RULE
+      - HTTPS_RULE
+    user_agent_types:  # Options: OPERA, FIREFOX, MSIE, MSEDGE, CHROME, SAFARI, OTHER, MSCHREDGE
+      - MSIE
+      - CHROME
+      - SAFARI
+      - FIREFOX
+    action:  ALLOW  # Options: ANY, BLOCK, CAUTION, ALLOW, ISOLATE, ICAP_RESPONSE
+    block_override: false
+    # override_users:
+    # override_groups:
+    state: present

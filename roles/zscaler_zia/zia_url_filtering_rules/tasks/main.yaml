@@ -1,0 +1,27 @@
+---
+
+- name: Create URL Filtering Rules
+  zscaler.ziacloud.zia_url_filtering_rules:
+    provider: '{{ zscaler_zia }}'
+    state: '{{ item.state }}'
+    name: '{{ item.name }}'
+    order: '{{ item.order }}'
+    description: '{{ item.description }}'
+    enabled: '{{ item.enabled }}'
+    url_categories: '{{ item.url_categories | default(omit) }}'
+    groups: '{{ item.groups | default(omit) }}'
+    departments: '{{ item.departments | default(omit) }}'
+    locations: '{{ item.locations | default(omit) }}'
+    location_groups: '{{ item.location_groups | default(omit) }}'
+    devices: '{{ item.devices | default(omit) }}'
+    device_groups: '{{ item.device_groups | default(omit) }}'
+    device_trust_levels: '{{ item.device_trust_levels | default(omit) }}'
+    labels: '{{ item.labels | default(omit) }}'
+    request_methods: '{{ item.request_methods | default(omit) }}'
+    protocols: '{{ item.protocols | default(omit) }}'
+    user_agent_types: '{{ item.user_agent_types | default(omit) }}'
+    action: '{{ item.action }}'
+    block_override: '{{ item.block_override | default(false) }}'
+    override_users: '{{ item.override_users | default(omit) }}'
+    override_groups: '{{ item.override_groups | default(omit) }}'
+  loop: '{{ zia_url_filtering_rules }}'
