@@ -17,4 +17,8 @@ galaxy_info:
     - 'zero trust network access'
     - 'security'
 
-dependencies: []
+dependencies:
+  - zia_user_management_groups_info
+  - zia_user_management_department_info
+  - zia_location_management_info
+  - zia_location_groups_info
