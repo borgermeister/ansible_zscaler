@@ -1,5 +1,6 @@
-# There are several ways to securely store sensitive data use by Ansible.
+# There are several ways to securely store sensitive data used by Ansible.
 # This example uses [Pass](https://www.passwordstore.org) to store credentials used to authenticate with Zscaler ZIA and ZPA.
+# Note that the ZPA collection currently does not support OneAPI and relies on the old Legacy API.
 zscaler_zia:
   client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") }}'
   client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") }}'
