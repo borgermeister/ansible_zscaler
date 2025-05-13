@@ -4,15 +4,15 @@ This repository contains the Ansible playbooks and roles for automating Zscaler 
 
 ## Requirements
 
-1. You need to configure Zscaler OneAPI with apropriate permissions.
+1. You need to configure Zscaler OneAPI with appropriate permissions.
 2. You need to have Ansible installed on your system.
 3. You need to decide on a secrets management method for storing Zscaler OneAPI credentials.
 
 ## Configuration
 
-### Zscaler API credentials
+### Zscaler OneAPI credentials
 
-In order to use the Ansible playbooks and roles in this repository, you will need to have Zscaler API credentials. You can obtain these by logging into the Zscaler Private Access Admin Portal and navigating to the Public API section (***Configuration & Control -> Public API***).
+In order to use the Ansible playbooks and roles in this repository, you will need to generate Zscaler OneAPI credentials. You can obtain these by logging into the Zscaler Admin Portal and navigating to the OneAPI section (***Administration -> API Configuration -> OneAPI***).
 
 At this moment Zscaler OneAPI is only supported on the ZIA collection. When using the ZPA collection you will need to use the Legacy API.
 
