@@ -121,9 +121,6 @@
         }
       }
     },
-    "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "resolved": "github:NixOS/nixpkgs/d19cf9dfc633816a437204555afeb9e722386b76?lastModified=1744316434&narHash=sha256-lzFCg%2F1C39pyY2hMB2gcuHV79ozpOz%2FVu15hdjiFOfI%3D"
-    },
     "gnupg@latest": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#gnupg",
