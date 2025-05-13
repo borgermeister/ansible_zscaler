@@ -1,0 +1,13 @@
+---
+
+- name: Gather Information Details for all Location Groups
+  zscaler.ziacloud.zia_location_groups_info:
+    provider: '{{ zscaler_zia }}'
+  register: id_location_groups
+
+- name: Register each Location Group ID as a separate variable
+  set_fact:
+    location_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+  loop: "{{ id_location_groups.locations}}"
+  loop_control:
+    label: "Location Group name: location_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
