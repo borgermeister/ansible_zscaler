@@ -1,29 +1,24 @@
-[tool.poetry]
-name = "Zscaler automation with Ansible"
-version = "1.2"
+[project]
+name = "Zscaler_automation_with_Ansible"
+version = "1.3"
 description = "Collection of Ansible playbooks for Zscaler ZIA and ZPA"
 authors = ["Bjorn-Vegar Borge <bvborge@gmail.com>"]
-license = "MIT"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-ansible-core = "~2.18"
-ansible-lint = "~25"
-ansible-pylibssh = "~1"
-dnspython = "~2"
-jmespath = "~1"
-jsondiff = "~2"
-ncclient = "~0"
-ntc-templates = "~7"
-packaging = "~25"
-paramiko = "~3"
-passlib = "~1"
-requests = "~2"
-requests_toolbelt = "~1"
-xmltodict = "~0"
-zscaler-sdk-python = "~1"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.12"
+dependencies = [
+    "ansible-core>=2.18.5",
+    "ansible-lint>=25.4.0",
+    "ansible-pylibssh>=1.2.2",
+    "dnspython>=2.7.0",
+    "jmespath>=1.0.1",
+    "jsondiff>=2.2.1",
+    "ncclient>=0.6.19",
+    "ntc-templates>=7.8.0",
+    "packaging>=25.0",
+    "paramiko>=3.5.1",
+    "passlib>=1.7.4",
+    "requests>=2.32.3",
+    "requests-toolbelt>=1.0.0",
+    "xmltodict>=0.14.2",
+    "zscaler-sdk-python>=1.3.0",
+]

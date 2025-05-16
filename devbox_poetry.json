@@ -3,6 +3,7 @@
   "packages": [
     "python@3.12",
     "locale@latest",
+    "poetry@latest",
     "gnupg@latest",
     "pinentry-gtk2@latest",
     "git@latest",
@@ -11,7 +12,6 @@
     "gopass@latest",
     "btop@latest",
     "pass@latest",
-    "uv@latest",
   ],
   "env": {
     "LANG":               "nb_NO.UTF-8",
@@ -23,9 +23,9 @@
   },
   "shell": {
     "init_hook": [
+      "poetry install --no-root",
       "source .venv/bin/activate",
-      "uv sync",
-      "ansible-galaxy collection install -r requirements.yaml --upgrade",
+      "ansible-galaxy collection install -r requirements.yaml",
     ],
     "scripts": {
       "wgetrc": ["echo 'inet4_only = on' >> ~/.wgetrc"],
