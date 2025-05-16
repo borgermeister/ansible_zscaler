@@ -6,8 +6,8 @@
   register: id_departments
 
 - name: Register each Department ID as a separate variable
-  set_fact:
+  ansible.builtin.set_fact:
     department_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
-  loop: "{{ id_departments.departments}}"
+  loop: "{{ id_departments.departments }}"
   loop_control:
     label: "Department name: department_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"

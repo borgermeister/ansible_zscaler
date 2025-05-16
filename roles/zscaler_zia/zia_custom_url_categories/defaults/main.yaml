@@ -1,3 +1,5 @@
+---
+
 # Zscaler Provider Connection Parameters
 zscaler_zia:
   client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") }}'
@@ -20,5 +22,5 @@ zia_custom_url_categories:
       - gdmf.apple.com
       - .cfn-apple.com
       - mesu.apple.com
-    #urls: # Custom URLs that will override the 'URLs Retaining Parent Category'
+    # urls: # Custom URLs that will override the 'URLs Retaining Parent Category'
     state: present

@@ -6,8 +6,8 @@
   register: id_location_groups
 
 - name: Register each Location Group ID as a separate variable
-  set_fact:
+  ansible.builtin.set_fact:
     location_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
-  loop: "{{ id_location_groups.locations}}"
+  loop: "{{ id_location_groups.locations }}"
   loop_control:
     label: "Location Group name: location_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"

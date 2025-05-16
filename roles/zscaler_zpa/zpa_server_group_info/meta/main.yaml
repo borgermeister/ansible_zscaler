@@ -12,9 +12,9 @@ galaxy_info:
   galaxy_tags:
     - 'zscaler'
     - 'zpa'
-    - 'zscaler private access'
+    - 'zscalerprivateaccess'
     - 'ztna'
-    - 'zero trust network access'
+    - 'zerotrustnetworkaccess'
     - 'security'
 
 dependencies: []

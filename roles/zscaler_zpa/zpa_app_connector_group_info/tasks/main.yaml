@@ -6,12 +6,12 @@
   register: app_connector_group
 
 - name: Register each app connector group ID as a separate variable
-  set_fact:
+  ansible.builtin.set_fact:
     app_connector_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
   loop: "{{ app_connector_group.groups }}"
 
 - name: Display all registered variables
-  debug:
+  ansible.builtin.debug:
     msg: |
       App Connector Group Name: {{ item.name }}
       New App Connector Group Name: app_connector_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}

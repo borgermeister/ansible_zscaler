@@ -14,7 +14,7 @@
       zscaler.ziacloud.zia_url_categories_info:
         provider: '{{ zscaler_zia }}'
         name: 'TLS Inspection Bypass - Apple General'
-        #id: "OTHER_ADULT_MATERIAL"
+        # id: "OTHER_ADULT_MATERIAL"
 
     - name: Configure custom URL Category
       zscaler.ziacloud.zia_url_categories:

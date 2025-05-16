@@ -12,9 +12,9 @@ galaxy_info:
   galaxy_tags:
     - 'zscaler'
     - 'zia'
-    - 'zscaler internet access'
+    - 'zscalerinternetaccess'
     - 'ztna'
-    - 'zero trust network access'
+    - 'zerotrustnetworkaccess'
     - 'security'
 
 dependencies:

@@ -1,3 +1,5 @@
+---
+
 # Zscaler Provider Connection Parameters
 zscaler_zia:
   client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") }}'
