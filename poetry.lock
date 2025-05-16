@@ -14,14 +14,14 @@ files = [
 
 [[package]]
 name = "ansible-compat"
-version = "25.1.5"
+version = "25.5.0"
 description = "Ansible compatibility goodies"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "ansible_compat-25.1.5-py3-none-any.whl", hash = "sha256:066c280b02e12eedcacfb3390a3e459c4d325bb9971f86bd6486b25d1d1f161d"},
-    {file = "ansible_compat-25.1.5.tar.gz", hash = "sha256:1dd35c21ba0301c93b19fe2bb3aa2caa2a630a05373a103adcc2621465f8da6a"},
+    {file = "ansible_compat-25.5.0-py3-none-any.whl", hash = "sha256:284c6f175e7301d7474b65629c5b10a41016569ce03f50bb7478d6fa9001a2b8"},
+    {file = "ansible_compat-25.5.0.tar.gz", hash = "sha256:0b71052313596e128d2bf60166a1d2ac41c6d140a0ca97d56b878e3c23bfce42"},
 ]
 
 [package.dependencies]
@@ -1785,14 +1785,14 @@ type = ["pytest-mypy"]
 
 [[package]]
 name = "zscaler-sdk-python"
-version = "1.2.4"
+version = "1.3.0"
 description = "Official Python SDK for the Zscaler Products"
 optional = false
-python-versions = "<4.0,>=3.9"
+python-versions = "<4.0,>=3.9.2"
 groups = ["main"]
 files = [
-    {file = "zscaler_sdk_python-1.2.4-py3-none-any.whl", hash = "sha256:8e29c0b7b753edd4b4fce5dbbdae003395e7e700b897a4a19fd114ab8ac4fee6"},
-    {file = "zscaler_sdk_python-1.2.4.tar.gz", hash = "sha256:cf4456fa5e5b1a3068608eeac4edb410386d322df268db1d405936b810d5d302"},
+    {file = "zscaler_sdk_python-1.3.0-py3-none-any.whl", hash = "sha256:6ccc7510f55b458c669a729b60de4f9189e961934268e078f68bbd96e59f170e"},
+    {file = "zscaler_sdk_python-1.3.0.tar.gz", hash = "sha256:0304e2ef3214485c38412ad1a687ff8b99561555240f34303b18ce5449a64fd7"},
 ]
 
 [package.dependencies]
