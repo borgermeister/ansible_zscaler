@@ -12,7 +12,7 @@ This repository contains the Ansible playbooks and roles for automating Zscaler 
 
 ### Zscaler OneAPI credentials
 
-In order to use the Ansible playbooks and roles in this repository, you will need to generate Zscaler OneAPI credentials. You can obtain these by logging into the Zscaler Admin Portal and navigating to the OneAPI section (***Administration -> API Configuration -> OneAPI***).
+In order to use the Ansible playbooks and roles in this repository, you will need to generate Zscaler OneAPI credentials. You can obtain these by logging into the [Zscaler Experience Center](https://console.zscaler.com) and navigating to the OneAPI section (***Administration -> API Configuration -> OneAPI***).
 
 At this moment Zscaler OneAPI is only supported on the ZIA collection. When using the ZPA collection you will need to use the Legacy API.
 
@@ -21,9 +21,12 @@ For the Legacy API you will also need your **customer ID** and the name of the *
 ### Ansible installation
 
 There are several ways you can install Ansible on your system. One way is to use the `pip` package manager, or you can run Ansible from a Docker container.
-In this example I have chosen to install Ansible using [Devbox](https://www.jetify.com/devbox) along with [Poetry](https://python-poetry.org/).
+In this example I have chosen to install Ansible in a virtual environment using [Devbox](https://www.jetify.com/devbox) along with [UV](https://docs.astral.sh/uv/).
+DevBox is a tool to create isolated, reproducible development environments, and UV is a lightweight and fast Python packet manager.
 
-#### DevBox Installation
+I recently replaced [Poetry](https://python-poetry.org/) with [UV](https://docs.astral.sh/uv/).
+
+#### DevBox Installation and basic usage
 
 ```shell
 # Install DevBox
@@ -31,6 +34,18 @@ curl -fsSL https://get.jetify.com/devbox | bash
 
 # Install Nix package manager
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+
+# Activate DevBox virtual environment - executes the content of devbox.json
+devbox shell
+
+# Update DevBox packages
+devbox update
+
+# Add DevBox package
+devbox add <package>
+
+# Upgrade DevBox
+devbox version update
 ```
 
 ## Secrets Management
@@ -40,7 +55,7 @@ The file `./inventory/host_vars/localhost/zscaler_provider.yaml` contains a few 
 
 ## Activating the virtual environment
 
-DevBox creates a virtual environment for each project you work on. To activate the virtual environment for this project you need torun the following command:
+DevBox creates a virtual environment for each project you work on - based on the content of `devbox.json`. To activate the virtual environment for this project you need to run the following command:
 
 ```shell
 # Activate the virtual environment
