@@ -5,6 +5,11 @@ zscaler_zia:
   vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") }}'
   # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'  # The cloud key is optional and only required when authenticating to other environments i.e beta
 
+# Be aware that if you change the name of an existing rule in Ansible,
+# a new rule will be created and Ansible will lose track of the old one.
+# The old rule will not be deleted, so you will need to delete it manually.
+# To prevent this behavior, you can have Ansible reference the rule by its ID.
+# I personally think this is to cumbersome, so I just use the name of the rule.
 zia_ssl_inspection_rules:
   - name: 'SSL Inspection Rule'
     order: 14

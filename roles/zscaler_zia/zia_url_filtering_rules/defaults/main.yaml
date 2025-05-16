@@ -5,13 +5,18 @@ zscaler_zia:
   vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") }}'
   # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'  # The cloud key is optional and only required when authenticating to other environments i.e beta
 
+# Be aware that if you change the name of an existing rule in Ansible,
+# a new rule will be created and Ansible will lose track of the old one.
+# The old rule will not be deleted, so you will need to delete it manually.
+# To prevent this behavior, you can have Ansible reference the rule by its ID.
+# I personally think this is to cumbersome, so I just use the name of the rule.
 zia_url_filtering_rules:
-  - name: 'URL Filtering Rule'
+  - name: 'Ansible URL Filtering Rule'
     order: 6
     description: 'Give a useful description'
     enabled: true
     url_categories:
-      - PROFESSIONAL_SERVICES
+      - ADWARE_OR_SPYWARE
     groups:
       - '{{ group_borgermeister }}'
     departments:
@@ -24,6 +29,7 @@ zia_url_filtering_rules:
     device_groups: []
     device_trust_levels:  # Options: ANY, LOW_TRUST, MEDIUM_TRUST, HIGH_TRUST, UNKNOWN_DEVICETRUSTLEVEL
       - UNKNOWN_DEVICETRUSTLEVEL
+      - LOW_TRUST
     labels: []
     request_methods:  # Options: OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, OTHER, PROPFIND, PROPPATCH, MOVE, MKCOL, LOCK, COPY, UNLOCK, PATCH
       - GET
@@ -50,7 +56,7 @@ zia_url_filtering_rules:
       - CHROME
       - SAFARI
       - FIREFOX
-    action:  ALLOW  # Options: ANY, BLOCK, CAUTION, ALLOW, ISOLATE, ICAP_RESPONSE
+    action:  BLOCK  # Options: ANY, BLOCK, CAUTION, ALLOW, ISOLATE, ICAP_RESPONSE
     block_override: false
     # override_users:
     # override_groups:
