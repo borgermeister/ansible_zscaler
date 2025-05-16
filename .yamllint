@@ -1,0 +1,17 @@
+---
+
+extends: default
+
+rules:
+  braces:
+    min-spaces-inside: 0
+    max-spaces-inside: 0
+  indentation:
+    indent-sequences: whatever
+  line-length:
+    max: 200
+    level: warning
+  truthy:
+    allowed-values:
+      - "true"
+      - "false"

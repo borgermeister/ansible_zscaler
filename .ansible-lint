@@ -1,0 +1,10 @@
+---
+
+skip_list:
+  - command-instead-of-module
+  - no-changed-when
+  - package-latest
+  - role-name
+  - run-once[task]
+  - yaml[line-length]
+  - var-naming[no-role-prefix]
