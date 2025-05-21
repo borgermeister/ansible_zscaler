@@ -1,0 +1,28 @@
+# Windows
+Thumbs.db
+desktop.ini
+
+# MacOS
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+
+# Config files generated from Jinja2 template files
+*.conf
+
+# VS Code workspace configuration
+.vscode/
+
+# Poetry Virtual Environment
+.venv/
+
+# Devbox
+.devbox/
+
+# ACME
+acme/
+
+# Ansible Navigator artifacts
+*artifact*.json
+
