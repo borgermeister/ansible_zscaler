@@ -4,13 +4,19 @@ extends: default
 
 rules:
   braces:
-    min-spaces-inside: 0
-    max-spaces-inside: 0
+    min-spaces-inside: 1
+    max-spaces-inside: 1
+  commments:
+    min-spaces-from-content: 1
   indentation:
-    indent-sequences: whatever
+    spaces: 2
+    indent-sequences: true
   line-length:
     max: 200
     level: warning
+  octal-values:
+    forbid-implicit-octal: true
+    forbid-explicit-octal: true
   truthy:
     allowed-values:
       - "true"
