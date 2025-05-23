@@ -1,0 +1,20 @@
+---
+
+galaxy_info:
+  author: 'Bjørn-Vegar Borge'
+  description: 'Zscaler Internet Access - Gather information about all Destination IP Groups and register them as a separate variable'
+  company: 'Netsecurity'
+
+  license: 'GLWTPL'
+
+  min_ansible_version: '2.1'
+
+  galaxy_tags:
+    - 'zscaler'
+    - 'zia'
+    - 'zscalerinternetaccess'
+    - 'ztna'
+    - 'zerotrustnetworkaccess'
+    - 'security'
+
+dependencies: []
