@@ -1,0 +1,30 @@
+---
+
+galaxy_info:
+  author: 'Bjørn-Vegar Borge'
+  description: 'Zscaler Internet Access - Create Firewall Rules'
+  company: 'Netsecurity'
+
+  license: 'GLWTPL'
+
+  min_ansible_version: '2.1'
+
+  galaxy_tags:
+    - 'zscaler'
+    - 'zia'
+    - 'zscalerinternetaccess'
+    - 'ztna'
+    - 'zerotrustnetworkaccess'
+    - 'security'
+
+dependencies:
+  - zia_user_management_groups_info
+  - zia_user_management_department_info
+  - zia_location_management_info
+  - zia_location_groups_info
+  - zia_cloud_firewall_ip_source_groups_info
+  - zia_cloud_firewall_ip_destination_groups_info
+  # - zia_cloud_firewall_network_application_info
+  - zia_cloud_firewall_network_application_group_info
+  - zia_cloud_firewall_network_services_info
+  - zia_cloud_firewall_network_services_groups_info
