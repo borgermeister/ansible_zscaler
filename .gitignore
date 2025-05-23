@@ -11,6 +11,9 @@ desktop.ini
 # Config files generated from Jinja2 template files
 *.conf
 
+# Ansible Collections, Modules and Roles
+.ansible/
+
 # VS Code workspace configuration
 .vscode/
 
