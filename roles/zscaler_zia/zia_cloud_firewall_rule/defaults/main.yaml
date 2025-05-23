@@ -37,7 +37,8 @@ zia_cloud_firewall_rule:
     nw_application_groups: []
     nw_applications: []  # Locate application ID here: '{{ role_path }}/files/nw_applications.txt'
     app_service_groups: []
-    src_ip_groups: '{{ src_ip_group_borgermeisterhome }}'
+    src_ip_groups:
+      - '{{ src_ip_group_borgermeisterhome }}'
     src_ips: []
     exclude_src_countries: false
     source_countries: []
