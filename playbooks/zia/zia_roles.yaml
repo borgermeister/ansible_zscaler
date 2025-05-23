@@ -1,6 +1,6 @@
 ---
 
-- name: Playbook to configure Zscaler Internet Access
+- name: Ansible Roles to configure Zscaler Internet Access
   hosts: localhost
 
   roles:
@@ -8,8 +8,16 @@
     # - role: zscaler_zia/zia_location_groups_info
     # - role: zscaler_zia/zia_user_management_groups_info
     # - role: zscaler_zia/zia_user_management_department_info
+    # - role: zscaler_zia/zia_cloud_firewall_ip_source_groups_info
+    # - role: zscaler_zia/zia_cloud_firewall_ip_destination_groups_info
+    # - role: zscaler_zia/zia_cloud_firewall_network_services_info
+    # - role: zscaler_zia/zia_cloud_firewall_network_services_groups_info
+    # - role: zscaler_zia/zia_cloud_firewall_network_application_info
+    # - role: zscaler_zia/zia_cloud_firewall_network_application_group_info
     # - role: zscaler_zia/zia_custom_url_categories_info
     # - role: zscaler_zia/zia_custom_url_categories
+    # - role: zscaler_zia/zia_cloud_firewall_rule_info
+    - role: zscaler_zia/zia_cloud_firewall_rule
     # - role: zscaler_zia/zia_ssl_inspection_rules_info
     - role: zscaler_zia/zia_ssl_inspection_rules
     # - role: zscaler_zia/zia_url_filtering_rule_info
