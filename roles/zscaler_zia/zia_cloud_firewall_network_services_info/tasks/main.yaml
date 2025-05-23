@@ -1,0 +1,13 @@
+---
+
+- name: Gather Information Details for all Network Application Groups
+  zscaler.ziacloud.zia_cloud_firewall_network_services_info:
+    provider: '{{ zscaler_zia }}'
+  register: id_nw_services
+
+- name: Register each Network Service ID as a separate variable
+  ansible.builtin.set_fact:
+    nw_service_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+  loop: "{{ id_nw_services.services }}"
+  loop_control:
+    label: "Network Service: nw_service_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"

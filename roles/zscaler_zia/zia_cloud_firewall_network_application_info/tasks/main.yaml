@@ -1,0 +1,26 @@
+---
+
+- name: Gather Information Details for all Network Applications
+  zscaler.ziacloud.zia_cloud_firewall_network_application_info:
+    provider: '{{ zscaler_zia }}'
+  register: id_nw_applications
+
+- name: Register all Network Applications to a file
+  ansible.builtin.lineinfile:
+    path: '{{ role_path }}/files/nw_applications.txt'
+    create: true
+    mode: '0644'
+    state: present
+    line: |
+      Network Application: {{ item.description }}
+      ID: {{ item.id }}
+      Parent Category: {{ item.parent_category }}
+  loop: "{{ id_nw_applications.apps }}"
+
+
+# - name: Register each Network Application ID as a separate variable
+#   ansible.builtin.set_fact:
+#     nw_application_{{ item.description | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+#   loop: "{{ id_nw_applications.apps }}"
+#   loop_control:
+#     label: "Network Application: nw_application_{{ item.description | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"

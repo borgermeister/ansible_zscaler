@@ -1,0 +1,5696 @@
+Network Application: APNS_DESC
+ID: APNS
+Parent Category: APP_SERVICE
+
+Network Application: DICT_DESC
+ID: DICT
+Parent Category: APP_SERVICE
+
+Network Application: EPM_DESC
+ID: EPM
+Parent Category: APP_SERVICE
+
+Network Application: GARP_DESC
+ID: GARP
+Parent Category: APP_SERVICE
+
+Network Application: ICLOUD_DESC
+ID: ICLOUD
+Parent Category: APP_SERVICE
+
+Network Application: IOS_OTA_UPDATE_DESC
+ID: IOS_OTA_UPDATE
+Parent Category: APP_SERVICE
+
+Network Application: LDAP_DESC
+ID: LDAP
+Parent Category: APP_SERVICE
+
+Network Application: LDAPS_DESC
+ID: LDAPS
+Parent Category: APP_SERVICE
+
+Network Application: MQ_DESC
+ID: MQ
+Parent Category: APP_SERVICE
+
+Network Application: NSPI_DESC
+ID: NSPI
+Parent Category: APP_SERVICE
+
+Network Application: PERFORCE_DESC
+ID: PERFORCE
+Parent Category: APP_SERVICE
+
+Network Application: PORTMAP_DESC
+ID: PORTMAP
+Parent Category: APP_SERVICE
+
+Network Application: SAMSUNG_APPS_DESC
+ID: SAMSUNG_APPS
+Parent Category: APP_SERVICE
+
+Network Application: SRVLOC_DESC
+ID: SRVLOC
+Parent Category: APP_SERVICE
+
+Network Application: SSDP_DESC
+ID: SSDP
+Parent Category: APP_SERVICE
+
+Network Application: SYSLOG_DESC
+ID: SYSLOG
+Parent Category: APP_SERVICE
+
+Network Application: WINDOWS_MARKETPLACE_DESC
+ID: WINDOWS_MARKETPLACE
+Parent Category: APP_SERVICE
+
+Network Application: XFS_DESC
+ID: XFS
+Parent Category: APP_SERVICE
+
+Network Application: VMWARE_HORIZON_VIEW_DESC
+ID: VMWARE_HORIZON_VIEW
+Parent Category: APP_SERVICE
+
+Network Application: FIX_DESC
+ID: FIX
+Parent Category: APP_SERVICE
+
+Network Application: DOCKER_DESC
+ID: DOCKER
+Parent Category: APP_SERVICE
+
+Network Application: CHAP_DESC
+ID: CHAP
+Parent Category: AUTHENTICATION
+
+Network Application: DIAMETER_DESC
+ID: DIAMETER
+Parent Category: AUTHENTICATION
+
+Network Application: IDENT_DESC
+ID: IDENT
+Parent Category: AUTHENTICATION
+
+Network Application: KRB5_DESC
+ID: KRB5
+Parent Category: AUTHENTICATION
+
+Network Application: PAP_DESC
+ID: PAP
+Parent Category: AUTHENTICATION
+
+Network Application: RADIUS_DESC
+ID: RADIUS
+Parent Category: AUTHENTICATION
+
+Network Application: APNS_DESC
+ID: APNS
+Parent Category: APP_SERVICE
+
+Network Application: DICT_DESC
+ID: DICT
+Parent Category: APP_SERVICE
+
+Network Application: EPM_DESC
+ID: EPM
+Parent Category: APP_SERVICE
+
+Network Application: GARP_DESC
+ID: GARP
+Parent Category: APP_SERVICE
+
+Network Application: ICLOUD_DESC
+ID: ICLOUD
+Parent Category: APP_SERVICE
+
+Network Application: IOS_OTA_UPDATE_DESC
+ID: IOS_OTA_UPDATE
+Parent Category: APP_SERVICE
+
+Network Application: LDAP_DESC
+ID: LDAP
+Parent Category: APP_SERVICE
+
+Network Application: LDAPS_DESC
+ID: LDAPS
+Parent Category: APP_SERVICE
+
+Network Application: MQ_DESC
+ID: MQ
+Parent Category: APP_SERVICE
+
+Network Application: NSPI_DESC
+ID: NSPI
+Parent Category: APP_SERVICE
+
+Network Application: PERFORCE_DESC
+ID: PERFORCE
+Parent Category: APP_SERVICE
+
+Network Application: PORTMAP_DESC
+ID: PORTMAP
+Parent Category: APP_SERVICE
+
+Network Application: SAMSUNG_APPS_DESC
+ID: SAMSUNG_APPS
+Parent Category: APP_SERVICE
+
+Network Application: SRVLOC_DESC
+ID: SRVLOC
+Parent Category: APP_SERVICE
+
+Network Application: SSDP_DESC
+ID: SSDP
+Parent Category: APP_SERVICE
+
+Network Application: SYSLOG_DESC
+ID: SYSLOG
+Parent Category: APP_SERVICE
+
+Network Application: WINDOWS_MARKETPLACE_DESC
+ID: WINDOWS_MARKETPLACE
+Parent Category: APP_SERVICE
+
+Network Application: XFS_DESC
+ID: XFS
+Parent Category: APP_SERVICE
+
+Network Application: VMWARE_HORIZON_VIEW_DESC
+ID: VMWARE_HORIZON_VIEW
+Parent Category: APP_SERVICE
+
+Network Application: FIX_DESC
+ID: FIX
+Parent Category: APP_SERVICE
+
+Network Application: DOCKER_DESC
+ID: DOCKER
+Parent Category: APP_SERVICE
+
+Network Application: CHAP_DESC
+ID: CHAP
+Parent Category: AUTHENTICATION
+
+Network Application: DIAMETER_DESC
+ID: DIAMETER
+Parent Category: AUTHENTICATION
+
+Network Application: IDENT_DESC
+ID: IDENT
+Parent Category: AUTHENTICATION
+
+Network Application: KRB5_DESC
+ID: KRB5
+Parent Category: AUTHENTICATION
+
+Network Application: PAP_DESC
+ID: PAP
+Parent Category: AUTHENTICATION
+
+Network Application: RADIUS_DESC
+ID: RADIUS
+Parent Category: AUTHENTICATION
+
+Network Application: TACACS_PLUS_DESC
+ID: TACACS_PLUS
+Parent Category: AUTHENTICATION
+
+Network Application: YPPASSWD_DESC
+ID: YPPASSWD
+Parent Category: AUTHENTICATION
+
+Network Application: YPSERV_DESC
+ID: YPSERV
+Parent Category: AUTHENTICATION
+
+Network Application: SALESFORCE_DESC
+ID: SALESFORCE
+Parent Category: BUSINESS
+
+Network Application: GOOGLEANALYTICS_DESC
+ID: GOOGLEANALYTICS
+Parent Category: BUSINESS
+
+Network Application: OFFICE365_DESC
+ID: OFFICE365
+Parent Category: BUSINESS
+
+Network Application: EVERNOTE_DESC
+ID: EVERNOTE
+Parent Category: BUSINESS
+
+Network Application: TUMBLR_DESC
+ID: TUMBLR
+Parent Category: BUSINESS
+
+Network Application: ZOHOCRM_DESC
+ID: ZOHOCRM
+Parent Category: BUSINESS
+
+Network Application: SUGARCRM_DESC
+ID: SUGARCRM
+Parent Category: BUSINESS
+
+Network Application: ADOBE_CREATIVE_CLOUD_DESC
+ID: ADOBE_CREATIVE_CLOUD
+Parent Category: BUSINESS
+
+Network Application: ZOOMINFO_DESC
+ID: ZOOMINFO
+Parent Category: BUSINESS
+
+Network Application: SERVICE_NOW_DESC
+ID: SERVICE_NOW
+Parent Category: BUSINESS
+
+Network Application: DB2_DESC
+ID: DB2
+Parent Category: DATABASE
+
+Network Application: DRDA_DESC
+ID: DRDA
+Parent Category: DATABASE
+
+Network Application: FILEMAKER_PRO_DESC
+ID: FILEMAKER_PRO
+Parent Category: DATABASE
+
+Network Application: INFORMIX_DESC
+ID: INFORMIX
+Parent Category: DATABASE
+
+Network Application: MOBILINK_DESC
+ID: MOBILINK
+Parent Category: DATABASE
+
+Network Application: MYSQL_DESC
+ID: MYSQL
+Parent Category: DATABASE
+
+Network Application: POSTGRES_DESC
+ID: POSTGRES
+Parent Category: DATABASE
+
+Network Application: SQLI_DESC
+ID: SQLI
+Parent Category: DATABASE
+
+Network Application: SYBASE_DESC
+ID: SYBASE
+Parent Category: DATABASE
+
+Network Application: TDS_DESC
+ID: TDS
+Parent Category: DATABASE
+
+Network Application: TNS_DESC
+ID: TNS
+Parent Category: DATABASE
+
+Network Application: MS_SSAS_DESC
+ID: MS_SSAS
+Parent Category: DATABASE
+
+Network Application: GOOGLE_DNS_DESC
+ID: GOOGLE_DNS
+Parent Category: DOH
+
+Network Application: CLOUDFLARE_DNS_DESC
+ID: CLOUDFLARE_DNS
+Parent Category: DOH
+
+Network Application: ADGUARD_DESC
+ID: ADGUARD
+Parent Category: DOH
+
+Network Application: QUAD9_DESC
+ID: QUAD9
+Parent Category: DOH
+
+Network Application: OPENDNS_DESC
+ID: OPENDNS
+Parent Category: DOH
+
+Network Application: CLEANBROWSING_DESC
+ID: CLEANBROWSING
+Parent Category: DOH
+
+Network Application: COMCAST_DNS_DESC
+ID: COMCAST_DNS
+Parent Category: DOH
+
+Network Application: NEXTDNS_DESC
+ID: NEXTDNS
+Parent Category: DOH
+
+Network Application: POWERDNS_DESC
+ID: POWERDNS
+Parent Category: DOH
+
+Network Application: BLAHDNS_DESC
+ID: BLAHDNS
+Parent Category: DOH
+
+Network Application: SECUREDNS_DESC
+ID: SECUREDNS
+Parent Category: DOH
+
+Network Application: RUBYFISH_DESC
+ID: RUBYFISH
+Parent Category: DOH
+
+Network Application: DOH_UNKNOWN_DESC
+ID: DOH_UNKNOWN
+Parent Category: DOH
+
+Network Application: GOTOMEETING_DESC
+ID: GOTOMEETING
+Parent Category: ENTERPRISE
+
+Network Application: MICROSOFTLIVEMEETING_DESC
+ID: MICROSOFTLIVEMEETING
+Parent Category: ENTERPRISE
+
+Network Application: YAMMER_DESC
+ID: YAMMER
+Parent Category: ENTERPRISE
+
+Network Application: NETVIEWER_DESC
+ID: NETVIEWER
+Parent Category: ENTERPRISE
+
+Network Application: AMAZON_CLD_DRIVE_DESC
+ID: AMAZON_CLD_DRIVE
+Parent Category: ENTERPRISE
+
+Network Application: WEBINAR_DESC
+ID: WEBINAR
+Parent Category: ENTERPRISE
+
+Network Application: GOOGLE_KEEP_DESC
+ID: GOOGLE_KEEP
+Parent Category: ENTERPRISE
+
+Network Application: AMAZON_CHIME_DESC
+ID: AMAZON_CHIME
+Parent Category: ENTERPRISE
+
+Network Application: WORKDAY_DESC
+ID: WORKDAY
+Parent Category: ERP
+
+Network Application: AIMINI_DESC
+ID: AIMINI
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: CFT_DESC
+ID: CFT
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: FTP_DESC
+ID: FTP
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: FTP_DATA_DESC
+ID: FTP_DATA
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: FTPS_DESC
+ID: FTPS
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: GOOGLE_DRIVE_DESC
+ID: GOOGLE_DRIVE
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: HOTLINE_DESC
+ID: HOTLINE
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: IBACKUP_DESC
+ID: IBACKUP
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: MOUNT_DESC
+ID: MOUNT
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: NETBIOS_DESC
+ID: NETBIOS
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: NFS_DESC
+ID: NFS
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: NLOCKMGR_DESC
+ID: NLOCKMGR
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: RQUOTA_DESC
+ID: RQUOTA
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: RSTAT_DESC
+ID: RSTAT
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: RSYNC_DESC
+ID: RSYNC
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: RUSERS_DESC
+ID: RUSERS
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: SMB_DESC
+ID: SMB
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: SYNC_DESC
+ID: SYNC
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: TFTP_DESC
+ID: TFTP
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: YPUPDATE_DESC
+ID: YPUPDATE
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: AIM_TRANSFER_DESC
+ID: AIM_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: IRC_TRANSFER_DESC
+ID: IRC_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: JABBER_TRANSFER_DESC
+ID: JABBER_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: PALTALK_TRANSFER_DESC
+ID: PALTALK_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: QQ_TRANSFER_DESC
+ID: QQ_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: YMSG_TRANSFER_DESC
+ID: YMSG_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: FTPS_DATA_DESC
+ID: FTPS_DATA
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: CSTRIKE_DESC
+ID: CSTRIKE
+Parent Category: GAMING
+
+Network Application: EVE_ONLINE_DESC
+ID: EVE_ONLINE
+Parent Category: GAMING
+
+Network Application: EVERQUEST_DESC
+ID: EVERQUEST
+Parent Category: GAMING
+
+Network Application: HALFLIFE_DESC
+ID: HALFLIFE
+Parent Category: GAMING
+
+Network Application: IMVU_DESC
+ID: IMVU
+Parent Category: GAMING
+
+Network Application: LINEAGE2_DESC
+ID: LINEAGE2
+Parent Category: GAMING
+
+Network Application: POKER_STARS_DESC
+ID: POKER_STARS
+Parent Category: GAMING
+
+Network Application: PSN_DESC
+ID: PSN
+Parent Category: GAMING
+
+Network Application: QUAKE_DESC
+ID: QUAKE
+Parent Category: GAMING
+
+Network Application: RUNESCAPE_DESC
+ID: RUNESCAPE
+Parent Category: GAMING
+
+Network Application: STEAM_DESC
+ID: STEAM
+Parent Category: GAMING
+
+Network Application: WFC_DESC
+ID: WFC
+Parent Category: GAMING
+
+Network Application: WIICONNECT24_DESC
+ID: WIICONNECT24
+Parent Category: GAMING
+
+Network Application: WOW_DESC
+ID: WOW
+Parent Category: GAMING
+
+Network Application: XBOXLIVE_DESC
+ID: XBOXLIVE
+Parent Category: GAMING
+
+Network Application: FIFA_DESC
+ID: FIFA
+Parent Category: GAMING
+
+Network Application: ROBLOX_DESC
+ID: ROBLOX
+Parent Category: GAMING
+
+Network Application: FLICKR_DESC
+ID: FLICKR
+Parent Category: IMAGEHOST
+
+Network Application: TELEGRAM_DESC
+ID: TELEGRAM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: ZOOM_DESC
+ID: ZOOM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MIBBIT_DESC
+ID: MIBBIT
+Parent Category: INSTANT_MESSAGING
+
+Network Application: AIM_DESC
+ID: AIM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: AIM_EXPRESS_DESC
+ID: AIM_EXPRESS
+Parent Category: INSTANT_MESSAGING
+
+Network Application: AIMS_DESC
+ID: AIMS
+Parent Category: INSTANT_MESSAGING
+
+Network Application: AIRAIM_DESC
+ID: AIRAIM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: BADOO_DESC
+ID: BADOO
+Parent Category: INSTANT_MESSAGING
+
+Network Application: EBUDDY_DESC
+ID: EBUDDY
+Parent Category: INSTANT_MESSAGING
+
+Network Application: FRIENDVOX_DESC
+ID: FRIENDVOX
+Parent Category: INSTANT_MESSAGING
+
+Network Application: GTALK_DESC
+ID: GTALK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: GCM_DESC
+ID: GCM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: HOVRS_DESC
+ID: HOVRS
+Parent Category: INSTANT_MESSAGING
+
+Network Application: ICQ2GO_DESC
+ID: ICQ2GO
+Parent Category: INSTANT_MESSAGING
+
+Network Application: ILOVEIM_DESC
+ID: ILOVEIM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: IRC_DESC
+ID: IRC
+Parent Category: INSTANT_MESSAGING
+
+Network Application: JABBER_DESC
+ID: JABBER
+Parent Category: INSTANT_MESSAGING
+
+Network Application: KAIXIN_CHAT_DESC
+ID: KAIXIN_CHAT
+Parent Category: INSTANT_MESSAGING
+
+Network Application: KAKAOTALK_DESC
+ID: KAKAOTALK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: KIK_DESC
+ID: KIK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: KOOLIM_DESC
+ID: KOOLIM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: LINE_DESC
+ID: LINE
+Parent Category: INSTANT_MESSAGING
+
+Network Application: LOTUS_SAMETIME_DESC
+ID: LOTUS_SAMETIME
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MESSENGERFX_DESC
+ID: MESSENGERFX
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MITALK_DESC
+ID: MITALK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MPLUS_MESSENGER_DESC
+ID: MPLUS_MESSENGER
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MS_COMMUNICATOR_DESC
+ID: MS_COMMUNICATOR
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MSN_DESC
+ID: MSN
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MSNMOBILE_DESC
+ID: MSNMOBILE
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MXIT_DESC
+ID: MXIT
+Parent Category: INSTANT_MESSAGING
+
+Network Application: NETMEETING_ILS_DESC
+ID: NETMEETING_ILS
+Parent Category: INSTANT_MESSAGING
+
+Network Application: OICQ_DESC
+ID: OICQ
+Parent Category: INSTANT_MESSAGING
+
+Network Application: OOVOO_DESC
+ID: OOVOO
+Parent Category: INSTANT_MESSAGING
+
+Network Application: PALTALK_DESC
+ID: PALTALK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: QQ_DESC
+ID: QQ
+Parent Category: INSTANT_MESSAGING
+
+Network Application: RADIUSIM_DESC
+ID: RADIUSIM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: SKYPE_DESC
+ID: SKYPE
+Parent Category: INSTANT_MESSAGING
+
+Network Application: TEAMSPEAK_DESC
+ID: TEAMSPEAK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: TEAMSPEAK_V3_DESC
+ID: TEAMSPEAK_V3
+Parent Category: INSTANT_MESSAGING
+
+Network Application: WECHAT_DESC
+ID: WECHAT
+Parent Category: INSTANT_MESSAGING
+
+Network Application: WHATSAPP_DESC
+ID: WHATSAPP
+Parent Category: INSTANT_MESSAGING
+
+Network Application: YMSG_DESC
+ID: YMSG
+Parent Category: INSTANT_MESSAGING
+
+Network Application: YMSG_CONF_DESC
+ID: YMSG_CONF
+Parent Category: INSTANT_MESSAGING
+
+Network Application: YOUNI_DESC
+ID: YOUNI
+Parent Category: INSTANT_MESSAGING
+
+Network Application: ZOHO_DESC
+ID: ZOHO
+Parent Category: INSTANT_MESSAGING
+
+Network Application: ZOHO_IM_DESC
+ID: ZOHO_IM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: WANGWANG_DESC
+ID: WANGWANG
+Parent Category: INSTANT_MESSAGING
+
+Network Application: IOS_APPSTORE_DESC
+ID: IOS_APPSTORE
+Parent Category: MAPPSTORE
+
+Network Application: ANZHI_DESC
+ID: ANZHI
+Parent Category: MAPPSTORE
+
+Network Application: GOOGLE_PLAY_DESC
+ID: GOOGLE_PLAY
+Parent Category: MAPPSTORE
+
+Network Application: ALTIRIS_DESC
+ID: ALTIRIS
+Parent Category: NETWORK_MGMT
+
+Network Application: CDP_DESC
+ID: CDP
+Parent Category: NETWORK_MGMT
+
+Network Application: IPERF_DESC
+ID: IPERF
+Parent Category: NETWORK_MGMT
+
+Network Application: LCP_DESC
+ID: LCP
+Parent Category: NETWORK_MGMT
+
+Network Application: NETFLOW_DESC
+ID: NETFLOW
+Parent Category: NETWORK_MGMT
+
+Network Application: RSVP_DESC
+ID: RSVP
+Parent Category: NETWORK_MGMT
+
+Network Application: SNMP_DESC
+ID: SNMP
+Parent Category: NETWORK_MGMT
+
+Network Application: SONMP_DESC
+ID: SONMP
+Parent Category: NETWORK_MGMT
+
+Network Application: ZABBIX_AGENT_DESC
+ID: ZABBIX_AGENT
+Parent Category: NETWORK_MGMT
+
+Network Application: APOLLO_DESC
+ID: APOLLO
+Parent Category: NETWORK_MGMT
+
+Network Application: BGP_DESC
+ID: BGP
+Parent Category: NETWORK_MGMT
+
+Network Application: EIGRP_DESC
+ID: EIGRP
+Parent Category: NETWORK_MGMT
+
+Network Application: HSRP_DESC
+ID: HSRP
+Parent Category: NETWORK_MGMT
+
+Network Application: IPXRIP_DESC
+ID: IPXRIP
+Parent Category: NETWORK_MGMT
+
+Network Application: LOOP_DESC
+ID: LOOP
+Parent Category: NETWORK_MGMT
+
+Network Application: MPLS_DESC
+ID: MPLS
+Parent Category: NETWORK_MGMT
+
+Network Application: NLSP_DESC
+ID: NLSP
+Parent Category: NETWORK_MGMT
+
+Network Application: OSPF_DESC
+ID: OSPF
+Parent Category: NETWORK_MGMT
+
+Network Application: PWE_DESC
+ID: PWE
+Parent Category: NETWORK_MGMT
+
+Network Application: RIP1_DESC
+ID: RIP1
+Parent Category: NETWORK_MGMT
+
+Network Application: RIP2_DESC
+ID: RIP2
+Parent Category: NETWORK_MGMT
+
+Network Application: RIPNG1_DESC
+ID: RIPNG1
+Parent Category: NETWORK_MGMT
+
+Network Application: STP_DESC
+ID: STP
+Parent Category: NETWORK_MGMT
+
+Network Application: VRRP_DESC
+ID: VRRP
+Parent Category: NETWORK_MGMT
+
+Network Application: S7COMM_PLUS_DESC
+ID: S7COMM_PLUS
+Parent Category: NETWORK_MGMT
+
+Network Application: IP_DESC
+ID: IP
+Parent Category: NETWORK_SERVICE
+
+Network Application: IP6_DESC
+ID: IP6
+Parent Category: NETWORK_SERVICE
+
+Network Application: TCP_DESC
+ID: TCP
+Parent Category: NETWORK_SERVICE
+
+Network Application: UDP_DESC
+ID: UDP
+Parent Category: NETWORK_SERVICE
+
+Network Application: ICMP_DESC
+ID: ICMP
+Parent Category: NETWORK_SERVICE
+
+Network Application: DHCP_DESC
+ID: DHCP
+Parent Category: NETWORK_SERVICE
+
+Network Application: NTP_DESC
+ID: NTP
+Parent Category: NETWORK_SERVICE
+
+Network Application: DNS_DESC
+ID: DNS
+Parent Category: NETWORK_SERVICE
+
+Network Application: TCP_OVER_DNS_DESC
+ID: TCP_OVER_DNS
+Parent Category: NETWORK_SERVICE
+
+Network Application: DOH_DESC
+ID: DOH
+Parent Category: NETWORK_SERVICE
+
+Network Application: AGORA_IO_DESC
+ID: AGORA_IO
+Parent Category: NETWORK_SERVICE
+
+Network Application: MS_DFSR_DESC
+ID: MS_DFSR
+Parent Category: NETWORK_SERVICE
+
+Network Application: WS_DISCOVERY_DESC
+ID: WS_DISCOVERY
+Parent Category: NETWORK_SERVICE
+
+Network Application: STUN_DESC
+ID: STUN
+Parent Category: NETWORK_SERVICE
+
+Network Application: WEBSOCKET_DESC
+ID: WEBSOCKET
+Parent Category: NETWORK_SERVICE
+
+Network Application: SCTP_DESC
+ID: SCTP
+Parent Category: NETWORK_SERVICE
+
+Network Application: SMTP_DESC
+ID: SMTP
+Parent Category: NETWORK_SERVICE
+
+Network Application: POP3_DESC
+ID: POP3
+Parent Category: NETWORK_SERVICE
+
+Network Application: POP3S_DESC
+ID: POP3S
+Parent Category: NETWORK_SERVICE
+
+Network Application: IGMP_DESC
+ID: IGMP
+Parent Category: NETWORK_SERVICE
+
+Network Application: ADC_DESC
+ID: ADC
+Parent Category: P2P
+
+Network Application: APPLEJUICE_DESC
+ID: APPLEJUICE
+Parent Category: P2P
+
+Network Application: ARES_DESC
+ID: ARES
+Parent Category: P2P
+
+Network Application: BITTORRENT_DESC
+ID: BITTORRENT
+Parent Category: P2P
+
+Network Application: BLUBSTER_DESC
+ID: BLUBSTER
+Parent Category: P2P
+
+Network Application: CLIP2NET_DESC
+ID: CLIP2NET
+Parent Category: P2P
+
+Network Application: DIINO_DESC
+ID: DIINO
+Parent Category: P2P
+
+Network Application: DIRECTCONNECT_DESC
+ID: DIRECTCONNECT
+Parent Category: P2P
+
+Network Application: EDONKEY_DESC
+ID: EDONKEY
+Parent Category: P2P
+
+Network Application: FILETOPIA_DESC
+ID: FILETOPIA
+Parent Category: P2P
+
+Network Application: GNUNET_DESC
+ID: GNUNET
+Parent Category: P2P
+
+Network Application: GNUTELLA_DESC
+ID: GNUTELLA
+Parent Category: P2P
+
+Network Application: GOBOOGY_DESC
+ID: GOBOOGY
+Parent Category: P2P
+
+Network Application: IMESH_DESC
+ID: IMESH
+Parent Category: P2P
+
+Network Application: KAZAA_DESC
+ID: KAZAA
+Parent Category: P2P
+
+Network Application: KUGOU_DESC
+ID: KUGOU
+Parent Category: P2P
+
+Network Application: MANOLITO_DESC
+ID: MANOLITO
+Parent Category: P2P
+
+Network Application: MUTE_DESC
+ID: MUTE
+Parent Category: P2P
+
+Network Application: OPENFT_DESC
+ID: OPENFT
+Parent Category: P2P
+
+Network Application: PANDO_DESC
+ID: PANDO
+Parent Category: P2P
+
+Network Application: QQMUSIC_DESC
+ID: QQMUSIC
+Parent Category: P2P
+
+Network Application: QQSTREAM_DESC
+ID: QQSTREAM
+Parent Category: P2P
+
+Network Application: SHARE_DESC
+ID: SHARE
+Parent Category: P2P
+
+Network Application: SLSK_DESC
+ID: SLSK
+Parent Category: P2P
+
+Network Application: SORIBADA_DESC
+ID: SORIBADA
+Parent Category: P2P
+
+Network Application: THUNDER_DESC
+ID: THUNDER
+Parent Category: P2P
+
+Network Application: UTP_DESC
+ID: UTP
+Parent Category: P2P
+
+Network Application: VAKAKA_DESC
+ID: VAKAKA
+Parent Category: P2P
+
+Network Application: WINMX_DESC
+ID: WINMX
+Parent Category: P2P
+
+Network Application: WINNY_DESC
+ID: WINNY
+Parent Category: P2P
+
+Network Application: HTTPTUNNEL_DESC
+ID: HTTPTUNNEL
+Parent Category: P2P
+
+Network Application: CLEARCASE_DESC
+ID: CLEARCASE
+Parent Category: REMOTE
+
+Network Application: GOTODEVICE_DESC
+ID: GOTODEVICE
+Parent Category: REMOTE
+
+Network Application: GOTOMYPC_DESC
+ID: GOTOMYPC
+Parent Category: REMOTE
+
+Network Application: ICA_DESC
+ID: ICA
+Parent Category: REMOTE
+
+Network Application: JEDI_DESC
+ID: JEDI
+Parent Category: REMOTE
+
+Network Application: RADMIN_DESC
+ID: RADMIN
+Parent Category: REMOTE
+
+Network Application: RDP_DESC
+ID: RDP
+Parent Category: REMOTE
+
+Network Application: RFB_DESC
+ID: RFB
+Parent Category: REMOTE
+
+Network Application: SHOWMYPC_DESC
+ID: SHOWMYPC
+Parent Category: REMOTE
+
+Network Application: TEAMVIEWER_DESC
+ID: TEAMVIEWER
+Parent Category: REMOTE
+
+Network Application: VMWARE_DESC
+ID: VMWARE
+Parent Category: REMOTE
+
+Network Application: X11_DESC
+ID: X11
+Parent Category: REMOTE
+
+Network Application: XDMCP_DESC
+ID: XDMCP
+Parent Category: REMOTE
+
+Network Application: RLOGIN_DESC
+ID: RLOGIN
+Parent Category: REMOTE
+
+Network Application: RSH_DESC
+ID: RSH
+Parent Category: REMOTE
+
+Network Application: TELNET_DESC
+ID: TELNET
+Parent Category: REMOTE
+
+Network Application: TNVIP_DESC
+ID: TNVIP
+Parent Category: REMOTE
+
+Network Application: DCERPC_DESC
+ID: DCERPC
+Parent Category: REMOTE
+
+Network Application: DIOP_DESC
+ID: DIOP
+Parent Category: REMOTE
+
+Network Application: GIOP_DESC
+ID: GIOP
+Parent Category: REMOTE
+
+Network Application: GIOPS_DESC
+ID: GIOPS
+Parent Category: REMOTE
+
+Network Application: IIOP_DESC
+ID: IIOP
+Parent Category: REMOTE
+
+Network Application: MSRPC_DESC
+ID: MSRPC
+Parent Category: REMOTE
+
+Network Application: RMI_IIOP_DESC
+ID: RMI_IIOP
+Parent Category: REMOTE
+
+Network Application: RPC_DESC
+ID: RPC
+Parent Category: REMOTE
+
+Network Application: SOAP_DESC
+ID: SOAP
+Parent Category: REMOTE
+
+Network Application: FOLDINGATHOME_DESC
+ID: FOLDINGATHOME
+Parent Category: REMOTE
+
+Network Application: GE_PROCIFY_DESC
+ID: GE_PROCIFY
+Parent Category: REMOTE
+
+Network Application: MOXA_ASPP_DESC
+ID: MOXA_ASPP
+Parent Category: REMOTE
+
+Network Application: ANYDESK_DESC
+ID: ANYDESK
+Parent Category: REMOTE
+
+Network Application: PINTEREST_DESC
+ID: PINTEREST
+Parent Category: SOCIAL
+
+Network Application: DIGG_DESC
+ID: DIGG
+Parent Category: SOCIAL
+
+Network Application: WORDPRESS_DESC
+ID: WORDPRESS
+Parent Category: SOCIAL
+
+Network Application: GOOGLE_GROUPS_DESC
+ID: GOOGLE_GROUPS
+Parent Category: SOCIAL
+
+Network Application: IRCS_DESC
+ID: IRCS
+Parent Category: SOCIAL
+
+Network Application: LINKEDIN_DESC
+ID: LINKEDIN
+Parent Category: SOCIAL
+
+Network Application: NNTP_DESC
+ID: NNTP
+Parent Category: SOCIAL
+
+Network Application: NNTPS_DESC
+ID: NNTPS
+Parent Category: SOCIAL
+
+Network Application: ODNOKLASSNIKI_DESC
+ID: ODNOKLASSNIKI
+Parent Category: SOCIAL
+
+Network Application: VKONTAKTE_DESC
+ID: VKONTAKTE
+Parent Category: SOCIAL
+
+Network Application: YAHOO_GROUPS_DESC
+ID: YAHOO_GROUPS
+Parent Category: SOCIAL
+
+Network Application: XING_DESC
+ID: XING
+Parent Category: SOCIAL
+
+Network Application: LIVEJOURNAL_DESC
+ID: LIVEJOURNAL
+Parent Category: SOCIAL
+
+Network Application: REDDIT_DESC
+ID: REDDIT
+Parent Category: SOCIAL
+
+Network Application: GOOGLE_PLUS_DESC
+ID: GOOGLE_PLUS
+Parent Category: SOCIAL
+
+Network Application: MIXI_DESC
+ID: MIXI
+Parent Category: SOCIAL
+
+Network Application: TWITTER_DESC
+ID: TWITTER
+Parent Category: SOCIAL
+
+Network Application: BLOGSPOT_DESC
+ID: BLOGSPOT
+Parent Category: SOCIAL
+
+Network Application: HI5_DESC
+ID: HI5
+Parent Category: SOCIAL
+
+Network Application: FRIENDSTER_DESC
+ID: FRIENDSTER
+Parent Category: SOCIAL
+
+Network Application: BEBO_DESC
+ID: BEBO
+Parent Category: SOCIAL
+
+Network Application: FACEBOOK_DESC
+ID: FACEBOOK
+Parent Category: SOCIAL
+
+Network Application: MYSPACE_DESC
+ID: MYSPACE
+Parent Category: SOCIAL
+
+Network Application: ORKUT_DESC
+ID: ORKUT
+Parent Category: SOCIAL
+
+Network Application: CRAIGSLIST_DESC
+ID: CRAIGSLIST
+Parent Category: SOCIAL
+
+Network Application: APP_CH_DESC
+ID: APP_CH
+Parent Category: SOCIAL
+
+Network Application: GLASSDOOR_DESC
+ID: GLASSDOOR
+Parent Category: SOCIAL
+
+Network Application: TINDER_DESC
+ID: TINDER
+Parent Category: SOCIAL
+
+Network Application: BAIDU_TIEBA_DESC
+ID: BAIDU_TIEBA
+Parent Category: SOCIAL
+
+Network Application: GOOGLE_VIDEO_DESC
+ID: GOOGLE_VIDEO
+Parent Category: STREAMING
+
+Network Application: WEBEX_DESC
+ID: WEBEX
+Parent Category: STREAMING
+
+Network Application: BOXNET_DESC
+ID: BOXNET
+Parent Category: STREAMING
+
+Network Application: APP_050PLUS_DESC
+ID: APP_050PLUS
+Parent Category: STREAMING
+
+Network Application: ADOBE_CONNECT_DESC
+ID: ADOBE_CONNECT
+Parent Category: STREAMING
+
+Network Application: BABELGUM_DESC
+ID: BABELGUM
+Parent Category: STREAMING
+
+Network Application: BAIDU_PLAYER_DESC
+ID: BAIDU_PLAYER
+Parent Category: STREAMING
+
+Network Application: BAOFENG_DESC
+ID: BAOFENG
+Parent Category: STREAMING
+
+Network Application: BBC_PLAYER_DESC
+ID: BBC_PLAYER
+Parent Category: STREAMING
+
+Network Application: BLIP_TV_DESC
+ID: BLIP_TV
+Parent Category: STREAMING
+
+Network Application: BLOCKBUSTER_DESC
+ID: BLOCKBUSTER
+Parent Category: STREAMING
+
+Network Application: CCTV_VOD_DESC
+ID: CCTV_VOD
+Parent Category: STREAMING
+
+Network Application: CNET_DESC
+ID: CNET
+Parent Category: STREAMING
+
+Network Application: CNET_TV_DESC
+ID: CNET_TV
+Parent Category: STREAMING
+
+Network Application: COMM_DESC
+ID: COMM
+Parent Category: STREAMING
+
+Network Application: FACETIME_DESC
+ID: FACETIME
+Parent Category: STREAMING
+
+Network Application: FLASH_DESC
+ID: FLASH
+Parent Category: STREAMING
+
+Network Application: FRING_DESC
+ID: FRING
+Parent Category: STREAMING
+
+Network Application: GROOVESHARK_DESC
+ID: GROOVESHARK
+Parent Category: STREAMING
+
+Network Application: H225_DESC
+ID: H225
+Parent Category: STREAMING
+
+Network Application: H245_DESC
+ID: H245
+Parent Category: STREAMING
+
+Network Application: H248_BINARY_DESC
+ID: H248_BINARY
+Parent Category: STREAMING
+
+Network Application: H248_TEXT_DESC
+ID: H248_TEXT
+Parent Category: STREAMING
+
+Network Application: HBO_GO_DESC
+ID: HBO_GO
+Parent Category: STREAMING
+
+Network Application: HOWCAST_DESC
+ID: HOWCAST
+Parent Category: STREAMING
+
+Network Application: HULU_DESC
+ID: HULU
+Parent Category: STREAMING
+
+Network Application: ICECAST_DESC
+ID: ICECAST
+Parent Category: STREAMING
+
+Network Application: IHEARTRADIO_DESC
+ID: IHEARTRADIO
+Parent Category: STREAMING
+
+Network Application: ITUNES_DESC
+ID: ITUNES
+Parent Category: STREAMING
+
+Network Application: JAJAH_DESC
+ID: JAJAH
+Parent Category: STREAMING
+
+Network Application: MEETINGPLACE_DESC
+ID: MEETINGPLACE
+Parent Category: STREAMING
+
+Network Application: METACAFE_DESC
+ID: METACAFE
+Parent Category: STREAMING
+
+Network Application: MGCP_DESC
+ID: MGCP
+Parent Category: STREAMING
+
+Network Application: MMS_DESC
+ID: MMS
+Parent Category: STREAMING
+
+Network Application: MOG_DESC
+ID: MOG
+Parent Category: STREAMING
+
+Network Application: MOGULUS_DESC
+ID: MOGULUS
+Parent Category: STREAMING
+
+Network Application: MPEGTS_DESC
+ID: MPEGTS
+Parent Category: STREAMING
+
+Network Application: MSN_VIDEO_DESC
+ID: MSN_VIDEO
+Parent Category: STREAMING
+
+Network Application: MSRP_DESC
+ID: MSRP
+Parent Category: STREAMING
+
+Network Application: NETFLIX_DESC
+ID: NETFLIX
+Parent Category: STREAMING
+
+Network Application: NICONICO_DOUGA_DESC
+ID: NICONICO_DOUGA
+Parent Category: STREAMING
+
+Network Application: PALTALK_AUDIO_DESC
+ID: PALTALK_AUDIO
+Parent Category: STREAMING
+
+Network Application: PALTALK_VIDEO_DESC
+ID: PALTALK_VIDEO
+Parent Category: STREAMING
+
+Network Application: PPLIVE_DESC
+ID: PPLIVE
+Parent Category: STREAMING
+
+Network Application: PPSTREAM_DESC
+ID: PPSTREAM
+Parent Category: STREAMING
+
+Network Application: Q931_DESC
+ID: Q931
+Parent Category: STREAMING
+
+Network Application: QIK_VIDEO_DESC
+ID: QIK_VIDEO
+Parent Category: STREAMING
+
+Network Application: QQLIVE_DESC
+ID: QQLIVE
+Parent Category: STREAMING
+
+Network Application: QVOD_DESC
+ID: QVOD
+Parent Category: STREAMING
+
+Network Application: RDT_DESC
+ID: RDT
+Parent Category: STREAMING
+
+Network Application: RHAPSODY_DESC
+ID: RHAPSODY
+Parent Category: STREAMING
+
+Network Application: RTMP_DESC
+ID: RTMP
+Parent Category: STREAMING
+
+Network Application: RTCP_DESC
+ID: RTCP
+Parent Category: STREAMING
+
+Network Application: RTP_DESC
+ID: RTP
+Parent Category: STREAMING
+
+Network Application: RTSP_DESC
+ID: RTSP
+Parent Category: STREAMING
+
+Network Application: SCCP_DESC
+ID: SCCP
+Parent Category: STREAMING
+
+Network Application: SHOUTCAST_DESC
+ID: SHOUTCAST
+Parent Category: STREAMING
+
+Network Application: SILVERLIGHT_DESC
+ID: SILVERLIGHT
+Parent Category: STREAMING
+
+Network Application: SIP_DESC
+ID: SIP
+Parent Category: STREAMING
+
+Network Application: SKY_DESC
+ID: SKY
+Parent Category: STREAMING
+
+Network Application: SKY_PLAYER_DESC
+ID: SKY_PLAYER
+Parent Category: STREAMING
+
+Network Application: SLACKER_DESC
+ID: SLACKER
+Parent Category: STREAMING
+
+Network Application: SLINGBOX_DESC
+ID: SLINGBOX
+Parent Category: STREAMING
+
+Network Application: SOPCAST_DESC
+ID: SOPCAST
+Parent Category: STREAMING
+
+Network Application: SOUNDCLOUD_DESC
+ID: SOUNDCLOUD
+Parent Category: STREAMING
+
+Network Application: SPOTIFY_DESC
+ID: SPOTIFY
+Parent Category: STREAMING
+
+Network Application: TANGO_DESC
+ID: TANGO
+Parent Category: STREAMING
+
+Network Application: TU_DESC
+ID: TU
+Parent Category: STREAMING
+
+Network Application: TUNEIN_DESC
+ID: TUNEIN
+Parent Category: STREAMING
+
+Network Application: TVANTS_DESC
+ID: TVANTS
+Parent Category: STREAMING
+
+Network Application: TVUPLAYER_DESC
+ID: TVUPLAYER
+Parent Category: STREAMING
+
+Network Application: UUSEE_DESC
+ID: UUSEE
+Parent Category: STREAMING
+
+Network Application: VEOHTV_DESC
+ID: VEOHTV
+Parent Category: STREAMING
+
+Network Application: VEVO_DESC
+ID: VEVO
+Parent Category: STREAMING
+
+Network Application: VIBER_DESC
+ID: VIBER
+Parent Category: STREAMING
+
+Network Application: VODDLER_DESC
+ID: VODDLER
+Parent Category: STREAMING
+
+Network Application: YAHOO_SCREEN_DESC
+ID: YAHOO_SCREEN
+Parent Category: STREAMING
+
+Network Application: YMSG_VIDEO_DESC
+ID: YMSG_VIDEO
+Parent Category: STREAMING
+
+Network Application: ZATTOO_DESC
+ID: ZATTOO
+Parent Category: STREAMING
+
+Network Application: DAILYMOTION_DESC
+ID: DAILYMOTION
+Parent Category: STREAMING
+
+Network Application: AOL_VIDEO_DESC
+ID: AOL_VIDEO
+Parent Category: STREAMING
+
+Network Application: ZIDDU_DESC
+ID: ZIDDU
+Parent Category: STREAMING
+
+Network Application: LASTFM_DESC
+ID: LASTFM
+Parent Category: STREAMING
+
+Network Application: DEEZER_DESC
+ID: DEEZER
+Parent Category: STREAMING
+
+Network Application: MYVIDEODE_DESC
+ID: MYVIDEODE
+Parent Category: STREAMING
+
+Network Application: PANDORA_DESC
+ID: PANDORA
+Parent Category: STREAMING
+
+Network Application: YOUTUBE_DESC
+ID: YOUTUBE
+Parent Category: STREAMING
+
+Network Application: VIMEO_DESC
+ID: VIMEO
+Parent Category: STREAMING
+
+Network Application: DROPBOX_DESC
+ID: DROPBOX
+Parent Category: STREAMING
+
+Network Application: HIGHTAIL_DESC
+ID: HIGHTAIL
+Parent Category: STREAMING
+
+Network Application: FILESTUBE_DESC
+ID: FILESTUBE
+Parent Category: STREAMING
+
+Network Application: RINGCENTRAL_DESC
+ID: RINGCENTRAL
+Parent Category: STREAMING
+
+Network Application: SHAREFILE_DESC
+ID: SHAREFILE
+Parent Category: STREAMING
+
+Network Application: MIMEDIA_DESC
+ID: MIMEDIA
+Parent Category: STREAMING
+
+Network Application: FILESANYWHERE_DESC
+ID: FILESANYWHERE
+Parent Category: STREAMING
+
+Network Application: HOUSEPARTY_DESC
+ID: HOUSEPARTY
+Parent Category: STREAMING
+
+Network Application: THREEGPP_LI_DESC
+ID: THREEGPP_LI
+Parent Category: TUNNELING
+
+Network Application: CAPWAP_DESC
+ID: CAPWAP
+Parent Category: TUNNELING
+
+Network Application: ETHERIP_DESC
+ID: ETHERIP
+Parent Category: TUNNELING
+
+Network Application: ETSI_LI_DESC
+ID: ETSI_LI
+Parent Category: TUNNELING
+
+Network Application: GRE_DESC
+ID: GRE
+Parent Category: TUNNELING
+
+Network Application: GTP_DESC
+ID: GTP
+Parent Category: TUNNELING
+
+Network Application: GTPV2_DESC
+ID: GTPV2
+Parent Category: TUNNELING
+
+Network Application: IPV6CP_DESC
+ID: IPV6CP
+Parent Category: TUNNELING
+
+Network Application: L2TP_DESC
+ID: L2TP
+Parent Category: TUNNELING
+
+Network Application: LQR_DESC
+ID: LQR
+Parent Category: TUNNELING
+
+Network Application: MOBILE_IP_DESC
+ID: MOBILE_IP
+Parent Category: TUNNELING
+
+Network Application: OPENVPN_DESC
+ID: OPENVPN
+Parent Category: TUNNELING
+
+Network Application: PPP_DESC
+ID: PPP
+Parent Category: TUNNELING
+
+Network Application: PPPOE_DESC
+ID: PPPOE
+Parent Category: TUNNELING
+
+Network Application: PPTP_DESC
+ID: PPTP
+Parent Category: TUNNELING
+
+Network Application: SOCKS2HTTP_DESC
+ID: SOCKS2HTTP
+Parent Category: TUNNELING
+
+Network Application: SOCKS4_DESC
+ID: SOCKS4
+Parent Category: TUNNELING
+
+Network Application: SOCKS5_DESC
+ID: SOCKS5
+Parent Category: TUNNELING
+
+Network Application: TEREDO_DESC
+ID: TEREDO
+Parent Category: TUNNELING
+
+Network Application: ULTRASURF_DESC
+ID: ULTRASURF
+Parent Category: TUNNELING
+
+Network Application: VJC_COMP_DESC
+ID: VJC_COMP
+Parent Category: TUNNELING
+
+Network Application: VJC_UNCOMP_DESC
+ID: VJC_UNCOMP
+Parent Category: TUNNELING
+
+Network Application: XOT_DESC
+ID: XOT
+Parent Category: TUNNELING
+
+Network Application: IPSEC_DESC
+ID: IPSEC
+Parent Category: TUNNELING
+
+Network Application: ISAKMP_DESC
+ID: ISAKMP
+Parent Category: TUNNELING
+
+Network Application: OCSP_DESC
+ID: OCSP
+Parent Category: TUNNELING
+
+Network Application: SSH_DESC
+ID: SSH
+Parent Category: TUNNELING
+
+Network Application: SSH_OVER_WEBSOCKET_DESC
+ID: SSH_OVER_WEBSOCKET
+Parent Category: TUNNELING
+
+Network Application: HTTP_PROXY_DESC
+ID: HTTP_PROXY
+Parent Category: TUNNELING
+
+Network Application: TOR_DESC
+ID: TOR
+Parent Category: TUNNELING
+
+Network Application: WSTUNNEL_DESC
+ID: WSTUNNEL
+Parent Category: TUNNELING
+
+Network Application: GBRIDGE_DESC
+ID: GBRIDGE
+Parent Category: TUNNELING
+
+Network Application: HAMACHI_DESC
+ID: HAMACHI
+Parent Category: TUNNELING
+
+Network Application: HEXATECH_DESC
+ID: HEXATECH
+Parent Category: TUNNELING
+
+Network Application: HOTSPOT_SHIELD_DESC
+ID: HOTSPOT_SHIELD
+Parent Category: TUNNELING
+
+Network Application: MEGAPROXY_DESC
+ID: MEGAPROXY
+Parent Category: TUNNELING
+
+Network Application: OPERA_VPN_DESC
+ID: OPERA_VPN
+Parent Category: TUNNELING
+
+Network Application: SPOTFLUX_DESC
+ID: SPOTFLUX
+Parent Category: TUNNELING
+
+Network Application: TUNNELBEAR_DESC
+ID: TUNNELBEAR
+Parent Category: TUNNELING
+
+Network Application: ZENMATE_DESC
+ID: ZENMATE
+Parent Category: TUNNELING
+
+Network Application: OPENGW_DESC
+ID: OPENGW
+Parent Category: TUNNELING
+
+Network Application: VPNOVERDNS_DESC
+ID: VPNOVERDNS
+Parent Category: TUNNELING
+
+Network Application: HOXX_VPN_DESC
+ID: HOXX_VPN
+Parent Category: TUNNELING
+
+Network Application: VPN1_COM_DESC
+ID: VPN1_COM
+Parent Category: TUNNELING
+
+Network Application: SPRINGTECH_VPN_DESC
+ID: SPRINGTECH_VPN
+Parent Category: TUNNELING
+
+Network Application: BARRACUDA_VPN_DESC
+ID: BARRACUDA_VPN
+Parent Category: TUNNELING
+
+Network Application: HIDEMAN_VPN_DESC
+ID: HIDEMAN_VPN
+Parent Category: TUNNELING
+
+Network Application: WINDSCRIBE_DESC
+ID: WINDSCRIBE
+Parent Category: TUNNELING
+
+Network Application: STARKVPN_DESC
+ID: STARKVPN
+Parent Category: TUNNELING
+
+Network Application: BROWSEC_VPN_DESC
+ID: BROWSEC_VPN
+Parent Category: TUNNELING
+
+Network Application: EPIC_BROWSER_VPN_DESC
+ID: EPIC_BROWSER_VPN
+Parent Category: TUNNELING
+
+Network Application: SKYVPN_DESC
+ID: SKYVPN
+Parent Category: TUNNELING
+
+Network Application: KPN_TUNNEL_DESC
+ID: KPN_TUNNEL
+Parent Category: TUNNELING
+
+Network Application: ERSPAN_DESC
+ID: ERSPAN
+Parent Category: TUNNELING
+
+Network Application: EVASIVE_PROTOCOL_DESC
+ID: EVASIVE_PROTOCOL
+Parent Category: TUNNELING
+
+Network Application: CYBERGHOST_DESC
+ID: CYBERGHOST
+Parent Category: TUNNELING
+
+Network Application: DOTVPN_DESC
+ID: DOTVPN
+Parent Category: TUNNELING
+
+Network Application: EXPRESSVPN_DESC
+ID: EXPRESSVPN
+Parent Category: TUNNELING
+
+Network Application: HIDEMYASS_DESC
+ID: HIDEMYASS
+Parent Category: TUNNELING
+
+Network Application: IPVANISH_VPN_DESC
+ID: IPVANISH_VPN
+Parent Category: TUNNELING
+
+Network Application: WIREGUARD_DESC
+ID: WIREGUARD
+Parent Category: TUNNELING
+
+Network Application: SSL_DESC
+ID: SSL
+Parent Category: WEB
+
+Network Application: ABCNEWS_DESC
+ID: ABCNEWS
+Parent Category: WEB
+
+Network Application: DOTDASH_DESC
+ID: DOTDASH
+Parent Category: WEB
+
+Network Application: ACCUWEATHER_DESC
+ID: ACCUWEATHER
+Parent Category: WEB
+
+Network Application: ACER_DESC
+ID: ACER
+Parent Category: WEB
+
+Network Application: ADOBE_DOCUMENT_CLOUD_DESC
+ID: ADOBE_DOCUMENT_CLOUD
+Parent Category: WEB
+
+Network Application: ACTIVESYNC_DESC
+ID: ACTIVESYNC
+Parent Category: WEB
+
+Network Application: ADDICTINGGAMES_DESC
+ID: ADDICTINGGAMES
+Parent Category: WEB
+
+Network Application: ADNSTREAM_DESC
+ID: ADNSTREAM
+Parent Category: WEB
+
+Network Application: ADOBE_MEETING_RC_DESC
+ID: ADOBE_MEETING_RC
+Parent Category: WEB
+
+Network Application: ADOBE_UPDATE_DESC
+ID: ADOBE_UPDATE
+Parent Category: WEB
+
+Network Application: ADRIVE_DESC
+ID: ADRIVE
+Parent Category: WEB
+
+Network Application: ADULTADWORLD_DESC
+ID: ADULTADWORLD
+Parent Category: WEB
+
+Network Application: ADULTFRIENDFINDER_DESC
+ID: ADULTFRIENDFINDER
+Parent Category: WEB
+
+Network Application: ADVOGATO_DESC
+ID: ADVOGATO
+Parent Category: WEB
+
+Network Application: AGAME_DESC
+ID: AGAME
+Parent Category: WEB
+
+Network Application: AIAIGAME_DESC
+ID: AIAIGAME
+Parent Category: WEB
+
+Network Application: AILI_DESC
+ID: AILI
+Parent Category: WEB
+
+Network Application: AIZHAN_DESC
+ID: AIZHAN
+Parent Category: WEB
+
+Network Application: AKAMAI_DESC
+ID: AKAMAI
+Parent Category: WEB
+
+Network Application: ALEXA_DESC
+ID: ALEXA
+Parent Category: WEB
+
+Network Application: ALIBABA_DESC
+ID: ALIBABA
+Parent Category: WEB
+
+Network Application: ALIMAMA_DESC
+ID: ALIMAMA
+Parent Category: WEB
+
+Network Application: ALIPAY_DESC
+ID: ALIPAY
+Parent Category: WEB
+
+Network Application: ALJAZEERA_DESC
+ID: ALJAZEERA
+Parent Category: WEB
+
+Network Application: ALLOCINE_DESC
+ID: ALLOCINE
+Parent Category: WEB
+
+Network Application: AMAZON_DESC
+ID: AMAZON
+Parent Category: WEB
+
+Network Application: AMAZON_AWS_DESC
+ID: AMAZON_AWS
+Parent Category: WEB
+
+Network Application: AMAZON_MP3_DESC
+ID: AMAZON_MP3
+Parent Category: WEB
+
+Network Application: AMAZON_VIDEO_DESC
+ID: AMAZON_VIDEO
+Parent Category: WEB
+
+Network Application: AMEBA_DESC
+ID: AMEBA
+Parent Category: WEB
+
+Network Application: AMERICANEXPRESS_DESC
+ID: AMERICANEXPRESS
+Parent Category: WEB
+
+Network Application: AMIE_STREET_DESC
+ID: AMIE_STREET
+Parent Category: WEB
+
+Network Application: ANOBII_DESC
+ID: ANOBII
+Parent Category: WEB
+
+Network Application: ANSWERS_DESC
+ID: ANSWERS
+Parent Category: WEB
+
+Network Application: ZYNGA_DESC
+ID: ZYNGA
+Parent Category: WEB
+
+Network Application: ZUM_DESC
+ID: ZUM
+Parent Category: WEB
+
+Network Application: APPLE_DESC
+ID: APPLE
+Parent Category: WEB
+
+Network Application: APPLE_AIRPORT_DESC
+ID: APPLE_AIRPORT
+Parent Category: WEB
+
+Network Application: APPLEDAILY_DESC
+ID: APPLEDAILY
+Parent Category: WEB
+
+Network Application: APPLE_MAPS_DESC
+ID: APPLE_MAPS
+Parent Category: WEB
+
+Network Application: APPLE_SIRI_DESC
+ID: APPLE_SIRI
+Parent Category: WEB
+
+Network Application: APPLE_UPDATE_DESC
+ID: APPLE_UPDATE
+Parent Category: WEB
+
+Network Application: APPSHOPPER_DESC
+ID: APPSHOPPER
+Parent Category: WEB
+
+Network Application: ARCHIVE_DESC
+ID: ARCHIVE
+Parent Category: WEB
+
+Network Application: ARMORGAMES_DESC
+ID: ARMORGAMES
+Parent Category: WEB
+
+Network Application: ASIAE_DESC
+ID: ASIAE
+Parent Category: WEB
+
+Network Application: ASMALLWORLD_DESC
+ID: ASMALLWORLD
+Parent Category: WEB
+
+Network Application: ATHLINKS_DESC
+ID: ATHLINKS
+Parent Category: WEB
+
+Network Application: ATT_DESC
+ID: ATT
+Parent Category: WEB
+
+Network Application: ATWIKI_DESC
+ID: ATWIKI
+Parent Category: WEB
+
+Network Application: AUCTION_DESC
+ID: AUCTION
+Parent Category: WEB
+
+Network Application: AUFEMININ_DESC
+ID: AUFEMININ
+Parent Category: WEB
+
+Network Application: AUONE_DESC
+ID: AUONE
+Parent Category: WEB
+
+Network Application: AVATARS_UNITED_DESC
+ID: AVATARS_UNITED
+Parent Category: WEB
+
+Network Application: AVG_UPDATE_DESC
+ID: AVG_UPDATE
+Parent Category: WEB
+
+Network Application: AVIRA_UPDATE_DESC
+ID: AVIRA_UPDATE
+Parent Category: WEB
+
+Network Application: AVOIDR_DESC
+ID: AVOIDR
+Parent Category: WEB
+
+Network Application: BABYCENTER_DESC
+ID: BABYCENTER
+Parent Category: WEB
+
+Network Application: BABYHOME_DESC
+ID: BABYHOME
+Parent Category: WEB
+
+Network Application: BACKPACKERS_DESC
+ID: BACKPACKERS
+Parent Category: WEB
+
+Network Application: BADONGO_DESC
+ID: BADONGO
+Parent Category: WEB
+
+Network Application: ZOO_DESC
+ID: ZOO
+Parent Category: WEB
+
+Network Application: BAIKE_DESC
+ID: BAIKE
+Parent Category: WEB
+
+Network Application: BEANFUN_DESC
+ID: BEANFUN
+Parent Category: WEB
+
+Network Application: BERNIAGA_DESC
+ID: BERNIAGA
+Parent Category: WEB
+
+Network Application: BIGADDA_DESC
+ID: BIGADDA
+Parent Category: WEB
+
+Network Application: BIGLOBE_NE_DESC
+ID: BIGLOBE_NE
+Parent Category: WEB
+
+Network Application: BIGTENT_DESC
+ID: BIGTENT
+Parent Category: WEB
+
+Network Application: BIGUPLOAD_DESC
+ID: BIGUPLOAD
+Parent Category: WEB
+
+Network Application: BIIP_DESC
+ID: BIIP
+Parent Category: WEB
+
+Network Application: ZOL_DESC
+ID: ZOL
+Parent Category: WEB
+
+Network Application: BITDEFENDER_UPDATE_DESC
+ID: BITDEFENDER_UPDATE
+Parent Category: WEB
+
+Network Application: BLACKBERRY_DESC
+ID: BLACKBERRY
+Parent Category: WEB
+
+Network Application: BLACKPLANET_DESC
+ID: BLACKPLANET
+Parent Category: WEB
+
+Network Application: BLOGDETIK_DESC
+ID: BLOGDETIK
+Parent Category: WEB
+
+Network Application: BLOGGER_DESC
+ID: BLOGGER
+Parent Category: WEB
+
+Network Application: BLOGIMG_DESC
+ID: BLOGIMG
+Parent Category: WEB
+
+Network Application: BLOGSTER_DESC
+ID: BLOGSTER
+Parent Category: WEB
+
+Network Application: BLOKUS_DESC
+ID: BLOKUS
+Parent Category: WEB
+
+Network Application: BLOOMBERG_DESC
+ID: BLOOMBERG
+Parent Category: WEB
+
+Network Application: BLUEJAYFILMS_DESC
+ID: BLUEJAYFILMS
+Parent Category: WEB
+
+Network Application: BOLT_DESC
+ID: BOLT
+Parent Category: WEB
+
+Network Application: BONPOO_DESC
+ID: BONPOO
+Parent Category: WEB
+
+Network Application: FLIPKART_BOOKS_DESC
+ID: FLIPKART_BOOKS
+Parent Category: WEB
+
+Network Application: BRIGHTTALK_DESC
+ID: BRIGHTTALK
+Parent Category: WEB
+
+Network Application: BUGS_DESC
+ID: BUGS
+Parent Category: WEB
+
+Network Application: BUSINESSWEEK_DESC
+ID: BUSINESSWEEK
+Parent Category: WEB
+
+Network Application: BUSINESSWEEKLY_DESC
+ID: BUSINESSWEEKLY
+Parent Category: WEB
+
+Network Application: BUZZFEED_DESC
+ID: BUZZFEED
+Parent Category: WEB
+
+Network Application: BUZZNET_DESC
+ID: BUZZNET
+Parent Category: WEB
+
+Network Application: BYPASSTHAT_DESC
+ID: BYPASSTHAT
+Parent Category: WEB
+
+Network Application: CAFEMOM_DESC
+ID: CAFEMOM
+Parent Category: WEB
+
+Network Application: CAM4_DESC
+ID: CAM4
+Parent Category: WEB
+
+Network Application: CAMPFIRE_DESC
+ID: CAMPFIRE
+Parent Category: WEB
+
+Network Application: CAMZAP_DESC
+ID: CAMZAP
+Parent Category: WEB
+
+Network Application: CAPITALONE_DESC
+ID: CAPITALONE
+Parent Category: WEB
+
+Network Application: CARE2_DESC
+ID: CARE2
+Parent Category: WEB
+
+Network Application: CARTOONNETWORK_DESC
+ID: CARTOONNETWORK
+Parent Category: WEB
+
+Network Application: CDISCOUNT_DESC
+ID: CDISCOUNT
+Parent Category: WEB
+
+Network Application: CELLUFUN_DESC
+ID: CELLUFUN
+Parent Category: WEB
+
+Network Application: CHANNEL4_DESC
+ID: CHANNEL4
+Parent Category: WEB
+
+Network Application: CHINA_AIRLINES_DESC
+ID: CHINA_AIRLINES
+Parent Category: WEB
+
+Network Application: CHINACOM_DESC
+ID: CHINACOM
+Parent Category: WEB
+
+Network Application: CHINACOMCN_DESC
+ID: CHINACOMCN
+Parent Category: WEB
+
+Network Application: CHINANEWS_DESC
+ID: CHINANEWS
+Parent Category: WEB
+
+Network Application: CHINATIMES_DESC
+ID: CHINATIMES
+Parent Category: WEB
+
+Network Application: CHINAZ_DESC
+ID: CHINAZ
+Parent Category: WEB
+
+Network Application: CHOSUN_DESC
+ID: CHOSUN
+Parent Category: WEB
+
+Network Application: CHOSUN_DAILY_DESC
+ID: CHOSUN_DAILY
+Parent Category: WEB
+
+Network Application: CHROME_UPDATE_DESC
+ID: CHROME_UPDATE
+Parent Category: WEB
+
+Network Application: CITRIX_ONLINE_DESC
+ID: CITRIX_ONLINE
+Parent Category: WEB
+
+Network Application: CJ_MALL_DESC
+ID: CJ_MALL
+Parent Category: WEB
+
+Network Application: CK101_DESC
+ID: CK101
+Parent Category: WEB
+
+Network Application: CLASSMATES_DESC
+ID: CLASSMATES
+Parent Category: WEB
+
+Network Application: CLOOB_DESC
+ID: CLOOB
+Parent Category: WEB
+
+Network Application: CLOUDFLARE_DESC
+ID: CLOUDFLARE
+Parent Category: WEB
+
+Network Application: CLOUDME_DESC
+ID: CLOUDME
+Parent Category: WEB
+
+Network Application: CLUBIC_DESC
+ID: CLUBIC
+Parent Category: WEB
+
+Network Application: CNN_DESC
+ID: CNN
+Parent Category: WEB
+
+Network Application: CNTV_DESC
+ID: CNTV
+Parent Category: WEB
+
+Network Application: CNYES_DESC
+ID: CNYES
+Parent Category: WEB
+
+Network Application: CNZZ_DESC
+ID: CNZZ
+Parent Category: WEB
+
+Network Application: COCOLOG_NIFTY_DESC
+ID: COCOLOG_NIFTY
+Parent Category: WEB
+
+Network Application: COLLEGE_BLENDER_DESC
+ID: COLLEGE_BLENDER
+Parent Category: WEB
+
+Network Application: COMCAST_DESC
+ID: COMCAST
+Parent Category: WEB
+
+Network Application: CONCUR_DESC
+ID: CONCUR
+Parent Category: WEB
+
+Network Application: CONDUIT_DESC
+ID: CONDUIT
+Parent Category: WEB
+
+Network Application: COUCH_SURFING_DESC
+ID: COUCH_SURFING
+Parent Category: WEB
+
+Network Application: COUPANG_DESC
+ID: COUPANG
+Parent Category: WEB
+
+Network Application: CROCKO_DESC
+ID: CROCKO
+Parent Category: WEB
+
+Network Application: CSDN_DESC
+ID: CSDN
+Parent Category: WEB
+
+Network Application: CTRIP_DESC
+ID: CTRIP
+Parent Category: WEB
+
+Network Application: DAILYMAIL_DESC
+ID: DAILYMAIL
+Parent Category: WEB
+
+Network Application: YUUGUU_DESC
+ID: YUUGUU
+Parent Category: WEB
+
+Network Application: DAILY_STRENGH_DESC
+ID: DAILY_STRENGH
+Parent Category: WEB
+
+Network Application: DANGDANG_DESC
+ID: DANGDANG
+Parent Category: WEB
+
+Network Application: DAUM_DESC
+ID: DAUM
+Parent Category: WEB
+
+Network Application: DAVIDOV_DESC
+ID: DAVIDOV
+Parent Category: WEB
+
+Network Application: DEBIAN_UPDATE_DESC
+ID: DEBIAN_UPDATE
+Parent Category: WEB
+
+Network Application: DECAYENNE_DESC
+ID: DECAYENNE
+Parent Category: WEB
+
+Network Application: DELICIOUS_DESC
+ID: DELICIOUS
+Parent Category: WEB
+
+Network Application: DEPOSITFILES_DESC
+ID: DEPOSITFILES
+Parent Category: WEB
+
+Network Application: DETIK_DESC
+ID: DETIK
+Parent Category: WEB
+
+Network Application: DETIKNEWS_DESC
+ID: DETIKNEWS
+Parent Category: WEB
+
+Network Application: DEVIANT_ART_DESC
+ID: DEVIANT_ART
+Parent Category: WEB
+
+Network Application: DIGITALVERSE_DESC
+ID: DIGITALVERSE
+Parent Category: WEB
+
+Network Application: DIRECTDOWNLOADLINKS_DESC
+ID: DIRECTDOWNLOADLINKS
+Parent Category: WEB
+
+Network Application: DIRECTV_DESC
+ID: DIRECTV
+Parent Category: WEB
+
+Network Application: DISABOOM_DESC
+ID: DISABOOM
+Parent Category: WEB
+
+Network Application: DIVSHARE_DESC
+ID: DIVSHARE
+Parent Category: WEB
+
+Network Application: DMM_CO_DESC
+ID: DMM_CO
+Parent Category: WEB
+
+Network Application: DNSHOP_DESC
+ID: DNSHOP
+Parent Category: WEB
+
+Network Application: DOL2DAY_DESC
+ID: DOL2DAY
+Parent Category: WEB
+
+Network Application: DONGA_DESC
+ID: DONGA
+Parent Category: WEB
+
+Network Application: DONTSTAYIN_DESC
+ID: DONTSTAYIN
+Parent Category: WEB
+
+Network Application: DOUBAN_DESC
+ID: DOUBAN
+Parent Category: WEB
+
+Network Application: DOUBLECLICK_ADS_DESC
+ID: DOUBLECLICK_ADS
+Parent Category: WEB
+
+Network Application: DRAUGIEM_DESC
+ID: DRAUGIEM
+Parent Category: WEB
+
+Network Application: DREAMWIZ_DESC
+ID: DREAMWIZ
+Parent Category: WEB
+
+Network Application: DRUPAL_DESC
+ID: DRUPAL
+Parent Category: WEB
+
+Network Application: DUOWAN_DESC
+ID: DUOWAN
+Parent Category: WEB
+
+Network Application: DYNAMICINTRANET_DESC
+ID: DYNAMICINTRANET
+Parent Category: WEB
+
+Network Application: EARTHCAM_DESC
+ID: EARTHCAM
+Parent Category: WEB
+
+Network Application: EASTMONEY_DESC
+ID: EASTMONEY
+Parent Category: WEB
+
+Network Application: EASYTRAVEL_DESC
+ID: EASYTRAVEL
+Parent Category: WEB
+
+Network Application: EBAY_DESC
+ID: EBAY
+Parent Category: WEB
+
+Network Application: ELFTOWN_DESC
+ID: ELFTOWN
+Parent Category: WEB
+
+Network Application: ELLE_TW_DESC
+ID: ELLE_TW
+Parent Category: WEB
+
+Network Application: EONS_DESC
+ID: EONS
+Parent Category: WEB
+
+Network Application: EPERNICUS_DESC
+ID: EPERNICUS
+Parent Category: WEB
+
+Network Application: EROOM_NET_DESC
+ID: EROOM_NET
+Parent Category: WEB
+
+Network Application: ESNIPS_DESC
+ID: ESNIPS
+Parent Category: WEB
+
+Network Application: ESPN_DESC
+ID: ESPN
+Parent Category: WEB
+
+Network Application: ETAO_DESC
+ID: ETAO
+Parent Category: WEB
+
+Network Application: ETTODAY_DESC
+ID: ETTODAY
+Parent Category: WEB
+
+Network Application: ZOHO_SHOW_DESC
+ID: ZOHO_SHOW
+Parent Category: WEB
+
+Network Application: EVONY_DESC
+ID: EVONY
+Parent Category: WEB
+
+Network Application: EXBLOG_DESC
+ID: EXBLOG
+Parent Category: WEB
+
+Network Application: EXPEDIA_DESC
+ID: EXPEDIA
+Parent Category: WEB
+
+Network Application: EXPERIENCE_PROJECT_DESC
+ID: EXPERIENCE_PROJECT
+Parent Category: WEB
+
+Network Application: EXPLOROO_DESC
+ID: EXPLOROO
+Parent Category: WEB
+
+Network Application: EYEJOT_DESC
+ID: EYEJOT
+Parent Category: WEB
+
+Network Application: EYNY_DESC
+ID: EYNY
+Parent Category: WEB
+
+Network Application: EZFLY_DESC
+ID: EZFLY
+Parent Category: WEB
+
+Network Application: EZTRAVEL_DESC
+ID: EZTRAVEL
+Parent Category: WEB
+
+Network Application: FACEBOOK_APPS_DESC
+ID: FACEBOOK_APPS
+Parent Category: WEB
+
+Network Application: FACEPARTY_DESC
+ID: FACEPARTY
+Parent Category: WEB
+
+Network Application: FACES_DESC
+ID: FACES
+Parent Category: WEB
+
+Network Application: FASHIONGUIDE_DESC
+ID: FASHIONGUIDE
+Parent Category: WEB
+
+Network Application: FC2_DESC
+ID: FC2
+Parent Category: WEB
+
+Network Application: FETLIFE_DESC
+ID: FETLIFE
+Parent Category: WEB
+
+Network Application: FILE_DROPPER_DESC
+ID: FILE_DROPPER
+Parent Category: WEB
+
+Network Application: FILEFLYER_DESC
+ID: FILEFLYER
+Parent Category: WEB
+
+Network Application: FILE_HOST_DESC
+ID: FILE_HOST
+Parent Category: WEB
+
+Network Application: FILER_CX_DESC
+ID: FILER_CX
+Parent Category: WEB
+
+Network Application: YOUSEEMORE_DESC
+ID: YOUSEEMORE
+Parent Category: WEB
+
+Network Application: FILLOS_DE_GALICIA_DESC
+ID: FILLOS_DE_GALICIA
+Parent Category: WEB
+
+Network Application: FILMAFFINITY_DESC
+ID: FILMAFFINITY
+Parent Category: WEB
+
+Network Application: FIREFOX_UPDATE_DESC
+ID: FIREFOX_UPDATE
+Parent Category: WEB
+
+Network Application: FLASHPLUGIN_UPDATE_DESC
+ID: FLASHPLUGIN_UPDATE
+Parent Category: WEB
+
+Network Application: FLEDGEWING_DESC
+ID: FLEDGEWING
+Parent Category: WEB
+
+Network Application: ZOHO_SHEET_DESC
+ID: ZOHO_SHEET
+Parent Category: WEB
+
+Network Application: FLIXSTER_DESC
+ID: FLIXSTER
+Parent Category: WEB
+
+Network Application: FLUMOTION_DESC
+ID: FLUMOTION
+Parent Category: WEB
+
+Network Application: FLUXIOM_DESC
+ID: FLUXIOM
+Parent Category: WEB
+
+Network Application: FLY_PROXY_DESC
+ID: FLY_PROXY
+Parent Category: WEB
+
+Network Application: FOGBUGZ_DESC
+ID: FOGBUGZ
+Parent Category: WEB
+
+Network Application: FORTUNECHINA_DESC
+ID: FORTUNECHINA
+Parent Category: WEB
+
+Network Application: FOTKI_DESC
+ID: FOTKI
+Parent Category: WEB
+
+Network Application: FOTOLOG_DESC
+ID: FOTOLOG
+Parent Category: WEB
+
+Network Application: FOURSQUARE_DESC
+ID: FOURSQUARE
+Parent Category: WEB
+
+Network Application: FOXMOVIES_DESC
+ID: FOXMOVIES
+Parent Category: WEB
+
+Network Application: FOXNEWS_DESC
+ID: FOXNEWS
+Parent Category: WEB
+
+Network Application: FOXSPORTS_DESC
+ID: FOXSPORTS
+Parent Category: WEB
+
+Network Application: FREEBSD_UPDATE_DESC
+ID: FREEBSD_UPDATE
+Parent Category: WEB
+
+Network Application: FREEETV_DESC
+ID: FREEETV
+Parent Category: WEB
+
+Network Application: FRIENDS_REUNITED_DESC
+ID: FRIENDS_REUNITED
+Parent Category: WEB
+
+Network Application: FRUHSTUCKSTREFF_DESC
+ID: FRUHSTUCKSTREFF
+Parent Category: WEB
+
+Network Application: FSECURE_UPDATE_DESC
+ID: FSECURE_UPDATE
+Parent Category: WEB
+
+Network Application: FUBAR_DESC
+ID: FUBAR
+Parent Category: WEB
+
+Network Application: FUNSHION_DESC
+ID: FUNSHION
+Parent Category: WEB
+
+Network Application: GAIAONLINE_DESC
+ID: GAIAONLINE
+Parent Category: WEB
+
+Network Application: GAMEBASE_TW_DESC
+ID: GAMEBASE_TW
+Parent Category: WEB
+
+Network Application: GAMERDNA_DESC
+ID: GAMERDNA
+Parent Category: WEB
+
+Network Application: GAMER_TW_DESC
+ID: GAMER_TW
+Parent Category: WEB
+
+Network Application: GAMES_CO_DESC
+ID: GAMES_CO
+Parent Category: WEB
+
+Network Application: GAMESMOMO_DESC
+ID: GAMESMOMO
+Parent Category: WEB
+
+Network Application: GANJI_DESC
+ID: GANJI
+Parent Category: WEB
+
+Network Application: GATHER_DESC
+ID: GATHER
+Parent Category: WEB
+
+Network Application: GAYS_DESC
+ID: GAYS
+Parent Category: WEB
+
+Network Application: GENI_DESC
+ID: GENI
+Parent Category: WEB
+
+Network Application: GFAN_DESC
+ID: GFAN
+Parent Category: WEB
+
+Network Application: GIGAUP_DESC
+ID: GIGAUP
+Parent Category: WEB
+
+Network Application: GLIDE_DESC
+ID: GLIDE
+Parent Category: WEB
+
+Network Application: GMARKET_DESC
+ID: GMARKET
+Parent Category: WEB
+
+Network Application: GOGOYOKO_DESC
+ID: GOGOYOKO
+Parent Category: WEB
+
+Network Application: GOHAPPY_DESC
+ID: GOHAPPY
+Parent Category: WEB
+
+Network Application: GOMTV_VOD_DESC
+ID: GOMTV_VOD
+Parent Category: WEB
+
+Network Application: GOODREADS_DESC
+ID: GOODREADS
+Parent Category: WEB
+
+Network Application: ZOHO_SHARE_DESC
+ID: ZOHO_SHARE
+Parent Category: WEB
+
+Network Application: GOOGLE_ADS_DESC
+ID: GOOGLE_ADS
+Parent Category: WEB
+
+Network Application: GOOGLE_APPENGINE_DESC
+ID: GOOGLE_APPENGINE
+Parent Category: WEB
+
+Network Application: GOOGLE_CACHE_DESC
+ID: GOOGLE_CACHE
+Parent Category: WEB
+
+Network Application: GOOGLE_DESKTOP_DESC
+ID: GOOGLE_DESKTOP
+Parent Category: WEB
+
+Network Application: GOOGLE_DOCS_DESC
+ID: GOOGLE_DOCS
+Parent Category: WEB
+
+Network Application: GOOGLE_EARTH_DESC
+ID: GOOGLE_EARTH
+Parent Category: WEB
+
+Network Application: GOOGLE_GEN_DESC
+ID: GOOGLE_GEN
+Parent Category: WEB
+
+Network Application: GOOGLE_MAPS_DESC
+ID: GOOGLE_MAPS
+Parent Category: WEB
+
+Network Application: GOOGLE_PICASA_DESC
+ID: GOOGLE_PICASA
+Parent Category: WEB
+
+Network Application: GOOGLE_SKYMAP_DESC
+ID: GOOGLE_SKYMAP
+Parent Category: WEB
+
+Network Application: GOOGLE_TOOLBAR_DESC
+ID: GOOGLE_TOOLBAR
+Parent Category: WEB
+
+Network Application: GOOGLE_TRANSLATE_DESC
+ID: GOOGLE_TRANSLATE
+Parent Category: WEB
+
+Network Application: GOO_NE_DESC
+ID: GOO_NE
+Parent Category: WEB
+
+Network Application: GOUGOU_DESC
+ID: GOUGOU
+Parent Category: WEB
+
+Network Application: GRATISINDO_DESC
+ID: GRATISINDO
+Parent Category: WEB
+
+Network Application: GREE_DESC
+ID: GREE
+Parent Category: WEB
+
+Network Application: GRONO_DESC
+ID: GRONO
+Parent Category: WEB
+
+Network Application: GROUPON_DESC
+ID: GROUPON
+Parent Category: WEB
+
+Network Application: GROUPWISE_DESC
+ID: GROUPWISE
+Parent Category: WEB
+
+Network Application: GSSHOP_DESC
+ID: GSSHOP
+Parent Category: WEB
+
+Network Application: GSTATIC_DESC
+ID: GSTATIC
+Parent Category: WEB
+
+Network Application: GUDANGLAGU_DESC
+ID: GUDANGLAGU
+Parent Category: WEB
+
+Network Application: GYAO_DESC
+ID: GYAO
+Parent Category: WEB
+
+Network Application: HABBO_DESC
+ID: HABBO
+Parent Category: WEB
+
+Network Application: HANGAME_DESC
+ID: HANGAME
+Parent Category: WEB
+
+Network Application: HANKOOKI_DESC
+ID: HANKOOKI
+Parent Category: WEB
+
+Network Application: HANKYUNG_DESC
+ID: HANKYUNG
+Parent Category: WEB
+
+Network Application: HAO123_DESC
+ID: HAO123
+Parent Category: WEB
+
+Network Application: HARDSEXTUBE_DESC
+ID: HARDSEXTUBE
+Parent Category: WEB
+
+Network Application: HATENA_NE_DESC
+ID: HATENA_NE
+Parent Category: WEB
+
+Network Application: HERALDM_DESC
+ID: HERALDM
+Parent Category: WEB
+
+Network Application: HERE_DESC
+ID: HERE
+Parent Category: WEB
+
+Network Application: HEXUN_DESC
+ID: HEXUN
+Parent Category: WEB
+
+Network Application: HGTV_DESC
+ID: HGTV
+Parent Category: WEB
+
+Network Application: HINET_GAMES_DESC
+ID: HINET_GAMES
+Parent Category: WEB
+
+Network Application: HOSPITALITY_CLUB_DESC
+ID: HOSPITALITY_CLUB
+Parent Category: WEB
+
+Network Application: HOTFILE_DESC
+ID: HOTFILE
+Parent Category: WEB
+
+Network Application: HOWSTUFFWORKS_DESC
+ID: HOWSTUFFWORKS
+Parent Category: WEB
+
+Network Application: HTTP_DESC
+ID: HTTP
+Parent Category: WEB
+
+Network Application: HTTPS_DESC
+ID: HTTPS
+Parent Category: WEB
+
+Network Application: HTTP2_DESC
+ID: HTTP2
+Parent Category: WEB
+
+Network Application: HUDONG_DESC
+ID: HUDONG
+Parent Category: WEB
+
+Network Application: HYVES_DESC
+ID: HYVES
+Parent Category: WEB
+
+Network Application: IAPP_DESC
+ID: IAPP
+Parent Category: WEB
+
+Network Application: IBIBO_DESC
+ID: IBIBO
+Parent Category: WEB
+
+Network Application: ICAP_DESC
+ID: ICAP
+Parent Category: WEB
+
+Network Application: IFENG_DESC
+ID: IFENG
+Parent Category: WEB
+
+Network Application: IFENG_FINANCE_DESC
+ID: IFENG_FINANCE
+Parent Category: WEB
+
+Network Application: IFILE_IT_DESC
+ID: IFILE_IT
+Parent Category: WEB
+
+Network Application: I_GAMER_DESC
+ID: I_GAMER
+Parent Category: WEB
+
+Network Application: IKEA_DESC
+ID: IKEA
+Parent Category: WEB
+
+Network Application: IMAGESHACK_DESC
+ID: IMAGESHACK
+Parent Category: WEB
+
+Network Application: IMDB_DESC
+ID: IMDB
+Parent Category: WEB
+
+Network Application: IMEEM_DESC
+ID: IMEEM
+Parent Category: WEB
+
+Network Application: IMEET_DESC
+ID: IMEET
+Parent Category: WEB
+
+Network Application: IMGUR_DESC
+ID: IMGUR
+Parent Category: WEB
+
+Network Application: IMPRESS_DESC
+ID: IMPRESS
+Parent Category: WEB
+
+Network Application: INDABA_MUSIC_DESC
+ID: INDABA_MUSIC
+Parent Category: WEB
+
+Network Application: INDONETWORK_DESC
+ID: INDONETWORK
+Parent Category: WEB
+
+Network Application: INDOWEBSTER_DESC
+ID: INDOWEBSTER
+Parent Category: WEB
+
+Network Application: INILAH_DESC
+ID: INILAH
+Parent Category: WEB
+
+Network Application: INSTAGRAM_DESC
+ID: INSTAGRAM
+Parent Category: WEB
+
+Network Application: INTALKING_DESC
+ID: INTALKING
+Parent Category: WEB
+
+Network Application: INTERNATIONS_DESC
+ID: INTERNATIONS
+Parent Category: WEB
+
+Network Application: INTERPARK_DESC
+ID: INTERPARK
+Parent Category: WEB
+
+Network Application: INTUIT_DESC
+ID: INTUIT
+Parent Category: WEB
+
+Network Application: I_PART_DESC
+ID: I_PART
+Parent Category: WEB
+
+Network Application: IQIYI_DESC
+ID: IQIYI
+Parent Category: WEB
+
+Network Application: IRC_GALLERIA_DESC
+ID: IRC_GALLERIA
+Parent Category: WEB
+
+Network Application: ITALKI_DESC
+ID: ITALKI
+Parent Category: WEB
+
+Network Application: ITSMY_DESC
+ID: ITSMY
+Parent Category: WEB
+
+Network Application: IWIW_DESC
+ID: IWIW
+Parent Category: WEB
+
+Network Application: JAIKU_DESC
+ID: JAIKU
+Parent Category: WEB
+
+Network Application: JAMMERDIRECT_DESC
+ID: JAMMERDIRECT
+Parent Category: WEB
+
+Network Application: JANGO_DESC
+ID: JANGO
+Parent Category: WEB
+
+Network Application: JAVA_UPDATE_DESC
+ID: JAVA_UPDATE
+Parent Category: WEB
+
+Network Application: JINGDONG_DESC
+ID: JINGDONG
+Parent Category: WEB
+
+Network Application: JNE_DESC
+ID: JNE
+Parent Category: WEB
+
+Network Application: JOBSTREET_DESC
+ID: JOBSTREET
+Parent Category: WEB
+
+Network Application: JOONGANG_DAILY_DESC
+ID: JOONGANG_DAILY
+Parent Category: WEB
+
+Network Application: JUBII_DESC
+ID: JUBII
+Parent Category: WEB
+
+Network Application: JUSTIN_TV_DESC
+ID: JUSTIN_TV
+Parent Category: WEB
+
+Network Application: KAIOO_DESC
+ID: KAIOO
+Parent Category: WEB
+
+Network Application: KAKAKU_DESC
+ID: KAKAKU
+Parent Category: WEB
+
+Network Application: KANKAN_DESC
+ID: KANKAN
+Parent Category: WEB
+
+Network Application: KAPANLAGI_DESC
+ID: KAPANLAGI
+Parent Category: WEB
+
+Network Application: KAROSGAME_DESC
+ID: KAROSGAME
+Parent Category: WEB
+
+Network Application: KASKUS_DESC
+ID: KASKUS
+Parent Category: WEB
+
+Network Application: KASPERSKY_DESC
+ID: KASPERSKY
+Parent Category: WEB
+
+Network Application: KASPERSKY_UPDATE_DESC
+ID: KASPERSKY_UPDATE
+Parent Category: WEB
+
+Network Application: KBS_DESC
+ID: KBS
+Parent Category: WEB
+
+Network Application: KEEZMOVIES_DESC
+ID: KEEZMOVIES
+Parent Category: WEB
+
+Network Application: KEMENKUMHAM_DESC
+ID: KEMENKUMHAM
+Parent Category: WEB
+
+Network Application: KHAN_DESC
+ID: KHAN
+Parent Category: WEB
+
+Network Application: KIWIBOX_DESC
+ID: KIWIBOX
+Parent Category: WEB
+
+Network Application: KOMPAS_DESC
+ID: KOMPAS
+Parent Category: WEB
+
+Network Application: KOMPASIANA_DESC
+ID: KOMPASIANA
+Parent Category: WEB
+
+Network Application: KONAMINET_DESC
+ID: KONAMINET
+Parent Category: WEB
+
+Network Application: KPROXY_DESC
+ID: KPROXY
+Parent Category: WEB
+
+Network Application: KU6_DESC
+ID: KU6
+Parent Category: WEB
+
+Network Application: KUXUN_DESC
+ID: KUXUN
+Parent Category: WEB
+
+Network Application: LADY8844_DESC
+ID: LADY8844
+Parent Category: WEB
+
+Network Application: LAREDOUTE_DESC
+ID: LAREDOUTE
+Parent Category: WEB
+
+Network Application: YUGMA_DESC
+ID: YUGMA
+Parent Category: WEB
+
+Network Application: LATIV_DESC
+ID: LATIV
+Parent Category: WEB
+
+Network Application: LDBLOG_DESC
+ID: LDBLOG
+Parent Category: WEB
+
+Network Application: LEAPFILE_DESC
+ID: LEAPFILE
+Parent Category: WEB
+
+Network Application: LEBONCOIN_DESC
+ID: LEBONCOIN
+Parent Category: WEB
+
+Network Application: LETV_DESC
+ID: LETV
+Parent Category: WEB
+
+Network Application: LEVEL3_DESC
+ID: LEVEL3
+Parent Category: WEB
+
+Network Application: LG_ESHOP_DESC
+ID: LG_ESHOP
+Parent Category: WEB
+
+Network Application: LIBERO_VIDEO_DESC
+ID: LIBERO_VIDEO
+Parent Category: WEB
+
+Network Application: LIBRARYTHING_DESC
+ID: LIBRARYTHING
+Parent Category: WEB
+
+Network Application: LIFEKNOT_DESC
+ID: LIFEKNOT
+Parent Category: WEB
+
+Network Application: LINTASBERITA_DESC
+ID: LINTASBERITA
+Parent Category: WEB
+
+Network Application: LIONAIR_DESC
+ID: LIONAIR
+Parent Category: WEB
+
+Network Application: LIONTRAVEL_DESC
+ID: LIONTRAVEL
+Parent Category: WEB
+
+Network Application: LISTOGRAFY_DESC
+ID: LISTOGRAFY
+Parent Category: WEB
+
+Network Application: LIVEDOOR_DESC
+ID: LIVEDOOR
+Parent Category: WEB
+
+Network Application: LIVEINTERNET_DESC
+ID: LIVEINTERNET
+Parent Category: WEB
+
+Network Application: LIVE_MEETING_DESC
+ID: LIVE_MEETING
+Parent Category: WEB
+
+Network Application: LIVEMOCHA_DESC
+ID: LIVEMOCHA
+Parent Category: WEB
+
+Network Application: LIVINGSOCIAL_DESC
+ID: LIVINGSOCIAL
+Parent Category: WEB
+
+Network Application: LOTOUR_DESC
+ID: LOTOUR
+Parent Category: WEB
+
+Network Application: LOTTE_DESC
+ID: LOTTE
+Parent Category: WEB
+
+Network Application: LOTUS_LIVE_DESC
+ID: LOTUS_LIVE
+Parent Category: WEB
+
+Network Application: LUNARSTORM_DESC
+ID: LUNARSTORM
+Parent Category: WEB
+
+Network Application: LVPING_DESC
+ID: LVPING
+Parent Category: WEB
+
+Network Application: SKYPE_FOR_BUSINESS_DESC
+ID: SKYPE_FOR_BUSINESS
+Parent Category: WEB
+
+Network Application: MANDRIVA_UPDATE_DESC
+ID: MANDRIVA_UPDATE
+Parent Category: WEB
+
+Network Application: MANGOCITY_DESC
+ID: MANGOCITY
+Parent Category: WEB
+
+Network Application: MAPQUEST_DESC
+ID: MAPQUEST
+Parent Category: WEB
+
+Network Application: MASHABLE_DESC
+ID: MASHABLE
+Parent Category: WEB
+
+Network Application: MASHARE_DESC
+ID: MASHARE
+Parent Category: WEB
+
+Network Application: MATCH_DESC
+ID: MATCH
+Parent Category: WEB
+
+Network Application: MBC_DESC
+ID: MBC
+Parent Category: WEB
+
+Network Application: MBN_DESC
+ID: MBN
+Parent Category: WEB
+
+Network Application: MEDIAFIRE_DESC
+ID: MEDIAFIRE
+Parent Category: WEB
+
+Network Application: MEETIN_DESC
+ID: MEETIN
+Parent Category: WEB
+
+Network Application: MEETME_DESC
+ID: MEETME
+Parent Category: WEB
+
+Network Application: MEETTHEBOSS_DESC
+ID: MEETTHEBOSS
+Parent Category: WEB
+
+Network Application: MEETUP_DESC
+ID: MEETUP
+Parent Category: WEB
+
+Network Application: MEGA_DESC
+ID: MEGA
+Parent Category: WEB
+
+Network Application: MK_DESC
+ID: MK
+Parent Category: WEB
+
+Network Application: MOBAGE_DESC
+ID: MOBAGE
+Parent Category: WEB
+
+Network Application: MOBILE01_DESC
+ID: MOBILE01
+Parent Category: WEB
+
+Network Application: MOBILE_ME_DESC
+ID: MOBILE_ME
+Parent Category: WEB
+
+Network Application: MOCOSPACE_DESC
+ID: MOCOSPACE
+Parent Category: WEB
+
+Network Application: MOMOSHOP_DESC
+ID: MOMOSHOP
+Parent Category: WEB
+
+Network Application: MONEX_DESC
+ID: MONEX
+Parent Category: WEB
+
+Network Application: MONEY_163_DESC
+ID: MONEY_163
+Parent Category: WEB
+
+Network Application: MONEYDJ_DESC
+ID: MONEYDJ
+Parent Category: WEB
+
+Network Application: MONSTER_DESC
+ID: MONSTER
+Parent Category: WEB
+
+Network Application: MOP_DESC
+ID: MOP
+Parent Category: WEB
+
+Network Application: MOUTHSHUT_DESC
+ID: MOUTHSHUT
+Parent Category: WEB
+
+Network Application: MOZILLA_DESC
+ID: MOZILLA
+Parent Category: WEB
+
+Network Application: MPQUEST_DESC
+ID: MPQUEST
+Parent Category: WEB
+
+Network Application: MSN_SEARCH_DESC
+ID: MSN_SEARCH
+Parent Category: WEB
+
+Network Application: MT_DESC
+ID: MT
+Parent Category: WEB
+
+Network Application: MTV_DESC
+ID: MTV
+Parent Category: WEB
+
+Network Application: MULTIPLY_DESC
+ID: MULTIPLY
+Parent Category: WEB
+
+Network Application: MULTIUPLOAD_DESC
+ID: MULTIUPLOAD
+Parent Category: WEB
+
+Network Application: MUSICA_DESC
+ID: MUSICA
+Parent Category: WEB
+
+Network Application: MYANIMELIST_DESC
+ID: MYANIMELIST
+Parent Category: WEB
+
+Network Application: MYCHURCH_DESC
+ID: MYCHURCH
+Parent Category: WEB
+
+Network Application: MYHERITAGE_DESC
+ID: MYHERITAGE
+Parent Category: WEB
+
+Network Application: MYLIFE_DESC
+ID: MYLIFE
+Parent Category: WEB
+
+Network Application: MYWEBSEARCH_DESC
+ID: MYWEBSEARCH
+Parent Category: WEB
+
+Network Application: MY_YAHOO_DESC
+ID: MY_YAHOO
+Parent Category: WEB
+
+Network Application: MYYEARBOOK_DESC
+ID: MYYEARBOOK
+Parent Category: WEB
+
+Network Application: NAPSTER_DESC
+ID: NAPSTER
+Parent Category: WEB
+
+Network Application: NASA_DESC
+ID: NASA
+Parent Category: WEB
+
+Network Application: NASZA_KLASA_DESC
+ID: NASZA_KLASA
+Parent Category: WEB
+
+Network Application: NATECYWORLD_DESC
+ID: NATECYWORLD
+Parent Category: WEB
+
+Network Application: NATIONALGEOGRAPHIC_DESC
+ID: NATIONALGEOGRAPHIC
+Parent Category: WEB
+
+Network Application: NATIONALLOTTERY_DESC
+ID: NATIONALLOTTERY
+Parent Category: WEB
+
+Network Application: NAVER_DESC
+ID: NAVER
+Parent Category: WEB
+
+Network Application: NBA_DESC
+ID: NBA
+Parent Category: WEB
+
+Network Application: NBA_CHINA_DESC
+ID: NBA_CHINA
+Parent Category: WEB
+
+Network Application: NDUOA_DESC
+ID: NDUOA
+Parent Category: WEB
+
+Network Application: NEND_DESC
+ID: NEND
+Parent Category: WEB
+
+Network Application: NETBSD_UPDATE_DESC
+ID: NETBSD_UPDATE
+Parent Category: WEB
+
+Network Application: NETLOAD_DESC
+ID: NETLOAD
+Parent Category: WEB
+
+Network Application: NETLOG_DESC
+ID: NETLOG
+Parent Category: WEB
+
+Network Application: NETMARBLE_DESC
+ID: NETMARBLE
+Parent Category: WEB
+
+Network Application: NETTBY_DESC
+ID: NETTBY
+Parent Category: WEB
+
+Network Application: NEXIAN_DESC
+ID: NEXIAN
+Parent Category: WEB
+
+Network Application: NEXON_DESC
+ID: NEXON
+Parent Category: WEB
+
+Network Application: NEXOPIA_DESC
+ID: NEXOPIA
+Parent Category: WEB
+
+Network Application: NFL_DESC
+ID: NFL
+Parent Category: WEB
+
+Network Application: NGO_POST_DESC
+ID: NGO_POST
+Parent Category: WEB
+
+Network Application: NIFTY_DESC
+ID: NIFTY
+Parent Category: WEB
+
+Network Application: NIKE_DESC
+ID: NIKE
+Parent Category: WEB
+
+Network Application: NIKKEI_DESC
+ID: NIKKEI
+Parent Category: WEB
+
+Network Application: NIMBUZZ_WEB_DESC
+ID: NIMBUZZ_WEB
+Parent Category: WEB
+
+Network Application: NING_DESC
+ID: NING
+Parent Category: WEB
+
+Network Application: NOD32_UPDATE_DESC
+ID: NOD32_UPDATE
+Parent Category: WEB
+
+Network Application: NOKIA_OVI_DESC
+ID: NOKIA_OVI
+Parent Category: WEB
+
+Network Application: NORTON_UPDATE_DESC
+ID: NORTON_UPDATE
+Parent Category: WEB
+
+Network Application: NOWNEWS_DESC
+ID: NOWNEWS
+Parent Category: WEB
+
+Network Application: NTV_DESC
+ID: NTV
+Parent Category: WEB
+
+Network Application: NYDAILYNEWS_DESC
+ID: NYDAILYNEWS
+Parent Category: WEB
+
+Network Application: NYTIMES_DESC
+ID: NYTIMES
+Parent Category: WEB
+
+Network Application: ZOHO_PLANNER_DESC
+ID: ZOHO_PLANNER
+Parent Category: WEB
+
+Network Application: OFFICEDEPOT_DESC
+ID: OFFICEDEPOT
+Parent Category: WEB
+
+Network Application: OKEZONE_DESC
+ID: OKEZONE
+Parent Category: WEB
+
+Network Application: OKWAVE_DESC
+ID: OKWAVE
+Parent Category: WEB
+
+Network Application: ONLINEDOWN_DESC
+ID: ONLINEDOWN
+Parent Category: WEB
+
+Network Application: OOYALA_DESC
+ID: OOYALA
+Parent Category: WEB
+
+Network Application: OPENBSD_UPDATE_DESC
+ID: OPENBSD_UPDATE
+Parent Category: WEB
+
+Network Application: OPEN_DIARY_DESC
+ID: OPEN_DIARY
+Parent Category: WEB
+
+Network Application: ORB_DESC
+ID: ORB
+Parent Category: WEB
+
+Network Application: OUTLOOK_DESC
+ID: OUTLOOK
+Parent Category: WEB
+
+Network Application: PAIPAI_DESC
+ID: PAIPAI
+Parent Category: WEB
+
+Network Application: PANDA_UPDATE_DESC
+ID: PANDA_UPDATE
+Parent Category: WEB
+
+Network Application: PANDORA_TV_DESC
+ID: PANDORA_TV
+Parent Category: WEB
+
+Network Application: PARTNERUP_DESC
+ID: PARTNERUP
+Parent Category: WEB
+
+Network Application: PARTY_POKER_DESC
+ID: PARTY_POKER
+Parent Category: WEB
+
+Network Application: PASSPORTSTAMP_DESC
+ID: PASSPORTSTAMP
+Parent Category: WEB
+
+Network Application: PAYEASY_DESC
+ID: PAYEASY
+Parent Category: WEB
+
+Network Application: PCGAMES_DESC
+ID: PCGAMES
+Parent Category: WEB
+
+Network Application: PCHOME_DESC
+ID: PCHOME
+Parent Category: WEB
+
+Network Application: PCLADY_DESC
+ID: PCLADY
+Parent Category: WEB
+
+Network Application: PCONLINE_DESC
+ID: PCONLINE
+Parent Category: WEB
+
+Network Application: PEERCAST_DESC
+ID: PEERCAST
+Parent Category: WEB
+
+Network Application: PENGYOU_DESC
+ID: PENGYOU
+Parent Category: WEB
+
+Network Application: PEOPLE_DESC
+ID: PEOPLE
+Parent Category: WEB
+
+Network Application: PERFSPOT_DESC
+ID: PERFSPOT
+Parent Category: WEB
+
+Network Application: PHOTOBUCKET_DESC
+ID: PHOTOBUCKET
+Parent Category: WEB
+
+Network Application: PIMANG_DESC
+ID: PIMANG
+Parent Category: WEB
+
+Network Application: PINGSTA_DESC
+ID: PINGSTA
+Parent Category: WEB
+
+Network Application: PIXIV_DESC
+ID: PIXIV
+Parent Category: WEB
+
+Network Application: PIXNET_DESC
+ID: PIXNET
+Parent Category: WEB
+
+Network Application: PLAXO_DESC
+ID: PLAXO
+Parent Category: WEB
+
+Network Application: PLAYSTATION_DESC
+ID: PLAYSTATION
+Parent Category: WEB
+
+Network Application: PLURK_DESC
+ID: PLURK
+Parent Category: WEB
+
+Network Application: POCO_DESC
+ID: POCO
+Parent Category: WEB
+
+Network Application: POGO_DESC
+ID: POGO
+Parent Category: WEB
+
+Network Application: PORNHUB_DESC
+ID: PORNHUB
+Parent Category: WEB
+
+Network Application: PPFILM_DESC
+ID: PPFILM
+Parent Category: WEB
+
+Network Application: PPTV_DESC
+ID: PPTV
+Parent Category: WEB
+
+Network Application: PRESENT_DESC
+ID: PRESENT
+Parent Category: WEB
+
+Network Application: PRICEMINISTER_DESC
+ID: PRICEMINISTER
+Parent Category: WEB
+
+Network Application: PRICERUNNER_DESC
+ID: PRICERUNNER
+Parent Category: WEB
+
+Network Application: PRIVAX_DESC
+ID: PRIVAX
+Parent Category: WEB
+
+Network Application: PROXEASY_DESC
+ID: PROXEASY
+Parent Category: WEB
+
+Network Application: PSIPHON_DESC
+ID: PSIPHON
+Parent Category: WEB
+
+Network Application: QQ_BLOG_DESC
+ID: QQ_BLOG
+Parent Category: WEB
+
+Network Application: QQDOWNLOAD_DESC
+ID: QQDOWNLOAD
+Parent Category: WEB
+
+Network Application: QQ_FINANCE_DESC
+ID: QQ_FINANCE
+Parent Category: WEB
+
+Network Application: QQ_GAMES_DESC
+ID: QQ_GAMES
+Parent Category: WEB
+
+Network Application: QQ_LADY_DESC
+ID: QQ_LADY
+Parent Category: WEB
+
+Network Application: QQ_NEWS_DESC
+ID: QQ_NEWS
+Parent Category: WEB
+
+Network Application: QQ_WEB_DESC
+ID: QQ_WEB
+Parent Category: WEB
+
+Network Application: QQ_WEIBO_DESC
+ID: QQ_WEIBO
+Parent Category: WEB
+
+Network Application: QUARTERLIFE_DESC
+ID: QUARTERLIFE
+Parent Category: WEB
+
+Network Application: QUNAR_DESC
+ID: QUNAR
+Parent Category: WEB
+
+Network Application: QZONE_DESC
+ID: QZONE
+Parent Category: WEB
+
+Network Application: RADIKO_DESC
+ID: RADIKO
+Parent Category: WEB
+
+Network Application: RAKUTEN_DESC
+ID: RAKUTEN
+Parent Category: WEB
+
+Network Application: RAMBLER_DESC
+ID: RAMBLER
+Parent Category: WEB
+
+Network Application: RAVELRY_DESC
+ID: RAVELRY
+Parent Category: WEB
+
+Network Application: REALTOR_DESC
+ID: REALTOR
+Parent Category: WEB
+
+Network Application: REDHAT_UPDATE_DESC
+ID: REDHAT_UPDATE
+Parent Category: WEB
+
+Network Application: REDTUBE_DESC
+ID: REDTUBE
+Parent Category: WEB
+
+Network Application: RENREN_DESC
+ID: RENREN
+Parent Category: WEB
+
+Network Application: REPUBLIKA_DESC
+ID: REPUBLIKA
+Parent Category: WEB
+
+Network Application: RESEARCHGATE_DESC
+ID: RESEARCHGATE
+Parent Category: WEB
+
+Network Application: REUTERS_DESC
+ID: REUTERS
+Parent Category: WEB
+
+Network Application: REVERBNATION_DESC
+ID: REVERBNATION
+Parent Category: WEB
+
+Network Application: REVERSO_DESC
+ID: REVERSO
+Parent Category: WEB
+
+Network Application: RSS_DESC
+ID: RSS
+Parent Category: WEB
+
+Network Application: RTL_DESC
+ID: RTL
+Parent Category: WEB
+
+Network Application: RUTEN_DESC
+ID: RUTEN
+Parent Category: WEB
+
+Network Application: RYANAIR_DESC
+ID: RYANAIR
+Parent Category: WEB
+
+Network Application: RYZE_DESC
+ID: RYZE
+Parent Category: WEB
+
+Network Application: SABERINDO_DESC
+ID: SABERINDO
+Parent Category: WEB
+
+Network Application: SAKURA_NE_DESC
+ID: SAKURA_NE
+Parent Category: WEB
+
+Network Application: ZOHO_PEOPLE_DESC
+ID: ZOHO_PEOPLE
+Parent Category: WEB
+
+Network Application: SAYCLUB_DESC
+ID: SAYCLUB
+Parent Category: WEB
+
+Network Application: SBS_DESC
+ID: SBS
+Parent Category: WEB
+
+Network Application: SCIENCESTAGE_DESC
+ID: SCIENCESTAGE
+Parent Category: WEB
+
+Network Application: SCISPACE_DESC
+ID: SCISPACE
+Parent Category: WEB
+
+Network Application: SCRIBD_DESC
+ID: SCRIBD
+Parent Category: WEB
+
+Network Application: SDO_DESC
+ID: SDO
+Parent Category: WEB
+
+Network Application: SECONDLIFE_DESC
+ID: SECONDLIFE
+Parent Category: WEB
+
+Network Application: SEEQPOD_DESC
+ID: SEEQPOD
+Parent Category: WEB
+
+Network Application: SEESAA_DESC
+ID: SEESAA
+Parent Category: WEB
+
+Network Application: SEESMIC_DESC
+ID: SEESMIC
+Parent Category: WEB
+
+Network Application: SEGYE_DESC
+ID: SEGYE
+Parent Category: WEB
+
+Network Application: SENDSPACE_DESC
+ID: SENDSPACE
+Parent Category: WEB
+
+Network Application: SEOUL_NEWS_DESC
+ID: SEOUL_NEWS
+Parent Category: WEB
+
+Network Application: SFR_DESC
+ID: SFR
+Parent Category: WEB
+
+Network Application: SHAREPOINT_DESC
+ID: SHAREPOINT
+Parent Category: WEB
+
+Network Application: SHAREPOINT_ADMIN_DESC
+ID: SHAREPOINT_ADMIN
+Parent Category: WEB
+
+Network Application: SHAREPOINT_BLOG_DESC
+ID: SHAREPOINT_BLOG
+Parent Category: WEB
+
+Network Application: SHAREPOINT_CALENDAR_DESC
+ID: SHAREPOINT_CALENDAR
+Parent Category: WEB
+
+Network Application: SHAREPOINT_DOCUMENT_DESC
+ID: SHAREPOINT_DOCUMENT
+Parent Category: WEB
+
+Network Application: SHAREPOINT_ONLINE_DESC
+ID: SHAREPOINT_ONLINE
+Parent Category: WEB
+
+Network Application: SHELFARI_DESC
+ID: SHELFARI
+Parent Category: WEB
+
+Network Application: SHINHAN_DESC
+ID: SHINHAN
+Parent Category: WEB
+
+Network Application: SHUTTERFLY_DESC
+ID: SHUTTERFLY
+Parent Category: WEB
+
+Network Application: SIEBEL_CRM_DESC
+ID: SIEBEL_CRM
+Parent Category: WEB
+
+Network Application: SINA_DESC
+ID: SINA
+Parent Category: WEB
+
+Network Application: SINA_BLOG_DESC
+ID: SINA_BLOG
+Parent Category: WEB
+
+Network Application: SINA_FINANCE_DESC
+ID: SINA_FINANCE
+Parent Category: WEB
+
+Network Application: SINA_NEWS_DESC
+ID: SINA_NEWS
+Parent Category: WEB
+
+Network Application: SINA_VIDEO_DESC
+ID: SINA_VIDEO
+Parent Category: WEB
+
+Network Application: SINA_WEIBO_DESC
+ID: SINA_WEIBO
+Parent Category: WEB
+
+Network Application: SKYBLOG_DESC
+ID: SKYBLOG
+Parent Category: WEB
+
+Network Application: SKYCN_DESC
+ID: SKYCN
+Parent Category: WEB
+
+Network Application: ONEDRIVE_DESC
+ID: ONEDRIVE
+Parent Category: WEB
+
+Network Application: SLIDESHARE_DESC
+ID: SLIDESHARE
+Parent Category: WEB
+
+Network Application: SOCIALTV_DESC
+ID: SOCIALTV
+Parent Category: WEB
+
+Network Application: SOFT4FUN_DESC
+ID: SOFT4FUN
+Parent Category: WEB
+
+Network Application: SOFTBANK_DESC
+ID: SOFTBANK
+Parent Category: WEB
+
+Network Application: SOGOU_DESC
+ID: SOGOU
+Parent Category: WEB
+
+Network Application: SOHU_DESC
+ID: SOHU
+Parent Category: WEB
+
+Network Application: SOHU_BLOG_DESC
+ID: SOHU_BLOG
+Parent Category: WEB
+
+Network Application: SOKU_DESC
+ID: SOKU
+Parent Category: WEB
+
+Network Application: SONET_NE_DESC
+ID: SONET_NE
+Parent Category: WEB
+
+Network Application: SONICO_DESC
+ID: SONICO
+Parent Category: WEB
+
+Network Application: SOSO_DESC
+ID: SOSO
+Parent Category: WEB
+
+Network Application: SOUFUN_DESC
+ID: SOUFUN
+Parent Category: WEB
+
+Network Application: SOUTHWEST_DESC
+ID: SOUTHWEST
+Parent Category: WEB
+
+Network Application: SPDY_DESC
+ID: SPDY
+Parent Category: WEB
+
+Network Application: SPEEDTEST_DESC
+ID: SPEEDTEST
+Parent Category: WEB
+
+Network Application: SPIEGEL_DESC
+ID: SPIEGEL
+Parent Category: WEB
+
+Network Application: SPORTCHOSUN_DESC
+ID: SPORTCHOSUN
+Parent Category: WEB
+
+Network Application: SPORTSILLUSTRATED_DESC
+ID: SPORTSILLUSTRATED
+Parent Category: WEB
+
+Network Application: SPORTSSEOUL_DESC
+ID: SPORTSSEOUL
+Parent Category: WEB
+
+Network Application: SPRINT_DESC
+ID: SPRINT
+Parent Category: WEB
+
+Network Application: STAFABAND_DESC
+ID: STAFABAND
+Parent Category: WEB
+
+Network Application: STAGEVU_DESC
+ID: STAGEVU
+Parent Category: WEB
+
+Network Application: STAYFRIENDS_DESC
+ID: STAYFRIENDS
+Parent Category: WEB
+
+Network Application: STICKAM_DESC
+ID: STICKAM
+Parent Category: WEB
+
+Network Application: STOCKQ_DESC
+ID: STOCKQ
+Parent Category: WEB
+
+Network Application: STREAMAUDIO_DESC
+ID: STREAMAUDIO
+Parent Category: WEB
+
+Network Application: STUDIVZ_DESC
+ID: STUDIVZ
+Parent Category: WEB
+
+Network Application: STUMBLEUPON_DESC
+ID: STUMBLEUPON
+Parent Category: WEB
+
+Network Application: SUGARSYNC_DESC
+ID: SUGARSYNC
+Parent Category: WEB
+
+Network Application: SUNING_DESC
+ID: SUNING
+Parent Category: WEB
+
+Network Application: SUPPERSOCCER_DESC
+ID: SUPPERSOCCER
+Parent Category: WEB
+
+Network Application: SURROGAFIER_DESC
+ID: SURROGAFIER
+Parent Category: WEB
+
+Network Application: SURVEYMONKEY_DESC
+ID: SURVEYMONKEY
+Parent Category: WEB
+
+Network Application: SVTPLAY_DESC
+ID: SVTPLAY
+Parent Category: WEB
+
+Network Application: TABELOG_DESC
+ID: TABELOG
+Parent Category: WEB
+
+Network Application: TAGGED_DESC
+ID: TAGGED
+Parent Category: WEB
+
+Network Application: TAGOO_DESC
+ID: TAGOO
+Parent Category: WEB
+
+Network Application: TAIWANLOTTERY_DESC
+ID: TAIWANLOTTERY
+Parent Category: WEB
+
+Network Application: TAKU_FILE_BIN_DESC
+ID: TAKU_FILE_BIN
+Parent Category: WEB
+
+Network Application: TALENTTROVE_DESC
+ID: TALENTTROVE
+Parent Category: WEB
+
+Network Application: TALKBIZNOW_DESC
+ID: TALKBIZNOW
+Parent Category: WEB
+
+Network Application: TALTOPIA_DESC
+ID: TALTOPIA
+Parent Category: WEB
+
+Network Application: TAOBAO_DESC
+ID: TAOBAO
+Parent Category: WEB
+
+Network Application: TARINGA_DESC
+ID: TARINGA
+Parent Category: WEB
+
+Network Application: TCHATCHE_DESC
+ID: TCHATCHE
+Parent Category: WEB
+
+Network Application: TEACHERTUBE_DESC
+ID: TEACHERTUBE
+Parent Category: WEB
+
+Network Application: TEACHSTREET_DESC
+ID: TEACHSTREET
+Parent Category: WEB
+
+Network Application: TECHINLINE_DESC
+ID: TECHINLINE
+Parent Category: WEB
+
+Network Application: TEMPOINTERAKTIF_DESC
+ID: TEMPOINTERAKTIF
+Parent Category: WEB
+
+Network Application: TENCENT_DESC
+ID: TENCENT
+Parent Category: WEB
+
+Network Application: TF1_DESC
+ID: TF1
+Parent Category: WEB
+
+Network Application: TGBUS_DESC
+ID: TGBUS
+Parent Category: WEB
+
+Network Application: THEPIRATEBAY_DESC
+ID: THEPIRATEBAY
+Parent Category: WEB
+
+Network Application: THREE_DESC
+ID: THREE
+Parent Category: WEB
+
+Network Application: TIANYA_DESC
+ID: TIANYA
+Parent Category: WEB
+
+Network Application: TICKETMONSTER_DESC
+ID: TICKETMONSTER
+Parent Category: WEB
+
+Network Application: TIDALTV_DESC
+ID: TIDALTV
+Parent Category: WEB
+
+Network Application: TISTORY_DESC
+ID: TISTORY
+Parent Category: WEB
+
+Network Application: TMALL_DESC
+ID: TMALL
+Parent Category: WEB
+
+Network Application: TOKBOX_DESC
+ID: TOKBOX
+Parent Category: WEB
+
+Network Application: TOKOBAGUS_DESC
+ID: TOKOBAGUS
+Parent Category: WEB
+
+Network Application: TORRENTDOWNLOADS_DESC
+ID: TORRENTDOWNLOADS
+Parent Category: WEB
+
+Network Application: TORRENTZ_DESC
+ID: TORRENTZ
+Parent Category: WEB
+
+Network Application: TRAVBUDDY_DESC
+ID: TRAVBUDDY
+Parent Category: WEB
+
+Network Application: TRAVELLERSPOINT_DESC
+ID: TRAVELLERSPOINT
+Parent Category: WEB
+
+Network Application: TRAVELOCITY_DESC
+ID: TRAVELOCITY
+Parent Category: WEB
+
+Network Application: TRAVIAN_DESC
+ID: TRAVIAN
+Parent Category: WEB
+
+Network Application: TRENDMICRO_UPDATE_DESC
+ID: TRENDMICRO_UPDATE
+Parent Category: WEB
+
+Network Application: TRIBE_DESC
+ID: TRIBE
+Parent Category: WEB
+
+Network Application: TRIBUNNEWS_DESC
+ID: TRIBUNNEWS
+Parent Category: WEB
+
+Network Application: TROMBI_DESC
+ID: TROMBI
+Parent Category: WEB
+
+Network Application: TUBE8_DESC
+ID: TUBE8
+Parent Category: WEB
+
+Network Application: TUDOU_DESC
+ID: TUDOU
+Parent Category: WEB
+
+Network Application: TUENTI_DESC
+ID: TUENTI
+Parent Category: WEB
+
+Network Application: ZOHO_NOTEBOOK_DESC
+ID: ZOHO_NOTEBOOK
+Parent Category: WEB
+
+Network Application: TUNEWIKI_DESC
+ID: TUNEWIKI
+Parent Category: WEB
+
+Network Application: TV_DESC
+ID: TV
+Parent Category: WEB
+
+Network Application: TV4PLAY_DESC
+ID: TV4PLAY
+Parent Category: WEB
+
+Network Application: TWITPIC_DESC
+ID: TWITPIC
+Parent Category: WEB
+
+Network Application: UBUNTU_ONE_DESC
+ID: UBUNTU_ONE
+Parent Category: WEB
+
+Network Application: UDN_DESC
+ID: UDN
+Parent Category: WEB
+
+Network Application: UNIVISION_DESC
+ID: UNIVISION
+Parent Category: WEB
+
+Network Application: UPLOADING_DESC
+ID: UPLOADING
+Parent Category: WEB
+
+Network Application: USATODAY_DESC
+ID: USATODAY
+Parent Category: WEB
+
+Network Application: USEJUMP_DESC
+ID: USEJUMP
+Parent Category: WEB
+
+Network Application: USTREAM_DESC
+ID: USTREAM
+Parent Category: WEB
+
+Network Application: VAMPIREFREAKS_DESC
+ID: VAMPIREFREAKS
+Parent Category: WEB
+
+Network Application: VEETLE_DESC
+ID: VEETLE
+Parent Category: WEB
+
+Network Application: VIADEO_DESC
+ID: VIADEO
+Parent Category: WEB
+
+Network Application: VIDEOBASH_DESC
+ID: VIDEOBASH
+Parent Category: WEB
+
+Network Application: VIDEOSURF_DESC
+ID: VIDEOSURF
+Parent Category: WEB
+
+Network Application: VIETBAO_DESC
+ID: VIETBAO
+Parent Category: WEB
+
+Network Application: YOUTUBE_HD_DESC
+ID: YOUTUBE_HD
+Parent Category: WEB
+
+Network Application: VIVANEWS_DESC
+ID: VIVANEWS
+Parent Category: WEB
+
+Network Application: VOX_DESC
+ID: VOX
+Parent Category: WEB
+
+Network Application: VTUNNEL_DESC
+ID: VTUNNEL
+Parent Category: WEB
+
+Network Application: VYEW_DESC
+ID: VYEW
+Parent Category: WEB
+
+Network Application: WAKOOPA_DESC
+ID: WAKOOPA
+Parent Category: WEB
+
+Network Application: WALLSTREETJOURNAL_CHINA_DESC
+ID: WALLSTREETJOURNAL_CHINA
+Parent Category: WEB
+
+Network Application: WANDOUJIA_DESC
+ID: WANDOUJIA
+Parent Category: WEB
+
+Network Application: WASABI_DESC
+ID: WASABI
+Parent Category: WEB
+
+Network Application: WASHINGTONPOST_DESC
+ID: WASHINGTONPOST
+Parent Category: WEB
+
+Network Application: WAT_DESC
+ID: WAT
+Parent Category: WEB
+
+Network Application: WAYN_DESC
+ID: WAYN
+Parent Category: WEB
+
+Network Application: WEATHER_DESC
+ID: WEATHER
+Parent Category: WEB
+
+Network Application: WEB_CRAWLER_DESC
+ID: WEB_CRAWLER
+Parent Category: WEB
+
+Network Application: WEOURFAMILY_DESC
+ID: WEOURFAMILY
+Parent Category: WEB
+
+Network Application: WERKENNTWEN_DESC
+ID: WERKENNTWEN
+Parent Category: WEB
+
+Network Application: WIKIA_DESC
+ID: WIKIA
+Parent Category: WEB
+
+Network Application: WIKIPEDIA_DESC
+ID: WIKIPEDIA
+Parent Category: WEB
+
+Network Application: WINDOWS_AZURE_DESC
+ID: WINDOWS_AZURE
+Parent Category: WEB
+
+Network Application: WINDOWSMEDIA_DESC
+ID: WINDOWSMEDIA
+Parent Category: WEB
+
+Network Application: WINDOWS_UPDATE_DESC
+ID: WINDOWS_UPDATE
+Parent Category: WEB
+
+Network Application: WIXI_DESC
+ID: WIXI
+Parent Category: WEB
+
+Network Application: WOORIBANK_DESC
+ID: WOORIBANK
+Parent Category: WEB
+
+Network Application: WRETCH_DESC
+ID: WRETCH
+Parent Category: WEB
+
+Network Application: XANGA_DESC
+ID: XANGA
+Parent Category: WEB
+
+Network Application: XBOX_DESC
+ID: XBOX
+Parent Category: WEB
+
+Network Application: XHAMSTER_DESC
+ID: XHAMSTER
+Parent Category: WEB
+
+Network Application: XIAMI_DESC
+ID: XIAMI
+Parent Category: WEB
+
+Network Application: XINHUANET_DESC
+ID: XINHUANET
+Parent Category: WEB
+
+Network Application: XLNET_DESC
+ID: XLNET
+Parent Category: WEB
+
+Network Application: XL_WAP_DESC
+ID: XL_WAP
+Parent Category: WEB
+
+Network Application: XL_WEBMAIL_DESC
+ID: XL_WEBMAIL
+Parent Category: WEB
+
+Network Application: XMLRPC_DESC
+ID: XMLRPC
+Parent Category: WEB
+
+Network Application: XM_RADIO_DESC
+ID: XM_RADIO
+Parent Category: WEB
+
+Network Application: XNXX_DESC
+ID: XNXX
+Parent Category: WEB
+
+Network Application: XREA_DESC
+ID: XREA
+Parent Category: WEB
+
+Network Application: XT3_DESC
+ID: XT3
+Parent Category: WEB
+
+Network Application: XUITE_DESC
+ID: XUITE
+Parent Category: WEB
+
+Network Application: XVIDEOS_DESC
+ID: XVIDEOS
+Parent Category: WEB
+
+Network Application: XVIDEOSLIVE_DESC
+ID: XVIDEOSLIVE
+Parent Category: WEB
+
+Network Application: ZOHO_MEETING_DESC
+ID: ZOHO_MEETING
+Parent Category: WEB
+
+Network Application: YAHOO360PLUSVIETNAM_DESC
+ID: YAHOO360PLUSVIETNAM
+Parent Category: WEB
+
+Network Application: YAHOO_ANSWERS_DESC
+ID: YAHOO_ANSWERS
+Parent Category: WEB
+
+Network Application: YAHOO_BIZ_DESC
+ID: YAHOO_BIZ
+Parent Category: WEB
+
+Network Application: YAHOO_BUY_DESC
+ID: YAHOO_BUY
+Parent Category: WEB
+
+Network Application: YAHOO_DOUGA_DESC
+ID: YAHOO_DOUGA
+Parent Category: WEB
+
+Network Application: YAHOO_GAMES_DESC
+ID: YAHOO_GAMES
+Parent Category: WEB
+
+Network Application: YAHOO_GEOCITIES_DESC
+ID: YAHOO_GEOCITIES
+Parent Category: WEB
+
+Network Application: YAHOO_KOREA_DESC
+ID: YAHOO_KOREA
+Parent Category: WEB
+
+Network Application: YAHOO_MAPS_DESC
+ID: YAHOO_MAPS
+Parent Category: WEB
+
+Network Application: YAHOO_REALESTATE_DESC
+ID: YAHOO_REALESTATE
+Parent Category: WEB
+
+Network Application: YAHOO_SEARCH_DESC
+ID: YAHOO_SEARCH
+Parent Category: WEB
+
+Network Application: YAHOO_STOCK_TW_DESC
+ID: YAHOO_STOCK_TW
+Parent Category: WEB
+
+Network Application: YAHOO_TRAVEL_DESC
+ID: YAHOO_TRAVEL
+Parent Category: WEB
+
+Network Application: ZOHO_DB_DESC
+ID: ZOHO_DB
+Parent Category: WEB
+
+Network Application: YELP_DESC
+ID: YELP
+Parent Category: WEB
+
+Network Application: YESKY_DESC
+ID: YESKY
+Parent Category: WEB
+
+Network Application: YIHAODIAN_DESC
+ID: YIHAODIAN
+Parent Category: WEB
+
+Network Application: YOKA_DESC
+ID: YOKA
+Parent Category: WEB
+
+Network Application: YOMIURI_DESC
+ID: YOMIURI
+Parent Category: WEB
+
+Network Application: YOUDAO_DESC
+ID: YOUDAO
+Parent Category: WEB
+
+Network Application: YOUKU_DESC
+ID: YOUKU
+Parent Category: WEB
+
+Network Application: YOUM7_DESC
+ID: YOUM7
+Parent Category: WEB
+
+Network Application: YOUMEO_DESC
+ID: YOUMEO
+Parent Category: WEB
+
+Network Application: YOUPORN_DESC
+ID: YOUPORN
+Parent Category: WEB
+
+Network Application: YOURFILEHOST_DESC
+ID: YOURFILEHOST
+Parent Category: WEB
+
+Network Application: BBC_DESC
+ID: BBC
+Parent Category: WEB
+
+Network Application: INDIATIMES_DESC
+ID: INDIATIMES
+Parent Category: WEB
+
+Network Application: DOCUSIGN_DESC
+ID: DOCUSIGN
+Parent Category: WEB
+
+Network Application: PASTEBIN_DESC
+ID: PASTEBIN
+Parent Category: WEB
+
+Network Application: YANDEXDISK_DESC
+ID: YANDEXDISK
+Parent Category: WEB
+
+Network Application: LASTPASS_DESC
+ID: LASTPASS
+Parent Category: WEB
+
+Network Application: ZENDESK_DESC
+ID: ZENDESK
+Parent Category: WEB
+
+Network Application: SLACK_DESC
+ID: SLACK
+Parent Category: WEB
+
+Network Application: FOURSHARED_DESC
+ID: FOURSHARED
+Parent Category: WEB
+
+Network Application: KICKASSTORRENTS_DESC
+ID: KICKASSTORRENTS
+Parent Category: WEB
+
+Network Application: ADP_DESC
+ID: ADP
+Parent Category: WEB
+
+Network Application: THUGLAK_DESC
+ID: THUGLAK
+Parent Category: WEB
+
+Network Application: REDIFF_DESC
+ID: REDIFF
+Parent Category: WEB
+
+Network Application: MEGAVIDEO_DESC
+ID: MEGAVIDEO
+Parent Category: WEB
+
+Network Application: MOTIONBOX_DESC
+ID: MOTIONBOX
+Parent Category: WEB
+
+Network Application: QUIC_DESC
+ID: QUIC
+Parent Category: WEB
+
+Network Application: REEBOK_DESC
+ID: REEBOK
+Parent Category: WEB
+
+Network Application: ADIDAS_DESC
+ID: ADIDAS
+Parent Category: WEB
+
+Network Application: EGNYTE_DESC
+ID: EGNYTE
+Parent Category: WEB
+
+Network Application: WETRANSFER_DESC
+ID: WETRANSFER
+Parent Category: WEB
+
+Network Application: INFOARMOR_DESC
+ID: INFOARMOR
+Parent Category: WEB
+
+Network Application: EPIC_BROWSER_UPDATE_DESC
+ID: EPIC_BROWSER_UPDATE
+Parent Category: WEB
+
+Network Application: AH_CDN_DESC
+ID: AH_CDN
+Parent Category: WEB
+
+Network Application: CODE42_DESC
+ID: CODE42
+Parent Category: WEB
+
+Network Application: CRASHPLAN_DESC
+ID: CRASHPLAN
+Parent Category: WEB
+
+Network Application: FACEBOOK_GAMES_DESC
+ID: FACEBOOK_GAMES
+Parent Category: WEB
+
+Network Application: LOCATION_IQ_DESC
+ID: LOCATION_IQ
+Parent Category: WEB
+
+Network Application: SHOPIFY_DESC
+ID: SHOPIFY
+Parent Category: WEB
+
+Network Application: STACKPATH_DESC
+ID: STACKPATH
+Parent Category: WEB
+
+Network Application: GOOGLE_STADIA_DESC
+ID: GOOGLE_STADIA
+Parent Category: WEB
+
+Network Application: MOXA_DESC
+ID: MOXA
+Parent Category: WEB
+
+Network Application: TOUTIAO_DESC
+ID: TOUTIAO
+Parent Category: WEB
+
+Network Application: TUCHONG_DESC
+ID: TUCHONG
+Parent Category: WEB
+
+Network Application: FASTMAIL_DESC
+ID: FASTMAIL
+Parent Category: WEBMAIL
+
+Network Application: YANDEX_MAIL_DESC
+ID: YANDEX_MAIL
+Parent Category: WEBMAIL
+
+Network Application: GMAIL_DESC
+ID: GMAIL
+Parent Category: WEBMAIL
+
+Network Application: YAHOOMAIL_DESC
+ID: YAHOOMAIL
+Parent Category: WEBMAIL
+
+Network Application: HOTMAIL_DESC
+ID: HOTMAIL
+Parent Category: WEBMAIL
+
+Network Application: GMAIL_MOBILE_DESC
+ID: GMAIL_MOBILE
+Parent Category: WEBMAIL
+
+Network Application: GMX_DESC
+ID: GMX
+Parent Category: WEBMAIL
+
+Network Application: IMP_DESC
+ID: IMP
+Parent Category: WEBMAIL
+
+Network Application: LIVEMAIL_MOBILE_DESC
+ID: LIVEMAIL_MOBILE
+Parent Category: WEBMAIL
+
+Network Application: MAIL_189_DESC
+ID: MAIL_189
+Parent Category: WEBMAIL
+
+Network Application: MAIL2000_DESC
+ID: MAIL2000
+Parent Category: WEBMAIL
+
+Network Application: MAILRU_DESC
+ID: MAILRU
+Parent Category: WEBMAIL
+
+Network Application: MAKTOOB_DESC
+ID: MAKTOOB
+Parent Category: WEBMAIL
+
+Network Application: MIMP_DESC
+ID: MIMP
+Parent Category: WEBMAIL
+
+Network Application: QQ_MAIL_DESC
+ID: QQ_MAIL
+Parent Category: WEBMAIL
+
+Network Application: RAMBLER_WEBMAIL_DESC
+ID: RAMBLER_WEBMAIL
+Parent Category: WEBMAIL
+
+Network Application: SQUIRRELMAIL_DESC
+ID: SQUIRRELMAIL
+Parent Category: WEBMAIL
+
+Network Application: YMAIL_MOBILE_DESC
+ID: YMAIL_MOBILE
+Parent Category: WEBMAIL
+
+Network Application: ZIMBRA_DESC
+ID: ZIMBRA
+Parent Category: WEBMAIL
+
+Network Application: ZIMBRA_STANDARD_DESC
+ID: ZIMBRA_STANDARD
+Parent Category: WEBMAIL
+
+Network Application: ORANGEMAIL_DESC
+ID: ORANGEMAIL
+Parent Category: WEBMAIL
+
+Network Application: IMAP_DESC
+ID: IMAP
+Parent Category: WEBMAIL
+
+Network Application: IMAPS_DESC
+ID: IMAPS
+Parent Category: WEBMAIL
+
+Network Application: FLIPKART_DESC
+ID: FLIPKART
+Parent Category: WEBSEARCH
+
+Network Application: GOOGLE_DESC
+ID: GOOGLE
+Parent Category: WEBSEARCH
+
+Network Application: YAHOO_DESC
+ID: YAHOO
+Parent Category: WEBSEARCH
+
+Network Application: BAIDU_DESC
+ID: BAIDU
+Parent Category: WEBSEARCH
+
+Network Application: ASK_DESC
+ID: ASK
+Parent Category: WEBSEARCH
+
+Network Application: AOL_DESC
+ID: AOL
+Parent Category: WEBSEARCH
+
+Network Application: BING_DESC
+ID: BING
+Parent Category: WEBSEARCH
+
+Network Application: YANDEX_DESC
+ID: YANDEX
+Parent Category: WEBSEARCH
+
+Network Application: APNS_DESC
+ID: APNS
+Parent Category: APP_SERVICE
+
+Network Application: DICT_DESC
+ID: DICT
+Parent Category: APP_SERVICE
+
+Network Application: EPM_DESC
+ID: EPM
+Parent Category: APP_SERVICE
+
+Network Application: GARP_DESC
+ID: GARP
+Parent Category: APP_SERVICE
+
+Network Application: ICLOUD_DESC
+ID: ICLOUD
+Parent Category: APP_SERVICE
+
+Network Application: IOS_OTA_UPDATE_DESC
+ID: IOS_OTA_UPDATE
+Parent Category: APP_SERVICE
+
+Network Application: LDAP_DESC
+ID: LDAP
+Parent Category: APP_SERVICE
+
+Network Application: LDAPS_DESC
+ID: LDAPS
+Parent Category: APP_SERVICE
+
+Network Application: MQ_DESC
+ID: MQ
+Parent Category: APP_SERVICE
+
+Network Application: NSPI_DESC
+ID: NSPI
+Parent Category: APP_SERVICE
+
+Network Application: PERFORCE_DESC
+ID: PERFORCE
+Parent Category: APP_SERVICE
+
+Network Application: PORTMAP_DESC
+ID: PORTMAP
+Parent Category: APP_SERVICE
+
+Network Application: SAMSUNG_APPS_DESC
+ID: SAMSUNG_APPS
+Parent Category: APP_SERVICE
+
+Network Application: SRVLOC_DESC
+ID: SRVLOC
+Parent Category: APP_SERVICE
+
+Network Application: SSDP_DESC
+ID: SSDP
+Parent Category: APP_SERVICE
+
+Network Application: SYSLOG_DESC
+ID: SYSLOG
+Parent Category: APP_SERVICE
+
+Network Application: WINDOWS_MARKETPLACE_DESC
+ID: WINDOWS_MARKETPLACE
+Parent Category: APP_SERVICE
+
+Network Application: XFS_DESC
+ID: XFS
+Parent Category: APP_SERVICE
+
+Network Application: VMWARE_HORIZON_VIEW_DESC
+ID: VMWARE_HORIZON_VIEW
+Parent Category: APP_SERVICE
+
+Network Application: FIX_DESC
+ID: FIX
+Parent Category: APP_SERVICE
+
+Network Application: DOCKER_DESC
+ID: DOCKER
+Parent Category: APP_SERVICE
+
+Network Application: CHAP_DESC
+ID: CHAP
+Parent Category: AUTHENTICATION
+
+Network Application: DIAMETER_DESC
+ID: DIAMETER
+Parent Category: AUTHENTICATION
+
+Network Application: IDENT_DESC
+ID: IDENT
+Parent Category: AUTHENTICATION
+
+Network Application: KRB5_DESC
+ID: KRB5
+Parent Category: AUTHENTICATION
+
+Network Application: PAP_DESC
+ID: PAP
+Parent Category: AUTHENTICATION
+
+Network Application: RADIUS_DESC
+ID: RADIUS
+Parent Category: AUTHENTICATION
+
+Network Application: TACACS_PLUS_DESC
+ID: TACACS_PLUS
+Parent Category: AUTHENTICATION
+
+Network Application: YPPASSWD_DESC
+ID: YPPASSWD
+Parent Category: AUTHENTICATION
+
+Network Application: YPSERV_DESC
+ID: YPSERV
+Parent Category: AUTHENTICATION
+
+Network Application: SALESFORCE_DESC
+ID: SALESFORCE
+Parent Category: BUSINESS
+
+Network Application: GOOGLEANALYTICS_DESC
+ID: GOOGLEANALYTICS
+Parent Category: BUSINESS
+
+Network Application: OFFICE365_DESC
+ID: OFFICE365
+Parent Category: BUSINESS
+
+Network Application: EVERNOTE_DESC
+ID: EVERNOTE
+Parent Category: BUSINESS
+
+Network Application: TUMBLR_DESC
+ID: TUMBLR
+Parent Category: BUSINESS
+
+Network Application: ZOHOCRM_DESC
+ID: ZOHOCRM
+Parent Category: BUSINESS
+
+Network Application: SUGARCRM_DESC
+ID: SUGARCRM
+Parent Category: BUSINESS
+
+Network Application: ADOBE_CREATIVE_CLOUD_DESC
+ID: ADOBE_CREATIVE_CLOUD
+Parent Category: BUSINESS
+
+Network Application: ZOOMINFO_DESC
+ID: ZOOMINFO
+Parent Category: BUSINESS
+
+Network Application: SERVICE_NOW_DESC
+ID: SERVICE_NOW
+Parent Category: BUSINESS
+
+Network Application: DB2_DESC
+ID: DB2
+Parent Category: DATABASE
+
+Network Application: DRDA_DESC
+ID: DRDA
+Parent Category: DATABASE
+
+Network Application: FILEMAKER_PRO_DESC
+ID: FILEMAKER_PRO
+Parent Category: DATABASE
+
+Network Application: INFORMIX_DESC
+ID: INFORMIX
+Parent Category: DATABASE
+
+Network Application: MOBILINK_DESC
+ID: MOBILINK
+Parent Category: DATABASE
+
+Network Application: MYSQL_DESC
+ID: MYSQL
+Parent Category: DATABASE
+
+Network Application: POSTGRES_DESC
+ID: POSTGRES
+Parent Category: DATABASE
+
+Network Application: SQLI_DESC
+ID: SQLI
+Parent Category: DATABASE
+
+Network Application: SYBASE_DESC
+ID: SYBASE
+Parent Category: DATABASE
+
+Network Application: TDS_DESC
+ID: TDS
+Parent Category: DATABASE
+
+Network Application: TNS_DESC
+ID: TNS
+Parent Category: DATABASE
+
+Network Application: MS_SSAS_DESC
+ID: MS_SSAS
+Parent Category: DATABASE
+
+Network Application: GOOGLE_DNS_DESC
+ID: GOOGLE_DNS
+Parent Category: DOH
+
+Network Application: CLOUDFLARE_DNS_DESC
+ID: CLOUDFLARE_DNS
+Parent Category: DOH
+
+Network Application: ADGUARD_DESC
+ID: ADGUARD
+Parent Category: DOH
+
+Network Application: QUAD9_DESC
+ID: QUAD9
+Parent Category: DOH
+
+Network Application: OPENDNS_DESC
+ID: OPENDNS
+Parent Category: DOH
+
+Network Application: CLEANBROWSING_DESC
+ID: CLEANBROWSING
+Parent Category: DOH
+
+Network Application: COMCAST_DNS_DESC
+ID: COMCAST_DNS
+Parent Category: DOH
+
+Network Application: NEXTDNS_DESC
+ID: NEXTDNS
+Parent Category: DOH
+
+Network Application: POWERDNS_DESC
+ID: POWERDNS
+Parent Category: DOH
+
+Network Application: BLAHDNS_DESC
+ID: BLAHDNS
+Parent Category: DOH
+
+Network Application: SECUREDNS_DESC
+ID: SECUREDNS
+Parent Category: DOH
+
+Network Application: RUBYFISH_DESC
+ID: RUBYFISH
+Parent Category: DOH
+
+Network Application: DOH_UNKNOWN_DESC
+ID: DOH_UNKNOWN
+Parent Category: DOH
+
+Network Application: GOTOMEETING_DESC
+ID: GOTOMEETING
+Parent Category: ENTERPRISE
+
+Network Application: MICROSOFTLIVEMEETING_DESC
+ID: MICROSOFTLIVEMEETING
+Parent Category: ENTERPRISE
+
+Network Application: YAMMER_DESC
+ID: YAMMER
+Parent Category: ENTERPRISE
+
+Network Application: NETVIEWER_DESC
+ID: NETVIEWER
+Parent Category: ENTERPRISE
+
+Network Application: AMAZON_CLD_DRIVE_DESC
+ID: AMAZON_CLD_DRIVE
+Parent Category: ENTERPRISE
+
+Network Application: WEBINAR_DESC
+ID: WEBINAR
+Parent Category: ENTERPRISE
+
+Network Application: GOOGLE_KEEP_DESC
+ID: GOOGLE_KEEP
+Parent Category: ENTERPRISE
+
+Network Application: AMAZON_CHIME_DESC
+ID: AMAZON_CHIME
+Parent Category: ENTERPRISE
+
+Network Application: WORKDAY_DESC
+ID: WORKDAY
+Parent Category: ERP
+
+Network Application: AIMINI_DESC
+ID: AIMINI
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: CFT_DESC
+ID: CFT
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: FTP_DESC
+ID: FTP
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: FTP_DATA_DESC
+ID: FTP_DATA
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: FTPS_DESC
+ID: FTPS
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: GOOGLE_DRIVE_DESC
+ID: GOOGLE_DRIVE
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: HOTLINE_DESC
+ID: HOTLINE
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: IBACKUP_DESC
+ID: IBACKUP
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: MOUNT_DESC
+ID: MOUNT
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: NETBIOS_DESC
+ID: NETBIOS
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: NFS_DESC
+ID: NFS
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: NLOCKMGR_DESC
+ID: NLOCKMGR
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: RQUOTA_DESC
+ID: RQUOTA
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: RSTAT_DESC
+ID: RSTAT
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: RSYNC_DESC
+ID: RSYNC
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: RUSERS_DESC
+ID: RUSERS
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: SMB_DESC
+ID: SMB
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: SYNC_DESC
+ID: SYNC
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: TFTP_DESC
+ID: TFTP
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: YPUPDATE_DESC
+ID: YPUPDATE
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: AIM_TRANSFER_DESC
+ID: AIM_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: IRC_TRANSFER_DESC
+ID: IRC_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: JABBER_TRANSFER_DESC
+ID: JABBER_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: PALTALK_TRANSFER_DESC
+ID: PALTALK_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: QQ_TRANSFER_DESC
+ID: QQ_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: YMSG_TRANSFER_DESC
+ID: YMSG_TRANSFER
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: FTPS_DATA_DESC
+ID: FTPS_DATA
+Parent Category: FILE_SERVER_TRANSER
+
+Network Application: CSTRIKE_DESC
+ID: CSTRIKE
+Parent Category: GAMING
+
+Network Application: EVE_ONLINE_DESC
+ID: EVE_ONLINE
+Parent Category: GAMING
+
+Network Application: EVERQUEST_DESC
+ID: EVERQUEST
+Parent Category: GAMING
+
+Network Application: HALFLIFE_DESC
+ID: HALFLIFE
+Parent Category: GAMING
+
+Network Application: IMVU_DESC
+ID: IMVU
+Parent Category: GAMING
+
+Network Application: LINEAGE2_DESC
+ID: LINEAGE2
+Parent Category: GAMING
+
+Network Application: POKER_STARS_DESC
+ID: POKER_STARS
+Parent Category: GAMING
+
+Network Application: PSN_DESC
+ID: PSN
+Parent Category: GAMING
+
+Network Application: QUAKE_DESC
+ID: QUAKE
+Parent Category: GAMING
+
+Network Application: RUNESCAPE_DESC
+ID: RUNESCAPE
+Parent Category: GAMING
+
+Network Application: STEAM_DESC
+ID: STEAM
+Parent Category: GAMING
+
+Network Application: WFC_DESC
+ID: WFC
+Parent Category: GAMING
+
+Network Application: WIICONNECT24_DESC
+ID: WIICONNECT24
+Parent Category: GAMING
+
+Network Application: WOW_DESC
+ID: WOW
+Parent Category: GAMING
+
+Network Application: XBOXLIVE_DESC
+ID: XBOXLIVE
+Parent Category: GAMING
+
+Network Application: FIFA_DESC
+ID: FIFA
+Parent Category: GAMING
+
+Network Application: ROBLOX_DESC
+ID: ROBLOX
+Parent Category: GAMING
+
+Network Application: FLICKR_DESC
+ID: FLICKR
+Parent Category: IMAGEHOST
+
+Network Application: TELEGRAM_DESC
+ID: TELEGRAM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: ZOOM_DESC
+ID: ZOOM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MIBBIT_DESC
+ID: MIBBIT
+Parent Category: INSTANT_MESSAGING
+
+Network Application: AIM_DESC
+ID: AIM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: AIM_EXPRESS_DESC
+ID: AIM_EXPRESS
+Parent Category: INSTANT_MESSAGING
+
+Network Application: AIMS_DESC
+ID: AIMS
+Parent Category: INSTANT_MESSAGING
+
+Network Application: AIRAIM_DESC
+ID: AIRAIM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: BADOO_DESC
+ID: BADOO
+Parent Category: INSTANT_MESSAGING
+
+Network Application: EBUDDY_DESC
+ID: EBUDDY
+Parent Category: INSTANT_MESSAGING
+
+Network Application: FRIENDVOX_DESC
+ID: FRIENDVOX
+Parent Category: INSTANT_MESSAGING
+
+Network Application: GTALK_DESC
+ID: GTALK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: GCM_DESC
+ID: GCM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: HOVRS_DESC
+ID: HOVRS
+Parent Category: INSTANT_MESSAGING
+
+Network Application: ICQ2GO_DESC
+ID: ICQ2GO
+Parent Category: INSTANT_MESSAGING
+
+Network Application: ILOVEIM_DESC
+ID: ILOVEIM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: IRC_DESC
+ID: IRC
+Parent Category: INSTANT_MESSAGING
+
+Network Application: JABBER_DESC
+ID: JABBER
+Parent Category: INSTANT_MESSAGING
+
+Network Application: KAIXIN_CHAT_DESC
+ID: KAIXIN_CHAT
+Parent Category: INSTANT_MESSAGING
+
+Network Application: KAKAOTALK_DESC
+ID: KAKAOTALK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: KIK_DESC
+ID: KIK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: KOOLIM_DESC
+ID: KOOLIM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: LINE_DESC
+ID: LINE
+Parent Category: INSTANT_MESSAGING
+
+Network Application: LOTUS_SAMETIME_DESC
+ID: LOTUS_SAMETIME
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MESSENGERFX_DESC
+ID: MESSENGERFX
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MITALK_DESC
+ID: MITALK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MPLUS_MESSENGER_DESC
+ID: MPLUS_MESSENGER
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MS_COMMUNICATOR_DESC
+ID: MS_COMMUNICATOR
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MSN_DESC
+ID: MSN
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MSNMOBILE_DESC
+ID: MSNMOBILE
+Parent Category: INSTANT_MESSAGING
+
+Network Application: MXIT_DESC
+ID: MXIT
+Parent Category: INSTANT_MESSAGING
+
+Network Application: NETMEETING_ILS_DESC
+ID: NETMEETING_ILS
+Parent Category: INSTANT_MESSAGING
+
+Network Application: OICQ_DESC
+ID: OICQ
+Parent Category: INSTANT_MESSAGING
+
+Network Application: OOVOO_DESC
+ID: OOVOO
+Parent Category: INSTANT_MESSAGING
+
+Network Application: PALTALK_DESC
+ID: PALTALK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: QQ_DESC
+ID: QQ
+Parent Category: INSTANT_MESSAGING
+
+Network Application: RADIUSIM_DESC
+ID: RADIUSIM
+Parent Category: INSTANT_MESSAGING
+
+Network Application: SKYPE_DESC
+ID: SKYPE
+Parent Category: INSTANT_MESSAGING
+
+Network Application: TEAMSPEAK_DESC
+ID: TEAMSPEAK
+Parent Category: INSTANT_MESSAGING
+
+Network Application: TEAMSPEAK_V3_DESC
+ID: TEAMSPEAK_V3
+Parent Category: INSTANT_MESSAGING
+
+Network Application: WECHAT_DESC
+ID: WECHAT
+Parent Category: INSTANT_MESSAGING
+
+Network Application: WHATSAPP_DESC
+ID: WHATSAPP
+Parent Category: INSTANT_MESSAGING
+
+Network Application: YMSG_DESC
+ID: YMSG
+Parent Category: INSTANT_MESSAGING
+
