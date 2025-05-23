@@ -1,0 +1,13 @@
+---
+
+- name: Gather Information Details for all Source IP Groups
+  zscaler.ziacloud.zia_cloud_firewall_ip_source_groups_info:
+    provider: '{{ zscaler_zia }}'
+  register: id_src_ip_groups
+
+- name: Register each Source IP Group ID as a separate variable
+  ansible.builtin.set_fact:
+    src_ip_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+  loop: "{{ id_src_ip_groups.groups }}"
+  loop_control:
+    label: "Source IP Group: src_ip_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
