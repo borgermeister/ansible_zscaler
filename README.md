@@ -1,6 +1,6 @@
 # Zscaler - Automation with Ansible
 
-This repository contains the Ansible playbooks and roles for automating Zscaler configuration and management.
+This repository contains Ansible playbooks and roles for automating Zscaler configuration and management.
 
 ## Requirements
 
