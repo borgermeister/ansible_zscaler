@@ -12,6 +12,13 @@ zscaler_zia:
 zscaler_zpa:
   client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_id") }}'
   client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_secret") }}'
+  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/vanity_domain") }}'
+  customer_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/customer_id") }}'
+  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/cloud") | default(omit) }}'  # The cloud key is optional and only required when authenticating to other environments i.e beta
+
+zscaler_zpa_old:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_id") }}'
+  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_secret") }}'
   customer_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/customer_id") }}'
   cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/cloud") | default(omit) }}'
 
