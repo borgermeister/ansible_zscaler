@@ -19,9 +19,9 @@
     # - role: zscaler_zia/zia_cloud_firewall_rule_info
     - role: zscaler_zia/zia_cloud_firewall_rule
     # - role: zscaler_zia/zia_ssl_inspection_rules_info
-    - role: zscaler_zia/zia_ssl_inspection_rules
+    # - role: zscaler_zia/zia_ssl_inspection_rules
     # - role: zscaler_zia/zia_url_filtering_rule_info
-    - role: zscaler_zia/zia_url_filtering_rules
+    # - role: zscaler_zia/zia_url_filtering_rules
     # - role: zscaler_zia/zia_activation_status
 
 ...

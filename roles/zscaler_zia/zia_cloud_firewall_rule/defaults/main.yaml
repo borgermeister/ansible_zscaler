@@ -28,12 +28,11 @@ zia_cloud_firewall_rule:
     devices: []
     device_groups: []
     device_trust_levels:  # Options: ANY, LOW_TRUST, MEDIUM_TRUST, HIGH_TRUST, UNKNOWN_DEVICETRUSTLEVEL
-      - UNKNOWN_DEVICETRUSTLEVEL
       - LOW_TRUST
     labels: []
     nw_service_groups: []
     nw_services:
-      - '{{ nw_service_icmpany }}'
+      - '{{ nw_service_dns }}'
     nw_application_groups: []
     nw_applications: []  # Locate application ID here: '{{ role_path }}/files/nw_applications.txt'
     app_service_groups: []
@@ -45,7 +44,7 @@ zia_cloud_firewall_rule:
     dest_ip_groups: []
     dest_addresses: []
     dest_countries: []
-    dest_ip_categories:
+    dest_ip_categories: []
     action: ALLOW  # Options: ALLOW, BLOCK_DROP, BLOCK_RESET, BLOCK_ICMP, EVAL_NWAPP
     enable_full_logging: false
     state: present
