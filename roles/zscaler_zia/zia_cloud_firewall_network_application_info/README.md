@@ -11,7 +11,3 @@ This Ansible role will query all [**Network Applications**](https://console.zsca
 ### Example
 
 Network Application **IOS Appstore** will be named `nw_application_iosappstore`.
-
-> [!NOTE]
-> The documentation says that the parameter must be a list / elements as integers,
-> but the output of this role will return the element ID as a string.

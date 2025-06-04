@@ -5,6 +5,11 @@
     provider: '{{ zscaler_zia }}'
   register: id_nw_applications
 
+- name: Delete file with all Network Applications
+  ansible.builtin.file:
+    path: '{{ role_path }}/files/nw_applications.txt'
+    state: absent
+
 - name: Register all Network Applications to a file
   ansible.builtin.lineinfile:
     path: '{{ role_path }}/files/nw_applications.txt'
