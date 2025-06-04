@@ -1,0 +1,504 @@
+ID: OTHER_ADULT_MATERIAL
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ADULT_THEMES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: LINGERIE_BIKINI
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: NUDITY
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: PORNOGRAPHY
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SEXUALITY
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ADULT_SEX_EDUCATION
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: K_12_SEX_EDUCATION
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SOCIAL_ADULT
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_DRUGS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: MARIJUANA
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: GAMBLING
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: VIOLENCE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: WEAPONS_AND_BOMBS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: TASTELESS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: MILITANCY_HATE_AND_EXTREMISM
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_ILLEGAL_OR_QUESTIONABLE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: COPYRIGHT_INFRINGEMENT
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: COMPUTER_HACKING
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: QUESTIONABLE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: PROFANITY
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: MATURE_HUMOR
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ANONYMIZER
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_SOCIETY_AND_LIFESTYLE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ART_CULTURE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ALTERNATE_LIFESTYLE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: HOBBIES_AND_LEISURE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: DINING_AND_RESTAURANT
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ALCOHOL_TOBACCO
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SOCIAL_NETWORKING
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: HEALTH
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SPORTS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SPECIAL_INTERESTS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_GAMES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SOCIAL_NETWORKING_GAMES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_SHOPPING_AND_AUCTIONS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SPECIALIZED_SHOPPING
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: REAL_ESTATE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ONLINE_AUCTIONS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_SOCIAL_AND_FAMILY_ISSUES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SOCIAL_ISSUES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: FAMILY_ISSUES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_RELIGION
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: TRADITIONAL_RELIGION
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: CULT
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ALT_NEW_AGE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_EDUCATION
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: CONTINUING_EDUCATION_COLLEGES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: HISTORY
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: K_12
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: REFERENCE_SITES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SCIENCE_AND_TECHNOLOGY
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_BUSINESS_AND_ECONOMY
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: CORPORATE_MARKETING
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: FINANCE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: PROFESSIONAL_SERVICES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: CLASSIFIEDS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: TRADING_BROKARAGE_INSURANCE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: INSURANCE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: JOB_SEARCH
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_INFORMATION_TECHNOLOGY
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: TRANSLATORS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: IMAGE_HOST
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: FILE_HOST
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SHAREWARE_DOWNLOAD
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: WEB_BANNERS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: WEB_HOST
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: WEB_SEARCH
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: PORTALS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: SAFE_SEARCH_ENGINE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: CDN
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OSS_UPDATES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: DNS_OVER_HTTPS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: AI_ML_APPS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: FILE_CONVERTORS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: GENERAL_AI_ML
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: DEVELOPER_TOOLS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_INTERNET_COMMUNICATION
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: INTERNET_SERVICES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: DISCUSSION_FORUMS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ONLINE_CHAT
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: EMAIL_HOST
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: BLOG
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: P2P_COMMUNICATION
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: REMOTE_ACCESS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: WEB_CONFERENCING
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ZSPROXY_IPS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_SECURITY
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ADWARE_OR_SPYWARE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ENCR_WEB_CONTENT
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: DYNAMIC_DNS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: NEWLY_REVIVED_DOMAINS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_MISCELLANEOUS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: MISCELLANEOUS_OR_UNKNOWN
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: NEWLY_REG_DOMAINS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: NON_CATEGORIZABLE
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: TRAVEL
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: VEHICLES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_GOVERNMENT_AND_POLITICS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: GOVERNMENT
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: POLITICS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: MILITARY
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: OTHER_ENTERTAINMENT_AND_RECREATION
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: ENTERTAINMENT
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: TELEVISION_AND_MOVIES
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: MUSIC
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: STREAMING_MEDIA
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: RADIO_STATIONS
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: NEWS_AND_MEDIA
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: USER_DEFINED
+Type: URL_CATEGORY
+Configured Name: 
+
+ID: CUSTOM_15
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Strava
+
+ID: CUSTOM_16
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Panasonic varmepumpe
+
+ID: CUSTOM_11
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - GitHub
+
+ID: CUSTOM_14
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Vipps
+
+ID: CUSTOM_06
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Facebook
+
+ID: CUSTOM_03
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Ring.com
+
+ID: CUSTOM_04
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Tesla
+
+ID: CUSTOM_05
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Snapchat
+
+ID: CUSTOM_10
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - NixOS
+
+ID: CUSTOM_07
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Apple General
+
+ID: CUSTOM_08
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - FittenCode
+
+ID: CUSTOM_09
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Borgermeister
+
+ID: CUSTOM_01
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - iOS
+
+ID: CUSTOM_02
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Apple Music
+
+ID: CUSTOM_12
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - PyPI
+
+ID: CUSTOM_13
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Gitlab
+
