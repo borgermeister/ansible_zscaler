@@ -1,0 +1,12 @@
+Name: Borgermeister Browser Isolation
+ID: e7947be1-16a8-4b84-a346-20ade07be859
+URL: https://redirect.isolation.zscaler.com/tenant/12176b75e351/profile/e7947be1-16a8-4b84-a346-20ade07be859
+
+Name: Default Isolation Profile
+ID: 101fb624-8675-4ecd-bee9-660f61f7ab8d
+URL: https://redirect.isolation.zscaler.com/tenant/12176b75e351/profile/101fb624-8675-4ecd-bee9-660f61f7ab8d
+
+Name: UXP_Isolation_Profile
+ID: 13de37f7-70ad-47aa-8cf0-864c0a748077
+URL: https://redirect.isolation.zscaler.com/tenant/12176b75e351/profile/13de37f7-70ad-47aa-8cf0-864c0a748077
+
