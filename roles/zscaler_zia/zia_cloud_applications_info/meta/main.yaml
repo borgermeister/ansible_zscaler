@@ -2,7 +2,7 @@
 
 galaxy_info:
   author: 'Bjørn-Vegar Borge'
-  description: 'Zscaler Internet Access - Gather information about all Network Applications and register them as a separate variable'
+  description: 'Zscaler Internet Access - Gather information about all Cloud Applications and register them as a separate variable'
   company: 'Netsecurity'
 
   license: 'GLWTPL'

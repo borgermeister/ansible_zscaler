@@ -1,0 +1,112 @@
+---
+
+# Zscaler Provider Connection Parameters
+zscaler_zia:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") }}'
+  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") }}'
+  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") }}'
+  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'  # The cloud key is optional and only required when authenticating to other environments i.e beta
+
+# Be aware that if you change the name of an existing rule in Ansible,
+# a new rule will be created and Ansible will lose track of the old one.
+# The old rule will not be deleted, so you will need to delete it manually.
+# To prevent this behavior, you can have Ansible reference the rule by its ID.
+# I personally think this is to cumbersome, so I just use the name of the rule.
+zia_url_filtering_rules:
+  - name: 'Block Adult Material'
+    order: 1
+    description: 'Block adult material'
+    enabled: true
+    url_categories:
+      - PORNOGRAPHY
+    groups: []
+    departments: []
+    locations: []
+    location_groups: []
+    devices: []
+    device_groups: []
+    device_trust_levels: [] # Options: ANY, LOW_TRUST, MEDIUM_TRUST, HIGH_TRUST, UNKNOWN_DEVICETRUSTLEVEL
+    labels: 4532654
+    request_methods: [GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, CONNECT, PATCH, PROPFIND, PROPPATCH, MOVE, MKCOL, LOCK, COPY, UNLOCK, OTHER]
+    protocols:  # Options: WEBSOCKETSSL_RULE, WEBSOCKET_RULE, DOHTTPS_RULE, TUNNELSSL_RULE, HTTP_PROXY, FOHTTP_RULE, FTP_RULE, HTTPS_RULE, HTTP_RULE, SSL_RULE, TUNNEL_RULE
+      - HTTP_RULE
+      - HTTPS_RULE
+    user_agent_types:  # Options: OPERA, FIREFOX, MSIE, MSEDGE, CHROME, SAFARI, OTHER, MSCHREDGE
+      - MSIE
+      - CHROME
+      - SAFARI
+      - FIREFOX
+    action: BLOCK  # Options: ANY, BLOCK, CAUTION, ALLOW, ISOLATE, ICAP_RESPONSE
+    block_override: false
+    # override_users:
+    # override_groups:
+    state: present
+  - name: 'Block High Risk Categories'
+    order: 2
+    description: 'Block high risk categories'
+    enabled: true
+    url_categories:
+      - ADWARE_OR_SPYWARE
+      - ANONYMIZER
+      - DYNAMIC_DNS
+      - NEWLY_REG_DOMAINS
+      - NEWLY_REVIVED_DOMAINS
+      - OTHER_ILLEGAL_OR_QUESTIONABLE
+      - OTHER_SECURITY
+      - P2P_COMMUNICATION
+    groups: []
+    departments: []
+    locations: []
+    location_groups: []
+    devices: []
+    device_groups: []
+    device_trust_levels: [] # Options: ANY, LOW_TRUST, MEDIUM_TRUST, HIGH_TRUST, UNKNOWN_DEVICETRUSTLEVEL
+    labels: 4532654
+    request_methods: [GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, CONNECT, PATCH, PROPFIND, PROPPATCH, MOVE, MKCOL, LOCK, COPY, UNLOCK, OTHER]
+    protocols:  # Options: WEBSOCKETSSL_RULE, WEBSOCKET_RULE, DOHTTPS_RULE, TUNNELSSL_RULE, HTTP_PROXY, FOHTTP_RULE, FTP_RULE, HTTPS_RULE, HTTP_RULE, SSL_RULE, TUNNEL_RULE
+      - HTTP_RULE
+      - HTTPS_RULE
+    user_agent_types:  # Options: OPERA, FIREFOX, MSIE, MSEDGE, CHROME, SAFARI, OTHER, MSCHREDGE
+      - MSIE
+      - CHROME
+      - SAFARI
+      - FIREFOX
+    action: BLOCK  # Options: ANY, BLOCK, CAUTION, ALLOW, ISOLATE, ICAP_RESPONSE
+    block_override: false
+    # override_users:
+    # override_groups:
+    state: present
+  - name: 'Browser Isolation'
+    order: 4
+    description: |
+      Browser isolation for high risk categories.
+      Apply Browser Isolation when Device Trust Level is 'Low', 'Medium' or 'Unknown'.
+    enabled: true
+    url_categories:
+      - GAMBLING
+    groups: []
+    departments: []
+    locations: []
+    location_groups: []
+    devices: []
+    device_groups: []
+    device_trust_levels: [LOW_TRUST, MEDIUM_TRUST, UNKNOWN_DEVICETRUSTLEVEL]
+    labels: 4532654
+    request_methods: [GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, CONNECT, PATCH, PROPFIND, PROPPATCH, MOVE, MKCOL, LOCK, COPY, UNLOCK, OTHER]
+    protocols:  # Options: WEBSOCKETSSL_RULE, WEBSOCKET_RULE, DOHTTPS_RULE, TUNNELSSL_RULE, HTTP_PROXY, FOHTTP_RULE, FTP_RULE, HTTPS_RULE, HTTP_RULE, SSL_RULE, TUNNEL_RULE
+      - HTTP_RULE
+      - HTTPS_RULE
+    user_agent_types:  # Options: OPERA, FIREFOX, MSIE, MSEDGE, CHROME, SAFARI, OTHER, MSCHREDGE
+      - MSIE
+      - CHROME
+      - SAFARI
+      - FIREFOX
+    action: ISOLATE  # Options: ANY, BLOCK, CAUTION, ALLOW, ISOLATE, ICAP_RESPONSE
+    block_override: false
+    # override_users:
+    # override_groups:
+    cbi_profile:
+      id: e7947be1-16a8-4b84-a346-20ade07be859
+      name: 'Borgermeister Browser Isolation'
+      url: 'https://redirect.isolation.zscaler.com/tenant/12176b75e351/profile/e7947be1-16a8-4b84-a346-20ade07be859'
+    state: present

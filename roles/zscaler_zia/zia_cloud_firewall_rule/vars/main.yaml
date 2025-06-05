@@ -1,0 +1,50 @@
+---
+
+# Zscaler Provider Connection Parameters
+zscaler_zia:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") }}'
+  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") }}'
+  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") }}'
+  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'  # The cloud key is optional and only required when authenticating to other environments i.e beta
+
+# Be aware that if you change the name of an existing rule in Ansible,
+# a new rule will be created and Ansible will lose track of the old one.
+# The old rule will not be deleted, so you will need to delete it manually.
+# To prevent this behavior, you can have Ansible reference the rule by its ID.
+# I personally think this is to cumbersome, so I just use the name of the rule.
+zia_cloud_firewall_rule:
+  - name: 'Ansible Firwall Rule'
+    order: 7
+    description: 'Give a useful description'
+    enabled: true
+    groups:
+      - '{{ group_borgermeister }}'
+    departments:
+      - '{{ department_borgermeisterit }}'
+    locations:
+      - '{{ location_borgermeisterhome }}'
+    location_groups:
+      - '{{ location_group_borgermeisterlocations }}'
+    devices: []
+    device_groups: []
+    device_trust_levels:  # Options: ANY, LOW_TRUST, MEDIUM_TRUST, HIGH_TRUST, UNKNOWN_DEVICETRUSTLEVEL
+      - LOW_TRUST
+    labels: []
+    nw_service_groups: []
+    nw_services:
+      - '{{ nw_service_dns }}'
+    nw_application_groups: []
+    nw_applications: []  # Locate application ID here: '{{ role_path }}/files/nw_applications.txt'
+    app_service_groups: []
+    src_ip_groups:
+      - '{{ src_ip_group_borgermeisterhome }}'
+    src_ips: []
+    exclude_src_countries: false
+    source_countries: []
+    dest_ip_groups: []
+    dest_addresses: []
+    dest_countries: []
+    dest_ip_categories: []
+    action: ALLOW  # Options: ALLOW, BLOCK_DROP, BLOCK_RESET, BLOCK_ICMP, EVAL_NWAPP
+    enable_full_logging: false
+    state: present

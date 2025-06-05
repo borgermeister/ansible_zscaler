@@ -17,6 +17,7 @@ zia_ssl_inspection_rules:
     order: 14
     description: 'Give a useful description'
     enabled: true
+    labels: []
     groups:
       - '{{ group_borgermeister }}'
     departments:
@@ -24,7 +25,7 @@ zia_ssl_inspection_rules:
     locations:
       - '{{ location_borgermeisterhome }}'
     location_groups: []
-    url_categories:
+    url_categories:  # empty array is not allowed - comment out if you do not want to use url_categories
       - PROFESSIONAL_SERVICES
     cloud_applications:
       - MSLOGINSERVICES
@@ -52,6 +53,7 @@ zia_ssl_inspection_rules:
     order: 15
     description: 'Minimal SSL Inspection Rule'
     enabled: true
+    labels: []
     groups:
       - '{{ group_borgermeister }}'
     departments:
