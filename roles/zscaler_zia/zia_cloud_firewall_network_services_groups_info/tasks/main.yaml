@@ -11,3 +11,19 @@
   loop: "{{ id_nw_service_groups.groups }}"
   loop_control:
     label: "Network Service Group: nw_service_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
+
+- name: Delete file with all Network Services Groups
+  ansible.builtin.file:
+    path: '{{ role_path }}/files/nw_service_groups.txt'
+    state: absent
+
+- name: Register all Network Services Groups to a file
+  ansible.builtin.lineinfile:
+    path: '{{ role_path }}/files/nw_service_groups.txt'
+    create: true
+    mode: '0644'
+    state: present
+    line: |
+      Network Service Group: nw_service_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
+      ID: {{ item.id }}
+  loop: "{{ id_nw_service_groups.groups }}"

@@ -11,3 +11,19 @@
   loop: "{{ id_locations.locations }}"
   loop_control:
     label: "Location name: location_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
+
+- name: Delete file with all Locations
+  ansible.builtin.file:
+    path: '{{ role_path }}/files/locations.txt'
+    state: absent
+
+- name: Register all Locations to a file
+  ansible.builtin.lineinfile:
+    path: '{{ role_path }}/files/locations.txt'
+    create: true
+    mode: '0644'
+    state: present
+    line: |
+      Location name: location_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
+      ID: {{ item.id }}
+  loop: "{{ id_location_groups.locations }}"

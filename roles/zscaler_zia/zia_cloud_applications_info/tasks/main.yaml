@@ -1,0 +1,29 @@
+---
+
+- name: Gather Information Details for all Cloud Applications - SSL Policy
+  zscaler.ziacloud.zia_cloud_applications_info:
+    provider: '{{ zscaler_zia }}'
+    mode: ssl_policy
+  register: cloud_applications
+
+# An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: too many values to unpack (expected 2)
+# fatal: [localhost]: FAILED! =>
+#     changed: false
+#     msg: too many values to unpack (expected 2)
+
+- name: Delete file with all Cloud Applications
+  ansible.builtin.file:
+    path: '{{ role_path }}/files/cloud_applications.txt'
+    state: absent
+
+- name: Register all Cloud Applications to a file
+  ansible.builtin.lineinfile:
+    path: '{{ role_path }}/files/cloud_applications.txt'
+    create: true
+    mode: '0644'
+    state: present
+    line: |
+      Network Application: {{ item.description }}
+      ID: {{ item.id }}
+      Parent Category: {{ item.parent_category }}
+  loop: "{{ cloud_applications.apps }}"

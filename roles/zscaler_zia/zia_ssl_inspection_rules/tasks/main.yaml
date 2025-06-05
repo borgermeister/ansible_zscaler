@@ -8,6 +8,7 @@
     name: '{{ item.name }}'
     description: '{{ item.description }}'
     enabled: '{{ item.enabled }}'
+    labels: '{{ item.labels | default(omit) }}'
     groups: '{{ item.groups | default(omit) }}'
     departments: '{{ item.departments | default(omit) }}'
     locations: '{{ item.locations | default(omit) }}'

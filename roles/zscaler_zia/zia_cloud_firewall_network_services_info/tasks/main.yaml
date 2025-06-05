@@ -1,6 +1,6 @@
 ---
 
-- name: Gather Information Details for all Network Application Groups
+- name: Gather Information Details for all Network Services
   zscaler.ziacloud.zia_cloud_firewall_network_services_info:
     provider: '{{ zscaler_zia }}'
   register: id_nw_services
@@ -11,3 +11,19 @@
   loop: "{{ id_nw_services.services }}"
   loop_control:
     label: "Network Service: nw_service_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
+
+- name: Delete file with all Network Services
+  ansible.builtin.file:
+    path: '{{ role_path }}/files/nw_services.txt'
+    state: absent
+
+- name: Register all Network Services to a file
+  ansible.builtin.lineinfile:
+    path: '{{ role_path }}/files/nw_services.txt'
+    create: true
+    mode: '0644'
+    state: present
+    line: |
+      Network Service: nw_service_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
+      ID: {{ item.id }}
+  loop: "{{ id_nw_services.services }}"

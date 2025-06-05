@@ -11,3 +11,19 @@
   loop: "{{ id_src_ip_groups.groups }}"
   loop_control:
     label: "Source IP Group: src_ip_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
+
+- name: Delete file with all Source IP Groups
+  ansible.builtin.file:
+    path: '{{ role_path }}/files/src_ip_groups.txt'
+    state: absent
+
+- name: Register all Source IP Groups to a file
+  ansible.builtin.lineinfile:
+    path: '{{ role_path }}/files/src_ip_groups.txt'
+    create: true
+    mode: '0644'
+    state: present
+    line: |
+      Source IP Group: src_ip_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
+      ID: {{ item.id }}
+  loop: "{{ id_src_ip_groups.groups }}"
