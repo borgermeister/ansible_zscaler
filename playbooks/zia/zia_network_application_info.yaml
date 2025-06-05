@@ -1,0 +1,9 @@
+---
+
+- name: Ansible Roles to read all network applications and write them to a file
+  hosts: localhost
+
+  roles:
+    - role: zscaler_zia/zia_cloud_firewall_network_application_info
+
+...

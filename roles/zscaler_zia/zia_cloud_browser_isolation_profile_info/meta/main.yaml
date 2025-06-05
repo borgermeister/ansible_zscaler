@@ -2,7 +2,7 @@
 
 galaxy_info:
   author: 'Bjørn-Vegar Borge'
-  description: 'Zscaler Internet Access - Gather information about all Custom URL Categories'
+  description: 'Zscaler Internet Access - Gather information about all Browser Isolation Profiles'
   company: 'Netsecurity'
 
   license: 'GLWTPL'
