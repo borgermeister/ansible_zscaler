@@ -1,0 +1,22 @@
+---
+
+version: 3
+
+env:
+
+tasks:
+  default:
+    desc: Show available tasks
+    cmds:
+      - task --list
+    silent: true
+
+  zia_activate_changes:
+    cmds:
+      - ansible-playbook playbooks/zia/zia_activate_changes.yaml
+    desc: Activate pending changes in Zscaler Internet Access (ZIA)
+
+  zia_url_categories:
+    cmds:
+      - ansible-playbook playbooks/zia/zia_url_categories.yaml
+    desc: Create or update custom URL categories in Zscaler Internet Access (ZIA)
