@@ -444,7 +444,15 @@ Configured Name: TLS Inspection Bypass - Strava
 
 ID: CUSTOM_16
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Panasonic varmepumpe
+Configured Name: TLS Inspection Bypass - Panasonic Comfort Cloud
+
+ID: CUSTOM_17
+Type: URL_CATEGORY
+Configured Name: TLS Inspection Bypass - Misc
+
+ID: CUSTOM_18
+Type: URL_CATEGORY
+Configured Name: URL Exemption - Borgermeister
 
 ID: CUSTOM_11
 Type: URL_CATEGORY

@@ -1,17 +1,5 @@
 ---
 
-# Zscaler Provider Connection Parameters
-zscaler_zia:
-  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") }}'
-  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") }}'
-  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") }}'
-  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'  # The cloud key is optional and only required when authenticating to other environments i.e beta
-
-# Be aware that if you change the name of an existing rule in Ansible,
-# a new rule will be created and Ansible will lose track of the old one.
-# The old rule will not be deleted, so you will need to delete it manually.
-# To prevent this behavior, you can have Ansible reference the rule by its ID.
-# I personally think this is to cumbersome, so I just use the name of the rule.
 zia_url_filtering_rules:
   - name: 'Block Adult Material'
     order: 1
@@ -25,21 +13,14 @@ zia_url_filtering_rules:
     location_groups: []
     devices: []
     device_groups: []
-    device_trust_levels: [] # Options: ANY, LOW_TRUST, MEDIUM_TRUST, HIGH_TRUST, UNKNOWN_DEVICETRUSTLEVEL
+    device_trust_levels: ANY
     labels: 4532654
     request_methods: [GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, CONNECT, PATCH, PROPFIND, PROPPATCH, MOVE, MKCOL, LOCK, COPY, UNLOCK, OTHER]
-    protocols:  # Options: WEBSOCKETSSL_RULE, WEBSOCKET_RULE, DOHTTPS_RULE, TUNNELSSL_RULE, HTTP_PROXY, FOHTTP_RULE, FTP_RULE, HTTPS_RULE, HTTP_RULE, SSL_RULE, TUNNEL_RULE
+    protocols:
       - HTTP_RULE
       - HTTPS_RULE
-    user_agent_types:  # Options: OPERA, FIREFOX, MSIE, MSEDGE, CHROME, SAFARI, OTHER, MSCHREDGE
-      - MSIE
-      - CHROME
-      - SAFARI
-      - FIREFOX
-    action: BLOCK  # Options: ANY, BLOCK, CAUTION, ALLOW, ISOLATE, ICAP_RESPONSE
-    block_override: false
-    # override_users:
-    # override_groups:
+    user_agent_types: []
+    action: BLOCK
     state: present
   - name: 'Block High Risk Categories'
     order: 2
@@ -60,30 +41,59 @@ zia_url_filtering_rules:
     location_groups: []
     devices: []
     device_groups: []
-    device_trust_levels: [] # Options: ANY, LOW_TRUST, MEDIUM_TRUST, HIGH_TRUST, UNKNOWN_DEVICETRUSTLEVEL
+    device_trust_levels: ANY
     labels: 4532654
     request_methods: [GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, CONNECT, PATCH, PROPFIND, PROPPATCH, MOVE, MKCOL, LOCK, COPY, UNLOCK, OTHER]
-    protocols:  # Options: WEBSOCKETSSL_RULE, WEBSOCKET_RULE, DOHTTPS_RULE, TUNNELSSL_RULE, HTTP_PROXY, FOHTTP_RULE, FTP_RULE, HTTPS_RULE, HTTP_RULE, SSL_RULE, TUNNEL_RULE
+    protocols:
       - HTTP_RULE
       - HTTPS_RULE
-    user_agent_types:  # Options: OPERA, FIREFOX, MSIE, MSEDGE, CHROME, SAFARI, OTHER, MSCHREDGE
-      - MSIE
+    user_agent_types:
       - CHROME
-      - SAFARI
       - FIREFOX
-    action: BLOCK  # Options: ANY, BLOCK, CAUTION, ALLOW, ISOLATE, ICAP_RESPONSE
-    block_override: false
-    # override_users:
-    # override_groups:
+      - MSCHREDGE
+      - MSEDGE
+      - MSIE
+      - OPERA
+      - SAFARI
+    action: BLOCK
+    state: present
+  - name: 'Exemptet URL Categories'
+    order: 3
+    description: 'Exempted URL categories'
+    enabled: true
+    url_categories:
+      - CUSTOM_18  # 'URL Exemption - Borgermeister'
+    groups: []
+    departments: []
+    locations: []
+    location_groups: []
+    devices: []
+    device_groups: []
+    device_trust_levels: ANY
+    labels: 4532654
+    request_methods: [GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, CONNECT, PATCH, PROPFIND, PROPPATCH, MOVE, MKCOL, LOCK, COPY, UNLOCK, OTHER]
+    protocols:
+      - HTTP_RULE
+      - HTTPS_RULE
+    user_agent_types:
+      - CHROME
+      - FIREFOX
+      - MSCHREDGE
+      - MSEDGE
+      - MSIE
+      - OPERA
+      - SAFARI
+    action: ALLOW
     state: present
   - name: 'Browser Isolation'
     order: 4
-    description: |
+    description: |-
       Browser isolation for high risk categories.
       Apply Browser Isolation when Device Trust Level is 'Low', 'Medium' or 'Unknown'.
     enabled: true
     url_categories:
-      - GAMBLING
+      - MISCELLANEOUS_OR_UNKNOWN
+      - OTHER_MISCELLANEOUS
     groups: []
     departments: []
     locations: []
@@ -93,15 +103,18 @@ zia_url_filtering_rules:
     device_trust_levels: [LOW_TRUST, MEDIUM_TRUST, UNKNOWN_DEVICETRUSTLEVEL]
     labels: 4532654
     request_methods: [GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, CONNECT, PATCH, PROPFIND, PROPPATCH, MOVE, MKCOL, LOCK, COPY, UNLOCK, OTHER]
-    protocols:  # Options: WEBSOCKETSSL_RULE, WEBSOCKET_RULE, DOHTTPS_RULE, TUNNELSSL_RULE, HTTP_PROXY, FOHTTP_RULE, FTP_RULE, HTTPS_RULE, HTTP_RULE, SSL_RULE, TUNNEL_RULE
+    protocols:
       - HTTP_RULE
       - HTTPS_RULE
-    user_agent_types:  # Options: OPERA, FIREFOX, MSIE, MSEDGE, CHROME, SAFARI, OTHER, MSCHREDGE
-      - MSIE
+    user_agent_types:
       - CHROME
-      - SAFARI
       - FIREFOX
-    action: ISOLATE  # Options: ANY, BLOCK, CAUTION, ALLOW, ISOLATE, ICAP_RESPONSE
+      - MSCHREDGE
+      - MSEDGE
+      - MSIE
+      - OPERA
+      - SAFARI
+    action: ISOLATE
     block_override: false
     # override_users:
     # override_groups:

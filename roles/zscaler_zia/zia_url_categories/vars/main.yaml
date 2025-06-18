@@ -8,13 +8,15 @@ zia_custom_url_categories:
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
     db_categorized_urls:
+      - .cfn-apple.com
       - configuration.apple.com
       - courier.push.apple.com
-      - init.push.apple.com
-      - gsp-ssl-ls.apple.com
       - gdmf.apple.com
-      - .cfn-apple.com
+      - gsp-ssl-ls.apple.com
+      - init.push.apple.com
       - mesu.apple.com
+      - swcdn.apple.com
+      - updates.cdn-apple.com
     state: present
   - name: 'TLS Inspection Bypass - Apple Music'
     description: 'Bypass TLS inspection to Apple Music.'
@@ -64,6 +66,26 @@ zia_custom_url_categories:
     db_categorized_urls:
       - gitlab.com
     state: present
+  - name: 'TLS Inspection Bypass - Misc'
+    description: 'Bypass TLS inspection to various other services.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - accounts.google.com
+      - analytics.revsure.cloud
+      - app-measurement.com
+      - api.hoopit.io
+      - cdn.rudderlabs.com
+      - firebaseinstallations.googleapis.com
+      - ogs.google.com
+      - play.google.com
+      - play.googleapis.com
+      - prod.rudderstack.withings.net
+      - scalews.withings.net
+      - static.withings.com
+      - www.googleadservices.com
+    state: present
   - name: 'TLS Inspection Bypass - NixOS'
     description: 'Bypass TLS inspection to NixOS.'
     custom_category: true
@@ -72,6 +94,14 @@ zia_custom_url_categories:
     db_categorized_urls:
       - cache.nixos.org
       - channels.nixos.org
+    state: present
+  - name: 'TLS Inspection Bypass - Panasonic Comfort Cloud'
+    description: 'Bypass TLS inspection to Panasonic Comfort Cloud.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - accsmart.panasonic.com
     state: present
   - name: 'TLS Inspection Bypass - PyPI'
     description: 'Bypass TLS inspection to PyPI.'
@@ -107,6 +137,16 @@ zia_custom_url_categories:
       - aws.duplex.snapchat.com
       - .sc-cdn.net
     state: present
+  - name: 'TLS Inspection Bypass - Strava'
+    description: 'Bypass TLS inspection to Strava.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - c.strava.com
+      - cdn-1.strava.com
+      - graphql.strava.com
+    state: present
   - name: 'TLS Inspection Bypass - Tesla'
     description: 'Bypass TLS inspection to Tesla.'
     custom_category: true
@@ -124,4 +164,14 @@ zia_custom_url_categories:
     super_category: 'USER_DEFINED'
     db_categorized_urls:
       - api.vipps.no
+    state: present
+  - name: 'URL Exemption - Borgermeister'
+    description: 'Exempted URLs for Borgermeister.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - .giga.borgermeister.cloud
+      - .home.borgermeister.cloud
+      - .hytta.borgermeister.cloud
     state: present

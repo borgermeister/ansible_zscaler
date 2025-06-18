@@ -8,7 +8,7 @@
     custom_category: '{{ item.custom_category | default(true) }}'
     super_category: '{{ item.super_category | default("USER_DEFINED") }}'
     type: '{{ item.type | default("URL_CATEGORY") }}'
-    db_categorized_urls: '{{ item.db_categorized_urls | default([]) }}'
+    db_categorized_urls: '{{ item.db_categorized_urls | default(omit) }}'
     urls: '{{ item.urls | default(omit) }}'  # Custom URLs that will override the 'URLs Retaining Parent Category'
     state: '{{ item.state | default("present") }}'
   loop: '{{ zia_custom_url_categories }}'

@@ -14,6 +14,9 @@ desktop.ini
 # Ansible Collections, Modules and Roles
 .ansible/
 
+# Ansible roles - exclude files directories
+roles/**/files/*
+
 # VS Code workspace configuration
 .vscode/
 

@@ -1,17 +1,5 @@
 ---
 
-# Zscaler Provider Connection Parameters
-zscaler_zia:
-  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") }}'
-  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") }}'
-  vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/vanity_domain") }}'
-  # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/cloud") | default(omit) }}'  # The cloud key is optional and only required when authenticating to other environments i.e beta
-
-# Be aware that if you change the name of an existing rule in Ansible,
-# a new rule will be created and Ansible will lose track of the old one.
-# The old rule will not be deleted, so you will need to delete it manually.
-# To prevent this behavior, you can have Ansible reference the rule by its ID.
-# I personally think this is to cumbersome, so I just use the name of the rule.
 zia_ssl_inspection_rules:
   - name: 'DoNotInspect / Finance'
     order: 1
@@ -27,10 +15,16 @@ zia_ssl_inspection_rules:
     cloud_applications: []
     action:
       type: DO_NOT_DECRYPT
+      do_not_decrypt_sub_actions:
+      #   block_ssl_traffic_with_no_sni_enabled: true
+      #   bypass_other_policies: false
+        min_tls_version: SERVER_TLS_1_2
+      #   ocsp_check: true
+      #   server_certificates: BLOCK
     state: present
-  - name: 'Inspect Microsoft Apps'
+  - name: 'Inspect / Microsoft Apps'
     order: 2
-    description: 'Inspect / Microsoft Apps'
+    description: 'Inspect Microsoft Apps - to enable tenant restrictions'
     enabled: true
     labels: 4532654
     groups: []
@@ -43,21 +37,15 @@ zia_ssl_inspection_rules:
       - SHAREPOINTONLINE
     action:
       type: DECRYPT
-      override_default_certificate: false
-      show_eun: false
-      show_eunatp: false
-      decrypt_sub_actions:
-        block_ssl_traffic_with_no_sni_enabled: true
-        block_undecrypt: true
-        http2_enabled: true
-        min_client_tls_version: CLIENT_TLS_1_2
-        min_server_tls_version: SERVER_TLS_1_2
-        ocsp_check: true
-        server_certificates: BLOCK
-      do_not_decrypt_sub_actions:
-        block_ssl_traffic_with_no_sni_enabled: true
-        bypass_other_policies: false
-        min_tls_version: SERVER_TLS_1_2
-        ocsp_check: true
-        server_certificates: BLOCK
+      # override_default_certificate: false
+      # show_eun: true
+      # show_eunatp: true
+      # decrypt_sub_actions:  # No need for this since the default values are already set - use defaults as a reference
+      #   block_ssl_traffic_with_no_sni_enabled: true
+      #   block_undecrypt: true
+      #   http2_enabled: true
+      #   min_client_tls_version: CLIENT_TLS_1_3
+      #   min_server_tls_version: SERVER_TLS_1_3
+      #   ocsp_check: true
+      #   server_certificates: BLOCK
     state: present

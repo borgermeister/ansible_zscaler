@@ -26,4 +26,4 @@
     line: |
       Location name: location_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
       ID: {{ item.id }}
-  loop: "{{ id_location_groups.locations }}"
+  loop: "{{ id_locations.locations }}"

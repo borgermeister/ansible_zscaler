@@ -15,14 +15,13 @@
     # - role: zscaler_zia/zia_cloud_firewall_network_services_groups_info
     # - role: zscaler_zia/zia_cloud_firewall_network_application_info
     # - role: zscaler_zia/zia_cloud_firewall_network_application_group_info
-    # - role: zscaler_zia/zia_url_categories_info
     # - role: zscaler_zia/zia_url_categories
-    # - role: zscaler_zia/zia_cloud_firewall_rule_info
-    - role: zscaler_zia/zia_cloud_firewall_rule
     # - role: zscaler_zia/zia_ssl_inspection_rules_info
     - role: zscaler_zia/zia_ssl_inspection_rules
     # - role: zscaler_zia/zia_url_filtering_rule_info
     - role: zscaler_zia/zia_url_filtering_rules
-    # - role: zscaler_zia/zia_activation_status
+    # - role: zscaler_zia/zia_cloud_firewall_rule_info
+    - role: zscaler_zia/zia_cloud_firewall_rule
+    - role: zscaler_zia/zia_activation_status
 
 ...

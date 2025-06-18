@@ -1,29 +1,45 @@
 ---
 
-- name: Gather Information Details for all Cloud Applications - SSL Policy
+- name: Gather Information Details for all Cloud Applications - App Policy
   zscaler.ziacloud.zia_cloud_applications_info:
     provider: '{{ zscaler_zia }}'
-    mode: ssl_policy
-  register: cloud_applications
+    mode: app_policy
+  register: cloud_applications_app
 
-# An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: too many values to unpack (expected 2)
-# fatal: [localhost]: FAILED! =>
-#     changed: false
-#     msg: too many values to unpack (expected 2)
-
-- name: Delete file with all Cloud Applications
+- name: Delete file with all Cloud Applications - App Policy
   ansible.builtin.file:
-    path: '{{ role_path }}/files/cloud_applications.txt'
+    path: '{{ role_path }}/files/cloud_applications_app.txt'
     state: absent
 
-- name: Register all Cloud Applications to a file
+- name: Register all Cloud Applications to a file - App Policy
   ansible.builtin.lineinfile:
-    path: '{{ role_path }}/files/cloud_applications.txt'
+    path: '{{ role_path }}/files/cloud_applications_app.txt'
     create: true
     mode: '0644'
     state: present
     line: |
-      Network Application: {{ item.description }}
-      ID: {{ item.id }}
-      Parent Category: {{ item.parent_category }}
-  loop: "{{ cloud_applications.apps }}"
+      Application: {{ item.app }}
+      Parent Category: {{ item.parent_name | default('N/A') }}
+  loop: "{{ cloud_applications_app.applications }}"
+
+- name: Gather Information Details for all Cloud Applications - SSL Policy
+  zscaler.ziacloud.zia_cloud_applications_info:
+    provider: '{{ zscaler_zia }}'
+    mode: ssl_policy
+  register: cloud_applications_ssl
+
+- name: Delete file with all Cloud Applications - SSL Policy
+  ansible.builtin.file:
+    path: '{{ role_path }}/files/cloud_applications_ssl.txt'
+    state: absent
+
+- name: Register all Cloud Applications to a file - SSL Policy
+  ansible.builtin.lineinfile:
+    path: '{{ role_path }}/files/cloud_applications_ssl.txt'
+    create: true
+    mode: '0644'
+    state: present
+    line: |
+      Application: {{ item.app }}
+      Parent Category: {{ item.parent_name | default('N/A') }}
+  loop: "{{ cloud_applications_ssl.applications }}"
