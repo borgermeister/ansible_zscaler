@@ -1,0 +1,8 @@
+---
+
+- name: Ansible Roles to create and read all URL categories and write them to a file
+  hosts: localhost
+
+  roles:
+    - role: zscaler_zia/zia_url_categories
+    - role: zscaler_zia/zia_url_categories_info

@@ -1,0 +1,7 @@
+---
+
+- name: Ansible Roles to activate changes on Zscaler Internet Access
+  hosts: localhost
+
+  roles:
+    - role: zscaler_zia/zia_activation_status

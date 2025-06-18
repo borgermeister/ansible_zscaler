@@ -1,0 +1,29 @@
+- name: Generate CSR and request ACME certificate
+  include_tasks: acme.yaml
+  vars:
+    acme_directory: "https://acme-staging-v02.api.letsencrypt.org/directory"  # https://acme-v02.api.letsencrypt.org/directory (production)
+    acme_version: 2
+    acme_revoke: false
+    acme_register_account: true
+    acme_web_dir: "/var/www/html"
+    acme_force: true
+    acme_account_email: bvborge@gmail.com
+    acme_domain: router01.hytta.borgermeister.cloud
+    acme_days_remaining: 89
+    dns_zone: borgermeister.cloud
+    dns_account_email: bvborge@gmail.com
+    dns_account_api_key: '{{ lookup("community.general.passwordstore", "ansible/cloudflare/dns_account_key") }}'
+    dns_api_token: '{{ lookup("community.general.passwordstore", "ansible/cloudflare/dns_api_token") }}'
+    acme_method: dns-01
+    csr_organization_name: "Borgermeister"
+    csr_email_address: "bjorn-vegar@borgermeister.cloud"
+    csr_country_name: "NO"
+  when: true
+
+- name: Onboard ZPA BA Certificate
+  zscaler.zpacloud.zpa_ba_certificate:
+    provider: "{{ zscaler_zpa }}"
+    name: pra.borgermeister.cloud
+    description: Remote Borgermeister Cloud
+    # cert_blob: "{{ lookup('file', 'pra.borgermeister.cloud-fullchain.crt') }}"
+    cert_blob: "{{ lookup('file', 'pra.borgermeister.cloud.pem') }}"

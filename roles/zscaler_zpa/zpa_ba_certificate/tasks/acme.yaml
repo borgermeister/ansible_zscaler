@@ -1,0 +1,121 @@
+---
+
+- name: Generate private key for ACME account
+  community.crypto.openssl_privatekey:
+    path: '{{ role_path }}/files/acme_account_key'
+    type: ECC
+    curve: secp256r1
+    size: 256
+    mode: 0600
+  no_log: true
+
+- name: Register ACME Account without external binding
+  community.crypto.acme_account:
+    account_key_src: '{{ role_path }}/files/acme_account_key'
+    acme_directory: '{{ acme_directory }}'
+    acme_version: '{{ acme_version }}'
+    state: present
+    terms_agreed: true
+    contact:
+      - 'mailto:{{ acme_account_email }}'
+  register: acme_account
+  when: acme_register_account
+  no_log: true
+
+- name: Generate private key for server
+  community.crypto.openssl_privatekey:
+    path: '{{ role_path }}/files/{{ acme_domain }}.key'
+    type: ECC
+    curve: secp256r1
+    size: 256
+    mode: 0600
+  no_log: true
+
+- name: Generate certificate signing request (CSR)
+  community.crypto.openssl_csr:
+    path: '{{ role_path }}/files/{{ acme_domain }}.csr'
+    privatekey_path: '{{ role_path }}/files/{{ acme_domain }}.key'
+    common_name: '{{ acme_domain }}'
+    country_name: '{{ csr_country_name }}'
+    organization_name: '{{ csr_organization_name }}'
+    email_address: '{{ csr_email_address }}'
+    # subject_alt_name: "DNS:{{ acme_domain }},DNS:*.{{ acme_domain }}"
+
+- name: Create a challenge
+  community.crypto.acme_certificate:
+    account_key_src: '{{ role_path }}/files/acme_account_key'
+    account_email: '{{ acme_account_email }}'
+    csr: '{{ role_path }}/files/{{ acme_domain }}.csr'
+    dest: '{{ role_path }}/files/{{ acme_domain }}.crt'
+    acme_directory: '{{ acme_directory }}'
+    acme_version: '{{ acme_version }}'
+    terms_agreed: true
+    force: '{{ acme_force }}'
+    modify_account: false
+    challenge: '{{ acme_method }}'
+  register: acme_challenge
+
+- name: Show challenge (for debug purposes)
+  ansible.builtin.debug:
+    var: acme_challenge
+  when: false
+
+- name: Add dns-01 challenge data to DNS
+  vars:
+    query_record: '.* | [0]."dns-01".record'
+    query_value: '.* | [0]."dns-01".resource_value'
+  community.general.cloudflare_dns:
+    account_email: '{{ dns_account_email }}'
+    account_api_key: '{{ dns_account_api_key }}'
+    api_token: '{{ dns_api_token }}'
+    zone: '{{ dns_zone }}'
+    type: TXT
+    record: '{{ (item | dict2items)[0].value["dns-01"].record }}'
+    value: '{{ (item | dict2items)[0].value["dns-01"].resource_value }}'
+    #record: '{{ item | community.general.json_query(query_record) }}'
+    #value: '{{ item | community.general.json_query(query_value) }}'
+    state: present
+  loop:
+    - '{{ acme_challenge["challenge_data"] }}'
+  when:
+    - acme_method == 'dns-01'
+    - item is not none
+    - item | length > 0
+    - acme_challenge['cert_days'] <= acme_days_remaining
+
+- name: Let the challenge(s) be validated and retrieve the cert and intermediate certificate
+  community.crypto.acme_certificate:
+    account_key_src: '{{ role_path }}/files/acme_account_key'
+    account_email: '{{ acme_account_email }}'
+    csr: '{{ role_path }}/files/{{ acme_domain }}.csr'
+    dest: '{{ role_path }}/files/{{ acme_domain }}.crt'
+    fullchain_dest: '{{ role_path }}/files/{{ acme_domain }}-fullchain.crt'
+    chain_dest: '{{ role_path }}/files/{{ acme_domain }}-intermediate.crt'
+    data: '{{ acme_challenge }}'
+    acme_directory: '{{ acme_directory }}'
+    acme_version: '{{ acme_version }}'
+    terms_agreed: true
+    force: '{{ acme_force }}'
+    modify_account: false
+    challenge: '{{ acme_method }}'
+  when:
+    - acme_challenge['cert_days'] <= acme_days_remaining
+  async: 120
+
+- name: Clean dns-01 challenge data from DNS
+  vars:
+    query_record: '*."dns-01".record | [0]'
+  community.general.cloudflare_dns:
+    account_email: '{{ dns_account_email }}'
+    account_api_key: '{{ dns_account_api_key }}'
+    api_token: '{{ dns_api_token }}'
+    zone: '{{ dns_zone }}'
+    type: TXT
+    # record: '{{ item | community.general.json_query(query_record) }}'
+    record: '{{ (item | dict2items)[0].value["dns-01"].record }}'
+    state: absent
+  loop:
+    - '{{ acme_challenge["challenge_data"] }}'
+  when:
+    - acme_method == 'dns-01'
+    - acme_challenge['cert_days'] <= acme_days_remaining
