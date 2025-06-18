@@ -18,13 +18,12 @@ galaxy_info:
     - 'security'
 
 dependencies:
-  - zia_user_management_groups_info
-  - zia_user_management_department_info
-  - zia_location_management_info
-  - zia_location_groups_info
-  - zia_cloud_firewall_ip_source_groups_info
-  - zia_cloud_firewall_ip_destination_groups_info
-  # - zia_cloud_firewall_network_application_info
-  - zia_cloud_firewall_network_application_group_info
-  - zia_cloud_firewall_network_services_info
-  - zia_cloud_firewall_network_services_groups_info
+  - role: zia_user_management_groups_info
+  - role: zia_user_management_department_info
+  - role: zia_location_management_info
+  - role: zia_location_groups_info
+  - role: zia_cloud_firewall_ip_source_groups_info
+  - role: zia_cloud_firewall_ip_destination_groups_info
+  - role: zia_cloud_firewall_network_application_group_info
+  - role: zia_cloud_firewall_network_services_info
+  - role: zia_cloud_firewall_network_services_groups_info

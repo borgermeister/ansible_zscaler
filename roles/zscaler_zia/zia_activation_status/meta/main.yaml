@@ -18,4 +18,4 @@ galaxy_info:
     - 'security'
 
 dependencies:
-  - zia_activation_status_info
+  - role: zia_activation_status_info

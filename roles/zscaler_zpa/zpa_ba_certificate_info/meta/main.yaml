@@ -2,7 +2,7 @@
 
 galaxy_info:
   author: 'Bjørn-Vegar Borge'
-  description: 'Zscaler Private Access - Create Server Groups'
+  description: 'Zscaler Private Access - Gather information about all Browser Certificates and register them as a separate variable'
   company: 'Netsecurity'
 
   license: 'GLWTPL'
@@ -17,5 +17,4 @@ galaxy_info:
     - 'zerotrustnetworkaccess'
     - 'security'
 
-dependencies:
-  - role: zpa_app_connector_group_info
+dependencies: []

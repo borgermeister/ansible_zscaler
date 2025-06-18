@@ -18,5 +18,5 @@ galaxy_info:
     - 'security'
 
 dependencies:
-  - zpa_segment_group_info
-  - zpa_server_group_info
+  - role: zpa_segment_group_info
+  - role: zpa_server_group_info
