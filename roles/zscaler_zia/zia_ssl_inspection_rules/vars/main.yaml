@@ -16,11 +16,11 @@ zia_ssl_inspection_rules:
     action:
       type: DO_NOT_DECRYPT
       do_not_decrypt_sub_actions:
-      #   block_ssl_traffic_with_no_sni_enabled: true
-      #   bypass_other_policies: false
+        # block_ssl_traffic_with_no_sni_enabled: true
+        # bypass_other_policies: false
         min_tls_version: SERVER_TLS_1_2
-      #   ocsp_check: true
-      #   server_certificates: BLOCK
+        # ocsp_check: true
+        # server_certificates: BLOCK
     state: present
   - name: 'Inspect / Microsoft Apps'
     order: 2

@@ -1,5 +1,7 @@
+---
+
 - name: Generate CSR and request ACME certificate
-  include_tasks: acme.yaml
+  ansible.builtin.include_tasks: acme.yaml
   vars:
     acme_directory: "https://acme-staging-v02.api.letsencrypt.org/directory"  # https://acme-v02.api.letsencrypt.org/directory (production)
     acme_version: 2
