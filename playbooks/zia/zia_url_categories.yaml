@@ -6,3 +6,4 @@
   roles:
     - role: zscaler_zia/zia_url_categories
     - role: zscaler_zia/zia_url_categories_info
+    - role: zscaler_zia/zia_activate_changes

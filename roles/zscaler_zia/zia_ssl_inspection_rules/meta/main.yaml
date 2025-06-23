@@ -18,6 +18,7 @@ galaxy_info:
     - 'security'
 
 dependencies:
+  - role: zia_cloud_firewall_ip_source_groups_info
   - role: zia_user_management_groups_info
   - role: zia_user_management_department_info
   - role: zia_location_management_info

@@ -18,6 +18,7 @@ zia_ssl_inspection_rules:
     description: 'Give a useful description'
     enabled: true
     labels: []
+    source_ip_groups: []
     groups:
       - '{{ group_borgermeister }}'
     departments:
@@ -54,6 +55,7 @@ zia_ssl_inspection_rules:
     description: 'Minimal SSL Inspection Rule'
     enabled: true
     labels: []
+    source_ip_groups: []
     groups:
       - '{{ group_borgermeister }}'
     departments:

@@ -24,6 +24,6 @@
     mode: '0644'
     state: present
     line: |
-      Source IP Group: src_ip_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
+      Source IP Group: src_ip_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
       ID: {{ item.id }}
   loop: "{{ id_src_ip_groups.groups }}"

@@ -1,0 +1,8 @@
+---
+
+- name: Ansible Roles to create and update all SSL inspection rules
+  hosts: localhost
+
+  roles:
+    - role: zscaler_zia/zia_ssl_inspection_rules
+    - role: zscaler_zia/zia_activation_status

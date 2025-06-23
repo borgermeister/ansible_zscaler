@@ -16,6 +16,11 @@ tasks:
       - ansible-playbook playbooks/zia/zia_activate_changes.yaml
     desc: Activate pending changes in Zscaler Internet Access (ZIA)
 
+  zia_ssl_inspection_rules:
+    cmds:
+      - ansible-playbook playbooks/zia/zia_ssl_inspection_rules.yaml
+    desc: Create or update SSL inspection rules in Zscaler Internet Access (ZIA)
+
   zia_url_categories:
     cmds:
       - ansible-playbook playbooks/zia/zia_url_categories.yaml

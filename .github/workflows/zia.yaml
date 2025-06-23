@@ -1,0 +1,41 @@
+name: 'GitHub Actions - Zscaler Internet Access'
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+
+permissions:
+  id-token: write  # This is required for requesting the JWT
+  contents: read  # This is required for actions/checkout
+
+jobs:
+  Zscaler:
+    name: 'ZIA'
+    runs-on: self-hosted
+    environment: production
+
+    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: './'
+
+    steps:
+
+    # Checkout the repository to the GitHub Actions runner
+    - name: 'Checkout code from repository'
+      uses: actions/checkout@v4
+
+    - name: 'Run Ansible Lint'
+      run: |
+        ansible-lint .
+      continue-on-error: false
+
+    - name: 'Checkout submodules'
+      run: git submodule update --init --recursive --remote
+
+    - name: 'Run Ansible playbook'
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      run: ansible-playbook ./playbooks/zia/zia_url_categories.yaml -v

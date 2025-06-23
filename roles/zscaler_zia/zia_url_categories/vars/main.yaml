@@ -66,25 +66,33 @@ zia_custom_url_categories:
     db_categorized_urls:
       - gitlab.com
     state: present
+  - name: 'TLS Inspection Bypass - Google'
+    description: 'Bypass TLS inspection to Google services.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - accounts.google.com
+      - clients1.google.com
+      - firebaseinstallations.googleapis.com
+      - ogs.google.com
+      - play.google.com
+      - play.googleapis.com
+      - www.googleadservices.com
+    state: present
   - name: 'TLS Inspection Bypass - Misc'
     description: 'Bypass TLS inspection to various other services.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
     db_categorized_urls:
-      - accounts.google.com
       - analytics.revsure.cloud
       - app-measurement.com
       - api.hoopit.io
       - cdn.rudderlabs.com
-      - firebaseinstallations.googleapis.com
-      - ogs.google.com
-      - play.google.com
-      - play.googleapis.com
       - prod.rudderstack.withings.net
       - scalews.withings.net
       - static.withings.com
-      - www.googleadservices.com
     state: present
   - name: 'TLS Inspection Bypass - NixOS'
     description: 'Bypass TLS inspection to NixOS.'
@@ -101,7 +109,9 @@ zia_custom_url_categories:
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
     db_categorized_urls:
+      - .pcpf.panasonic.com
       - accsmart.panasonic.com
+      - afus.apc.panasonic.com
     state: present
   - name: 'TLS Inspection Bypass - PyPI'
     description: 'Bypass TLS inspection to PyPI.'

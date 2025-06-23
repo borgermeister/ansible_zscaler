@@ -22,12 +22,35 @@ zia_ssl_inspection_rules:
         # ocsp_check: true
         # server_certificates: BLOCK
     state: present
-  - name: 'Inspect / Microsoft Apps'
+  - name: 'DoNotInspect / Health'
     order: 2
-    description: 'Inspect Microsoft Apps - to enable tenant restrictions'
+    description: 'Do not inspect health categories - e.g., medical, dental, etc.'
     enabled: true
     labels: 4532654
     groups: []
+    departments: []
+    locations: []
+    location_groups: []
+    url_categories:
+      - HEALTH
+    cloud_applications: []
+    action:
+      type: DO_NOT_DECRYPT
+      do_not_decrypt_sub_actions:
+        # block_ssl_traffic_with_no_sni_enabled: true
+        # bypass_other_policies: false
+        min_tls_version: SERVER_TLS_1_2
+        # ocsp_check: true
+        # server_certificates: BLOCK
+    state: present
+  - name: 'Inspect / Microsoft Apps'
+    order: 3
+    description: 'Inspect Microsoft Apps - to enable tenant restrictions'
+    enabled: true
+    labels: 4532654
+    groups:
+      - '{{ group_borgermeister }}'
+      - '{{ group_borgermeistercontractors }}'
     departments: []
     locations: []
     location_groups: []
@@ -35,6 +58,110 @@ zia_ssl_inspection_rules:
     cloud_applications:
       - MSLOGINSERVICES
       - SHAREPOINTONLINE
+    action:
+      type: DECRYPT
+      # override_default_certificate: false
+      # show_eun: true
+      # show_eunatp: true
+      # decrypt_sub_actions:  # No need for this since the default values are already set - use defaults as a reference
+      #   block_ssl_traffic_with_no_sni_enabled: true
+      #   block_undecrypt: true
+      #   http2_enabled: true
+      #   min_client_tls_version: CLIENT_TLS_1_3
+      #   min_server_tls_version: SERVER_TLS_1_3
+      #   ocsp_check: true
+      #   server_certificates: BLOCK
+    state: present
+  - name: 'DoNotInspect /Cloud Apps'
+    order: 4
+    description: 'Do not inspect cloud applications - e.g., Apple iCloud, SnapChat, etc.'
+    enabled: true
+    labels: 4532654
+    groups:
+      - '{{ group_borgermeister }}'
+      - '{{ group_borgermeistercontractors }}'
+    departments: []
+    locations: []
+    location_groups: []
+    # url_categories:  # empty array is not allowed - comment out if you do not want to use url_categories
+    cloud_applications:
+      - APPLE_ICLOUD
+      - APPLE_ITUNES
+      - APPLE_TV
+      - ICLOUD
+      - SNAPCHAT
+    action:
+      type: DO_NOT_DECRYPT
+      do_not_decrypt_sub_actions:
+    state: present
+  - name: 'DoNotInspect / URL Categories'
+    order: 5
+    description: 'Do not inspect custom categories - e.g., Google, GitLab, etc.'
+    enabled: true
+    labels: 4532654
+    groups:
+      - '{{ group_borgermeister }}'
+      - '{{ group_borgermeistercontractors }}'
+    departments: []
+    locations: []
+    location_groups: []
+    url_categories:
+      - CUSTOM_01
+      - CUSTOM_02
+      - CUSTOM_03
+      - CUSTOM_04
+      - CUSTOM_05
+      - CUSTOM_06
+      - CUSTOM_07
+      - CUSTOM_08
+      - CUSTOM_09
+      - CUSTOM_10
+      - CUSTOM_11
+      - CUSTOM_12
+      - CUSTOM_13
+      - CUSTOM_14
+      - CUSTOM_15
+      - CUSTOM_16
+      - CUSTOM_17
+      - CUSTOM_19
+    cloud_applications: []
+    action:
+      type: DO_NOT_DECRYPT
+      do_not_decrypt_sub_actions:
+        # block_ssl_traffic_with_no_sni_enabled: true
+        # bypass_other_policies: false
+        # min_tls_version: SERVER_TLS_1_2
+        # ocsp_check: true
+        # server_certificates: BLOCK
+    state: present
+  - name: 'DoNotInspect / Borgermeister'
+    order: 11
+    description: 'Do not inspect Borgermeister home network.'
+    enabled: true
+    labels: 4532654
+    source_ip_groups:
+      - '{{ src_ip_group_borgermeisterhome }}'
+    groups: []
+    departments: []
+    locations: []
+    location_groups: []
+    # url_categories:  # empty array is not allowed - comment out if you do not want to use url_categories
+    cloud_applications: []
+    action:
+      type: DO_NOT_DECRYPT
+      do_not_decrypt_sub_actions:
+    state: present
+  - name: 'Inspect All'
+    order: 12
+    description: 'Inspect all traffic - to ensure all traffic is inspected by default'
+    enabled: true
+    labels: 4532654
+    groups: []
+    departments: []
+    locations: []
+    location_groups: []
+    # url_categories:  # empty array is not allowed - comment out if you do not want to use url_categories
+    cloud_applications: []
     action:
       type: DECRYPT
       # override_default_certificate: false
