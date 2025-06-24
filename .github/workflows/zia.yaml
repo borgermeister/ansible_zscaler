@@ -27,6 +27,17 @@ jobs:
     # Checkout the repository to the GitHub Actions runner
     - name: 'Checkout code from repository'
       uses: actions/checkout@v4
+      with:
+        submodules: 'recursive'  # Checkout submodules recursively
+        fetch-depth: 0  # Fetch all history for all branches and tags
+
+    - name: 'Verify runner dependencies'
+      run: |
+        echo "Runner user: $(whoami)"
+        echo "Python version: $(python3 --version)"
+        echo "Ansible version: $(ansible --version)"
+        echo "Working directory: $(pwd)"
+        ls -la
 
     - name: 'Run Ansible Lint'
       run: |
