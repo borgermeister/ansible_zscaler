@@ -2,24 +2,28 @@
 
 # Dictionary of custom URL categories used for bypassing TLS inspection in Zscaler Internet Access.
 zia_custom_url_categories:
-  - name: 'TLS Inspection Bypass - Apple General'
-    description: 'Bypass TLS inspection to Apple general services.'
+  - name: 'Custom URLs - Apple General'
+    description: 'Custom URLs for Apple general services.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
     db_categorized_urls:
       - .cfn-apple.com
+      - app-site-association.cdn-apple.com
+      - cabana-server.cdn-apple.com
       - configuration.apple.com
       - courier.push.apple.com
+      - cstat.cdn-apple.com
       - gdmf.apple.com
+      - gs.apple.com
       - gsp-ssl-ls.apple.com
       - init.push.apple.com
       - mesu.apple.com
       - swcdn.apple.com
       - updates.cdn-apple.com
     state: present
-  - name: 'TLS Inspection Bypass - Apple Music'
-    description: 'Bypass TLS inspection to Apple Music.'
+  - name: 'Custom URLs - Apple Music'
+    description: 'Custom URLs for Apple Music.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -28,8 +32,8 @@ zia_custom_url_categories:
       - .mzstatic.com
       - .itunes.apple.com
     state: present
-  - name: 'TLS Inspection Bypass - Facebook'
-    description: 'Bypass TLS inspection to Facebook services.'
+  - name: 'Custom URLs - Facebook'
+    description: 'Custom URLs for Facebook services.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -39,8 +43,8 @@ zia_custom_url_categories:
       - gateway.facebook.com
       - gateway-fallback.facebook.com
     state: present
-  - name: 'TLS Inspection Bypass - FittenCode'
-    description: 'Bypass TLS inspection to FittenCode AI Assistant.'
+  - name: 'Custom URLs - FittenCode'
+    description: 'Custom URLs for FittenCode AI Assistant.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -48,8 +52,8 @@ zia_custom_url_categories:
       - fc.fittenlab.cn
       - fc.fittentech.com
     state: present
-  - name: 'TLS Inspection Bypass - GitHub'
-    description: 'Bypass TLS inspection to GitHub.'
+  - name: 'Custom URLs - GitHub'
+    description: 'Custom URLs for GitHub.'
     custom_category: true
     type: URL_CATEGORY
     super_category: USER_DEFINED
@@ -58,16 +62,16 @@ zia_custom_url_categories:
       - api.github.com
       - .individual.githubcopilot.com
     state: present
-  - name: 'TLS Inspection Bypass - Gitlab'
-    description: 'Bypass TLS inspection to Gitlab.'
+  - name: 'Custom URLs - Gitlab'
+    description: 'Custom URLs for Gitlab.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
     db_categorized_urls:
       - gitlab.com
     state: present
-  - name: 'TLS Inspection Bypass - Google'
-    description: 'Bypass TLS inspection to Google services.'
+  - name: 'Custom URLs - Google'
+    description: 'Custom URLs for Google services.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -80,8 +84,8 @@ zia_custom_url_categories:
       - play.googleapis.com
       - www.googleadservices.com
     state: present
-  - name: 'TLS Inspection Bypass - Misc'
-    description: 'Bypass TLS inspection to various other services.'
+  - name: 'Custom URLs - Misc'
+    description: 'Custom URLs for various other services.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -94,8 +98,8 @@ zia_custom_url_categories:
       - scalews.withings.net
       - static.withings.com
     state: present
-  - name: 'TLS Inspection Bypass - NixOS'
-    description: 'Bypass TLS inspection to NixOS.'
+  - name: 'Custom URLs - NixOS'
+    description: 'Custom URLs for NixOS.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -103,8 +107,8 @@ zia_custom_url_categories:
       - cache.nixos.org
       - channels.nixos.org
     state: present
-  - name: 'TLS Inspection Bypass - Panasonic Comfort Cloud'
-    description: 'Bypass TLS inspection to Panasonic Comfort Cloud.'
+  - name: 'Custom URLs - Panasonic Comfort Cloud'
+    description: 'Custom URLs for Panasonic Comfort Cloud.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -113,16 +117,16 @@ zia_custom_url_categories:
       - accsmart.panasonic.com
       - afus.apc.panasonic.com
     state: present
-  - name: 'TLS Inspection Bypass - PyPI'
-    description: 'Bypass TLS inspection to PyPI.'
+  - name: 'Custom URLs - PyPI'
+    description: 'Custom URLs for PyPI.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
     db_categorized_urls:
       - pypi.org
     state: present
-  - name: 'TLS Inspection Bypass - Ring.com'
-    description: 'Bypass TLS inspection to Ring.com.'
+  - name: 'Custom URLs - Ring.com'
+    description: 'Custom URLs for Ring.com.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -136,8 +140,16 @@ zia_custom_url_categories:
       - eventstream.ring.com
       - app-snaps.ring.com
     state: present
-  - name: 'TLS Inspection Bypass - Snapchat'
-    description: 'Bypass TLS inspection to Snapchat.'
+  - name: 'Custom URLs - Sensibo'
+    description: 'Custom URLs for Sensibo.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - home.sensibo.com
+    state: present
+  - name: 'Custom URLs - Snapchat'
+    description: 'Custom URLs for Snapchat.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -147,8 +159,8 @@ zia_custom_url_categories:
       - aws.duplex.snapchat.com
       - .sc-cdn.net
     state: present
-  - name: 'TLS Inspection Bypass - Strava'
-    description: 'Bypass TLS inspection to Strava.'
+  - name: 'Custom URLs - Strava'
+    description: 'Custom URLs for Strava.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -157,8 +169,8 @@ zia_custom_url_categories:
       - cdn-1.strava.com
       - graphql.strava.com
     state: present
-  - name: 'TLS Inspection Bypass - Tesla'
-    description: 'Bypass TLS inspection to Tesla.'
+  - name: 'Custom URLs - Tesla'
+    description: 'Custom URLs for Tesla.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -167,15 +179,15 @@ zia_custom_url_categories:
       - sentry-api.ops.na.vn.cloud.tesla.com
       - owner-api.teslamotors.com
     state: present
-  - name: 'TLS Inspection Bypass - Vipps'
-    description: 'Bypass TLS inspection to Vipps.'
+  - name: 'Custom URLs - Vipps'
+    description: 'Custom URLs for Vipps.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
     db_categorized_urls:
       - api.vipps.no
     state: present
-  - name: 'URL Exemption - Borgermeister'
+  - name: 'Custom URLs - Borgermeister'
     description: 'Exempted URLs for Borgermeister.'
     custom_category: true
     type: 'URL_CATEGORY'

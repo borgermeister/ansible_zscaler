@@ -440,77 +440,81 @@ Configured Name:
 
 ID: CUSTOM_01
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - iOS
+Configured Name: Custom URLs - iOS
 
 ID: CUSTOM_02
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Apple Music
+Configured Name: Custom URLs - Apple Music
 
 ID: CUSTOM_03
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Ring.com
+Configured Name: Custom URLs - Ring.com
 
 ID: CUSTOM_04
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Tesla
+Configured Name: Custom URLs - Tesla
 
 ID: CUSTOM_05
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Snapchat
+Configured Name: Custom URLs - Snapchat
 
 ID: CUSTOM_06
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Facebook
+Configured Name: Custom URLs - Facebook
 
 ID: CUSTOM_07
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Apple General
+Configured Name: Custom URLs - Apple General
 
 ID: CUSTOM_08
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - FittenCode
+Configured Name: Custom URLs - FittenCode
 
 ID: CUSTOM_09
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Borgermeister
+Configured Name: Custom URLs - Borgermeister2
 
 ID: CUSTOM_10
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - NixOS
+Configured Name: Custom URLs - NixOS
 
 ID: CUSTOM_11
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - GitHub
+Configured Name: Custom URLs - GitHub
 
 ID: CUSTOM_12
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - PyPI
+Configured Name: Custom URLs - PyPI
 
 ID: CUSTOM_13
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Gitlab
+Configured Name: Custom URLs - Gitlab
 
 ID: CUSTOM_14
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Vipps
+Configured Name: Custom URLs - Vipps
 
 ID: CUSTOM_15
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Strava
+Configured Name: Custom URLs - Strava
 
 ID: CUSTOM_16
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Panasonic Comfort Cloud
+Configured Name: Custom URLs - Panasonic Comfort Cloud
 
 ID: CUSTOM_17
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Misc
+Configured Name: Custom URLs - Misc
 
 ID: CUSTOM_18
 Type: URL_CATEGORY
-Configured Name: URL Exemption - Borgermeister
+Configured Name: Custom URLs - Borgermeister
 
 ID: CUSTOM_19
 Type: URL_CATEGORY
-Configured Name: TLS Inspection Bypass - Google
+Configured Name: Custom URLs - Google
+
+ID: CUSTOM_20
+Type: URL_CATEGORY
+Configured Name: Custom URLs - Sensibo
 

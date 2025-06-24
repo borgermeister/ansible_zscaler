@@ -9,8 +9,8 @@ zscaler_zia:
 
 # Default variables for zscaler_zia_custom_url_categories role
 zia_custom_url_categories:
-  - name: 'TLS Inspection Bypass - Example'
-    description: 'This category is for bypassing TLS inspection.'
+  - name: 'Custom URLs - Example'
+    description: 'This category contains custom URLs.'
     custom_category: true
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
@@ -22,5 +22,5 @@ zia_custom_url_categories:
       - gdmf.apple.com
       - .cfn-apple.com
       - mesu.apple.com
-    # urls: # Custom URLs that will override the 'URLs Retaining Parent Category'
+    urls: []  # Custom URLs that will override the 'URLs Retaining Parent Category'
     state: present

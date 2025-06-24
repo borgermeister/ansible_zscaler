@@ -62,7 +62,7 @@ zia_url_filtering_rules:
     description: 'Exempted URL categories'
     enabled: true
     url_categories:
-      - CUSTOM_18  # 'URL Exemption - Borgermeister'
+      - CUSTOM_18  # 'Custom URLs - Borgermeister'
     groups: []
     departments: []
     locations: []
