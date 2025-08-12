@@ -10,4 +10,4 @@ This Ansible role will query all [**Departments**](https://console.zscaler.com/z
 
 ### Example
 
-Location **Borgermeister IT** will be named `department_borgermeisterit`.
+Department **Borgermeister IT** will be named `department_borgermeisterit`.

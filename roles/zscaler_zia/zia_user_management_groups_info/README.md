@@ -10,4 +10,4 @@ This Ansible role will query all [**User Groups**](https://console.zscaler.com/z
 
 ### Example
 
-Location **Borgermeister Contractors** will be named `group_borgermeistercontractors`.
+Group **Borgermeister Contractors** will be named `group_borgermeistercontractors`.
