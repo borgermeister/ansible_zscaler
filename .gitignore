@@ -13,6 +13,7 @@ desktop.ini
 
 # Ansible Collections, Modules and Roles
 .ansible/
+ansible.log
 
 # Ansible roles - exclude files directories
 roles/**/files/*

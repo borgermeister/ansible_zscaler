@@ -6689,3 +6689,30 @@ Origin: /home/ansible/git/github/ansible_zscaler/roles/zscaler_zia/zia_user_mana
 2025-08-12 14:38:15,549 p=41862 u=ansible n=ansible INFO| changed: [localhost] => (item={'id': 4461626, 'name': 'Netsecurity Grimstad - Lab', 'is_non_editable': False, 'ip_addresses': ['192.168.3.0/24']})
 2025-08-12 14:38:15,780 p=41862 u=ansible n=ansible INFO| changed: [localhost] => (item={'id': 5717949, 'name': 'Borgermeister Home - IoT', 'is_non_editable': False, 'ip_addresses': ['10.100.100.0/24']})
 2025-08-12 14:38:16,003 p=41862 u=ansible n=ansible INFO| changed: [localhost] => (item={'id': -2, 'name': 'All IPv4', 'description': 'All IPv4 source traffic pre-defined group', 'is_non_editable': True, 'ip_addresses': ['0.0.0.0']})
+2025-08-12 21:10:51,945 p=93047 u=bvborge n=ansible INFO| Starting galaxy collection install process
+2025-08-12 21:10:51,959 p=93047 u=bvborge n=ansible INFO| Process install dependency map
+2025-08-12 21:10:51,959 p=93047 u=bvborge n=ansible INFO| |
+2025-08-12 21:10:52,064 p=93047 u=bvborge n=ansible INFO| /
+2025-08-12 21:10:52,168 p=93047 u=bvborge n=ansible INFO| -
+2025-08-12 21:10:52,270 p=93047 u=bvborge n=ansible INFO| \
+2025-08-12 21:10:52,375 p=93047 u=bvborge n=ansible INFO| |
+2025-08-12 21:10:52,480 p=93047 u=bvborge n=ansible INFO| /
+2025-08-12 21:10:52,585 p=93047 u=bvborge n=ansible INFO| -
+2025-08-12 21:10:52,690 p=93047 u=bvborge n=ansible INFO| \
+2025-08-12 21:10:52,795 p=93047 u=bvborge n=ansible INFO| |
+2025-08-12 21:10:52,900 p=93047 u=bvborge n=ansible INFO| /
+2025-08-12 21:10:53,001 p=93047 u=bvborge n=ansible INFO| -
+2025-08-12 21:10:53,102 p=93047 u=bvborge n=ansible INFO| \
+2025-08-12 21:10:53,203 p=93047 u=bvborge n=ansible INFO| |
+2025-08-12 21:10:53,304 p=93047 u=bvborge n=ansible INFO| /
+2025-08-12 21:10:53,409 p=93047 u=bvborge n=ansible INFO| -
+2025-08-12 21:10:53,514 p=93047 u=bvborge n=ansible INFO| \
+2025-08-12 21:10:53,618 p=93047 u=bvborge n=ansible INFO| |
+2025-08-12 21:10:53,724 p=93047 u=bvborge n=ansible INFO| /
+2025-08-12 21:10:53,826 p=93047 u=bvborge n=ansible INFO| -
+2025-08-12 21:10:53,931 p=93047 u=bvborge n=ansible INFO| \
+2025-08-12 21:10:54,035 p=93047 u=bvborge n=ansible INFO| Starting collection install process
+2025-08-12 21:10:54,035 p=93047 u=bvborge n=ansible INFO| |
+2025-08-12 21:10:54,139 p=93047 u=bvborge n=ansible INFO| 'community.general:11.2.0' is already installed, skipping.
+2025-08-12 21:10:54,139 p=93047 u=bvborge n=ansible INFO| 'zscaler.ziacloud:2.0.7' is already installed, skipping.
+2025-08-12 21:10:54,140 p=93047 u=bvborge n=ansible INFO| 'zscaler.zpacloud:2.0.7' is already installed, skipping.
