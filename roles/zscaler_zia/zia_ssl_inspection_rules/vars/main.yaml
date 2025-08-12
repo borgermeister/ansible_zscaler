@@ -135,6 +135,30 @@ zia_ssl_inspection_rules:
         # ocsp_check: true
         # server_certificates: BLOCK
     state: present
+  - name: 'DoNotInspect / IoT'
+    order: 10
+    description: 'Do not inspect Borgermeister IoT network.'
+    enabled: true
+    labels: 4532654
+    source_ip_groups:
+      - '{{ src_ip_group_borgermeisterhomeiot }}'
+    groups: []
+    departments: []
+    locations: []
+    location_groups: []
+    url_categories:
+      - CUSTOM_16
+      - CUSTOM_21
+    cloud_applications: []
+    action:
+      type: DO_NOT_DECRYPT
+      do_not_decrypt_sub_actions:
+        # block_ssl_traffic_with_no_sni_enabled: false
+        bypass_other_policies: true
+        # min_tls_version: SERVER_TLS_1_2
+        # ocsp_check: true
+        # server_certificates: ALLOW
+    state: present
   - name: 'DoNotInspect / Borgermeister'
     order: 11
     description: 'Do not inspect Borgermeister home network.'
@@ -151,6 +175,11 @@ zia_ssl_inspection_rules:
     action:
       type: DO_NOT_DECRYPT
       do_not_decrypt_sub_actions:
+        block_ssl_traffic_with_no_sni_enabled: true
+        bypass_other_policies: false
+        min_tls_version: SERVER_TLS_1_2
+        ocsp_check: true
+        server_certificates: BLOCK
     state: present
   - name: 'Inspect All'
     order: 12

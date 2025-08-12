@@ -1,0 +1,8 @@
+---
+
+- name: Playbook to configure Zscaler Private Access (ZPA) Policy Access Rules
+  hosts: localhost
+
+  roles:
+    - role: zscaler_zpa/zpa_policy_access_rule_info
+    - role: zscaler_zpa/zpa_policy_access_rule

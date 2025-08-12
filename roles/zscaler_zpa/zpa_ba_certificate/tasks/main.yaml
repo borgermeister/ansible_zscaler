@@ -29,3 +29,4 @@
     description: Remote Borgermeister Cloud
     # cert_blob: "{{ lookup('file', 'pra.borgermeister.cloud-fullchain.crt') }}"
     cert_blob: "{{ lookup('file', 'pra.borgermeister.cloud.pem') }}"
+  when: false

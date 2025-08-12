@@ -25,3 +25,8 @@ tasks:
     cmds:
       - ansible-playbook playbooks/zia/zia_url_categories.yaml
     desc: Create or update custom URL categories in Zscaler Internet Access (ZIA)
+
+  zpa_ba_certificate:
+    cmds:
+      - ansible-playbook playbooks/zpa/zpa_ba_certificate.yaml
+    desc: Create or update the Zscaler Private Access (ZPA) Browser Access certificates

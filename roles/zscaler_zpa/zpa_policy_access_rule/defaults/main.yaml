@@ -1,0 +1,25 @@
+---
+
+# Zscaler Provider Connection Parameters
+zscaler_zpa:
+  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_id") | default(omit) }}'
+  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_secret") | default(omit) }}'
+  customer_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/customer_id") | default(omit) }}'
+  cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/cloud") | default(omit) }}'
+
+# Default variables for zpa_policy_access_rule role
+zpa_policy_access_rule:
+  name: Example Policy Access Rule
+  description: This is an example policy access rule.
+  rule_order: 1  # Order of the rule in the policy
+  action: ALLOW  # Options: ALLOW, DENY, REQUIRE_APPROVAL
+  app_connector_group_ids: []  # List of App Connector Group IDs
+  app_server_group_ids: []  # List of App Server Group IDs
+  operator: AND  # Logical operator for combining conditions (AND/OR)
+  operands:
+    - idp_id: []  # List of IDP IDs for the condition
+      name:
+      object_type: SCIM_GROUP  # Options:  - APP, - APP_GROUP, - LOCATION, - IDP, - SAML, - SCIM, - SCIM_GROUP, - CLIENT_TYPE, - POSTURE, - TRUSTED_NETWORK, - BRANCH_CONNECTOR_GROUP, - EDGE_CONNECTOR_GROUP, - MACHINE_GRP, - PLATFORM, - RISK_FACTOR_TYPE, - CHROME_ENTERPRISE
+      lhs: ??
+      rhs: ??
+  state: present  # Desired state of the policy access rule (present/absent)
