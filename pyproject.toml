@@ -8,7 +8,6 @@ requires-python = ">=3.12"
 dependencies = [
     "ansible-core>=2.19",
     "ansible-lint>=25.7.0",
-    "ansible-pylibssh>=1.2.2",
     "dnspython>=2.7.0",
     "jmespath>=1.0.1",
     "jsondiff>=2.2.1",
