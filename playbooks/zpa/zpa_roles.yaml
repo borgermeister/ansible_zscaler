@@ -4,8 +4,6 @@
   hosts: localhost
 
   roles:
-    # - role: zscaler_zpa/zpa_ba_certificate_info
-    - role: zscaler_zpa/zpa_ba_certificate
     - role: zscaler_zpa/zpa_server_group
     - role: zscaler_zpa/zpa_segment_group
     - role: zscaler_zpa/zpa_application_segment

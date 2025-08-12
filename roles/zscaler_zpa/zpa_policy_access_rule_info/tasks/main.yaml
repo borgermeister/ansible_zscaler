@@ -1,0 +1,37 @@
+---
+
+- name: Get Policy Access Info for all rules
+  zscaler.zpacloud.zpa_policy_access_rule_info:
+    provider: "{{ zscaler_zpa }}"
+    policy_type: "access"
+  register: zpa_policy_access_rule_info
+
+# - name: Register each Policy Access Rule ID as a separate variable
+#   ansible.builtin.set_fact:
+#     browser_certificate_{{ item.name | regex_replace('[^a-zA-Z0-9_]', '_') | lower }}: "{{ item.id }}"
+#   loop: "{{ ba_certificate.certificates }}"
+
+# - name: Display all registered variables
+#   ansible.builtin.debug:
+#     msg: |
+#       Browser Certificate Name: ba_certificate_{{ item.name | regex_replace('[^a-zA-Z0-9_]', '_') | lower }}
+#       Browser Certificate ID: {{ item.id }}
+#   loop: "{{ ba_certificate.certificates }}"
+#   loop_control:
+#     label: "{{ item.name }}"
+
+# - name: Delete file with all Locations
+#   ansible.builtin.file:
+#     path: '{{ role_path }}/files/ba_certificates.txt'
+#     state: absent
+
+# - name: Register all Locations to a file
+#   ansible.builtin.lineinfile:
+#     path: '{{ role_path }}/files/ba_certificates.txt'
+#     create: true
+#     mode: '0644'
+#     state: present
+#     line: |
+#       Browser Certificate Name: ba_certificate_{{ item.name | regex_replace('[^a-zA-Z0-9_]', '_') | lower }}
+#       Browser Certificate ID: {{ item.id }}
+#   loop: "{{ ba_certificate.certificates }}"

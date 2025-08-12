@@ -5,7 +5,7 @@
     provider: "{{ zscaler_zpa }}"
   register: server_group
 
-- name: Register each server group ID as a separate variable
+- name: Register each Server Group ID as a separate variable
   ansible.builtin.set_fact:
     server_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
   loop: "{{ server_group.groups }}"
@@ -13,6 +13,20 @@
 - name: Display all registered variables
   ansible.builtin.debug:
     msg: |
+      Server Group Name: {{ item.name }}
+      New Server Group Name: server_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
+      Server Group ID: {{ item.id }}
+  loop: "{{ server_group.groups }}"
+  loop_control:
+    label: "{{ item.name }}"
+
+- name: Register all Server Group IDs to a file
+  ansible.builtin.lineinfile:
+    path: '{{ role_path }}/files/server_groups.txt'
+    create: true
+    mode: '0644'
+    state: present
+    line: |
       Server Group Name: {{ item.name }}
       New Server Group Name: server_group_id_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
       Server Group ID: {{ item.id }}

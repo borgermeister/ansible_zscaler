@@ -1,0 +1,7 @@
+---
+
+- name: Ansible Roles
+  hosts: localhost
+
+  roles:
+    - role: zscaler_zia/zia_user_management_groups_info

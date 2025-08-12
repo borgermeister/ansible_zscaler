@@ -118,4 +118,6 @@
     - '{{ acme_challenge["challenge_data"] }}'
   when:
     - acme_method == 'dns-01'
+    - item is not none
+    - item | length > 0
     - acme_challenge['cert_days'] <= acme_days_remaining

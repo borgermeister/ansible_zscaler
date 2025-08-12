@@ -4,8 +4,8 @@ collections:
   - name: community.general
     version: '>=11'
   - name: zscaler.ziacloud
-    version: '>=2.0'
+    version: '>=2'
   - name: zscaler.zpacloud
-    version: '>=2.0'
+    version: '>=2'
 
 ...

@@ -57,7 +57,7 @@ zia_url_filtering_rules:
       - SAFARI
     action: BLOCK
     state: present
-  - name: 'Exemptet URL Categories'
+  - name: 'Exempted URL Categories'
     order: 3
     description: 'Exempted URL categories'
     enabled: true

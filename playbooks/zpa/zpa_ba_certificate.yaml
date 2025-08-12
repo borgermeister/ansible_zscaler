@@ -1,0 +1,9 @@
+---
+
+- name: Playbook to configure Zscaler Private Access
+  hosts: localhost
+
+  roles:
+    - role: zscaler_zpa/zpa_ba_certificate
+
+...

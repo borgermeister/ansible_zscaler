@@ -1,0 +1,20 @@
+---
+
+galaxy_info:
+  author: 'Bjørn-Vegar Borge'
+  description: 'Zscaler Private Access - Gather information about all Policy Access Rules'
+  company: 'Netsecurity'
+
+  license: 'GLWTPL'
+
+  min_ansible_version: '2.1'
+
+  galaxy_tags:
+    - 'zscaler'
+    - 'zpa'
+    - 'zscalerprivateaccess'
+    - 'ztna'
+    - 'zerotrustnetworkaccess'
+    - 'security'
+
+dependencies: []
