@@ -2,7 +2,7 @@
 
 # There are several ways to securely store sensitive data used by Ansible.
 # This example uses [Pass](https://www.passwordstore.org) to store credentials used to authenticate with Zscaler ZIA and ZPA.
-# Note that the ZPA collection currently does not support OneAPI and relies on the old Legacy API.
+
 zscaler_zia:
   client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_id") }}'
   client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zia/client_secret") }}'
@@ -15,12 +15,6 @@ zscaler_zpa:
   vanity_domain: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/vanity_domain") }}'
   customer_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/customer_id") }}'
   # cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/cloud") | default(omit) }}'  # The cloud key is optional and only required when authenticating to other environments i.e beta
-
-zscaler_zpa_old:
-  client_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_id") }}'
-  client_secret: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/client_secret") }}'
-  customer_id: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/customer_id") }}'
-  cloud: '{{ lookup("community.general.passwordstore", "ansible/zscaler/zpa/cloud") | default(omit) }}'
 
 # Another way to securely store sensitive data is to use environment variables.
 # This example uses environment variables to store credentials used to authenticate with Zscaler OneAPI.
