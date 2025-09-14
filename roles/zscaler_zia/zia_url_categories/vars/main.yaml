@@ -9,18 +9,23 @@ zia_custom_url_categories:
     super_category: 'USER_DEFINED'
     db_categorized_urls:
       - .cfn-apple.com
+      - api.smoot.apple.com
       - app-site-association.cdn-apple.com
+      - bpapi.apple.com
       - cabana-server.cdn-apple.com
       - configuration.apple.com
       - courier.push.apple.com
       - cstat.cdn-apple.com
       - gdmf.apple.com
       - gs.apple.com
+      - gsa.apple.com
       - gsp-ssl-ls.apple.com
       - init.push.apple.com
+      - iphone-ld.apple.com
       - mesu.apple.com
       - swcdn.apple.com
       - updates.cdn-apple.com
+      - xp.apple.com
     state: present
   - name: 'Custom URLs - Apple Music'
     description: 'Custom URLs for Apple Music.'
@@ -31,6 +36,14 @@ zia_custom_url_categories:
       - .music.apple.com
       - .mzstatic.com
       - .itunes.apple.com
+    state: present
+  - name: 'Custom URLs - Duo Security'
+    description: 'Custom URLs for Duo Security.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - .duosecurity.com
     state: present
   - name: 'Custom URLs - Facebook'
     description: 'Custom URLs for Facebook services.'

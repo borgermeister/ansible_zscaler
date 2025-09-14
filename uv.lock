@@ -12,7 +12,7 @@ wheels = [
 
 [[package]]
 name = "ansible-compat"
-version = "25.5.0"
+version = "25.8.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansible-core" },
@@ -21,14 +21,14 @@ dependencies = [
     { name = "pyyaml" },
     { name = "subprocess-tee" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/30/66/5ab513ccbc8a5820056ee06eab293591a3ed0908eff47e7d3447a4280e20/ansible_compat-25.5.0.tar.gz", hash = "sha256:0b71052313596e128d2bf60166a1d2ac41c6d140a0ca97d56b878e3c23bfce42", size = 88398, upload-time = "2025-05-13T07:34:29.62Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ea/96/d5bcbd652dbcbf8611b32457d67b10e41e5e596e34460c25511ccfa6fbf1/ansible_compat-25.8.1.tar.gz", hash = "sha256:f29ab81264b3f04fb94ac2d7f68fe73efc2eb3cbe4ecf00f9b4742e77c41756f", size = 90142, upload-time = "2025-08-14T15:59:57.215Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/db/4c/8fd9e702bef678cede0e34c5c7a8be2ff205dfb37c605bf8b7ea9840a6a1/ansible_compat-25.5.0-py3-none-any.whl", hash = "sha256:284c6f175e7301d7474b65629c5b10a41016569ce03f50bb7478d6fa9001a2b8", size = 25861, upload-time = "2025-05-13T07:34:27.823Z" },
+    { url = "https://files.pythonhosted.org/packages/32/29/c73b6d6d5ecdaf51ee4210e6fbf95de0a24b87f2b5df83155ac0c753513e/ansible_compat-25.8.1-py3-none-any.whl", hash = "sha256:5bb843838414b75efff24dae5ff5b332cd503a596143d471980243cec4b46c9c", size = 27523, upload-time = "2025-08-14T15:59:55.866Z" },
 ]
 
 [[package]]
 name = "ansible-core"
-version = "2.19.0"
+version = "2.19.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cryptography" },
@@ -37,14 +37,14 @@ dependencies = [
     { name = "pyyaml" },
     { name = "resolvelib" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ce/72/5fbf0f4a4f14286e1a50f9ba8f86dad6177b569d3b86c1296c85616c2289/ansible_core-2.19.0.tar.gz", hash = "sha256:ca4730837fdd50c8f8ab2fa17c04c448d74c5a27f3d5be7e602d9e3feb9430bc", size = 3396541, upload-time = "2025-07-21T17:44:26.941Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4e/5e/c3333cdf0a6c0512a272734f0b91602a3686ad119d75c8d22f16fd513706/ansible_core-2.19.1.tar.gz", hash = "sha256:affd33b38d32b57cfc2cd6daf3aafcb384297039e4c5600196a2ee9aa027b75d", size = 3401547, upload-time = "2025-08-25T19:18:24.129Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ac/d6/5b9a1650581d4adca5dda3fa4a50235aa9e6ab767530c5c5b0e94cf4f5c9/ansible_core-2.19.0-py3-none-any.whl", hash = "sha256:5914f1539f5da190bd9591112e20e339d699bda0c546992fc77c1e3ccc3928f2", size = 2398633, upload-time = "2025-07-21T17:44:25.122Z" },
+    { url = "https://files.pythonhosted.org/packages/37/9d/422fc6efbadad60ab3d9c18edc52c43fb7bc4677e83ce0908def8dd7bea5/ansible_core-2.19.1-py3-none-any.whl", hash = "sha256:ef42569dc9bb1641ef1adcc7e5bc6b4567b7383c7daf46d3a1885117c93a83e4", size = 2412931, upload-time = "2025-08-25T19:18:22.514Z" },
 ]
 
 [[package]]
 name = "ansible-lint"
-version = "25.7.0"
+version = "25.8.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansible-compat" },
@@ -62,9 +62,9 @@ dependencies = [
     { name = "wcmatch" },
     { name = "yamllint" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/dc/ab/e6ac95e777d723fe20a7d8888d5d6ab9f75a808a57f2ab42fe353b6fbd9f/ansible_lint-25.7.0.tar.gz", hash = "sha256:9afcf419997ce1ffc57acaa3a56f377bce8ceeb9db10e6ab84fd565d09be408b", size = 577354, upload-time = "2025-07-29T19:57:53.461Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/60/93/2c344f3eeaf15fee5ee99a30ebe77f316a65f09d290034e4290fdb114cb4/ansible_lint-25.8.2.tar.gz", hash = "sha256:35dd3ddd12d8063876915bf2f06b9a1b80fd27a7cb1ca4ce51c8cebb84690922", size = 580055, upload-time = "2025-08-21T13:45:13.372Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e8/a4/ae857f480aefd37ca505652bfb4ccd034fbba616b33609aaec9dd8b90f90/ansible_lint-25.7.0-py3-none-any.whl", hash = "sha256:9d9ed35e57abbf6e40f55026ba193e3660930089ae1c65c376281fd84ea19842", size = 326905, upload-time = "2025-07-29T19:57:51.293Z" },
+    { url = "https://files.pythonhosted.org/packages/7b/d9/ec00c80dceff6cfdeb2dc437058800969da11b7d5b625f75104e32c2be26/ansible_lint-25.8.2-py3-none-any.whl", hash = "sha256:14de8c51650af33255a5ba14a01d798d64c2559eaec9d6a92927535b46d1d9ab", size = 328717, upload-time = "2025-08-21T13:45:11.603Z" },
 ]
 
 [[package]]
@@ -967,6 +967,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "ansible-core" },
     { name = "ansible-lint" },
+    { name = "ansible-pylibssh" },
     { name = "dnspython" },
     { name = "jmespath" },
     { name = "jsondiff" },
@@ -984,27 +985,27 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "ansible-core", specifier = ">=2.19" },
-    { name = "ansible-lint", specifier = ">=25.7.0" },
-    { name = "ansible-pylibssh", specifier = ">=1.2.2" },
-    { name = "dnspython", specifier = ">=2.7.0" },
-    { name = "jmespath", specifier = ">=1.0.1" },
-    { name = "jsondiff", specifier = ">=2.2.1" },
-    { name = "ncclient", specifier = ">=0.6.19" },
-    { name = "ntc-templates", specifier = ">=7.9.0" },
+    { name = "ansible-core", specifier = ">=2.19.1" },
+    { name = "ansible-lint", specifier = ">=25.8.2" },
+    { name = "ansible-pylibssh", specifier = ">=1.2" },
+    { name = "dnspython", specifier = ">=2.7" },
+    { name = "jmespath", specifier = ">=1.0" },
+    { name = "jsondiff", specifier = ">=2.2" },
+    { name = "ncclient", specifier = ">=0.6" },
+    { name = "ntc-templates", specifier = ">=7.9" },
     { name = "packaging", specifier = ">=25" },
     { name = "paramiko", specifier = ">=4.0" },
-    { name = "passlib", specifier = ">=1.7.4" },
-    { name = "pycountry", specifier = ">=24.6.1" },
+    { name = "passlib", specifier = ">=1.7" },
+    { name = "pycountry", specifier = ">=24.6" },
     { name = "requests", specifier = ">=2.32" },
-    { name = "requests-toolbelt", specifier = ">=1.0.0" },
-    { name = "xmltodict", specifier = ">=0.14.2" },
-    { name = "zscaler-sdk-python", specifier = ">=1.7" },
+    { name = "requests-toolbelt", specifier = ">=1.0" },
+    { name = "xmltodict", specifier = ">=0.14" },
+    { name = "zscaler-sdk-python", specifier = ">=1.8.0" },
 ]
 
 [[package]]
 name = "zscaler-sdk-python"
-version = "1.7.3"
+version = "1.8.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aenum" },
@@ -1019,7 +1020,7 @@ dependencies = [
     { name = "pyyaml" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/78/00/d3b4308a3462fe651b016d1a3849ef543c29b403cb61fc3869ba9e3203ce/zscaler_sdk_python-1.7.3.tar.gz", hash = "sha256:1aefec5380531dbb9cb7a65c68107a58286a6852b44114a89d2bb5730a03e52c", size = 504937, upload-time = "2025-08-07T07:21:25.734Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/29/98/eafd03f615592288bf4f81e94753470c5f1275525a5495c5e1a683992aae/zscaler_sdk_python-1.8.0.tar.gz", hash = "sha256:e0bd683632d689b30637fa26655d759ca55375e8f6a0859486e8e93ac00233a5", size = 517973, upload-time = "2025-09-12T05:33:01.126Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d4/40/a5b13a6fd5d007aae8a8a749112c9d55b7f214ba10e87b25f4d808063a5d/zscaler_sdk_python-1.7.3-py3-none-any.whl", hash = "sha256:e00f27632a2e8d4a69908de9b45d63cea4dbe5f1e6de7a50a7cda6efcaa4b2b1", size = 954302, upload-time = "2025-08-07T07:21:24.205Z" },
+    { url = "https://files.pythonhosted.org/packages/40/74/a2dc43e6af7261673ab4f486d4fa374e2be9de958ce82b50a16fa23a2ce0/zscaler_sdk_python-1.8.0-py3-none-any.whl", hash = "sha256:efe61d895afc5bde30a0864fb149e3ab0719e43401dbd3a3b8e7a0b8cdcdb3a7", size = 970478, upload-time = "2025-09-12T05:32:59.713Z" },
 ]

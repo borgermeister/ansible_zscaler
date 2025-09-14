@@ -7,5 +7,3 @@ collections:
     version: '>=2'
   - name: zscaler.zpacloud
     version: '>=2'
-
-...

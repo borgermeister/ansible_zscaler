@@ -125,6 +125,8 @@ zia_ssl_inspection_rules:
       - CUSTOM_17
       - CUSTOM_19
       - CUSTOM_20
+      - CUSTOM_21
+      - CUSTOM_22
     cloud_applications: []
     action:
       type: DO_NOT_DECRYPT

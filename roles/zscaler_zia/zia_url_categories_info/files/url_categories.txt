@@ -518,3 +518,11 @@ ID: CUSTOM_20
 Type: URL_CATEGORY
 Configured Name: Custom URLs - Sensibo
 
+ID: CUSTOM_21
+Type: URL_CATEGORY
+Configured Name: Custom URLs - Navimow
+
+ID: CUSTOM_22
+Type: URL_CATEGORY
+Configured Name: Custom URLs - Duo Security
+
