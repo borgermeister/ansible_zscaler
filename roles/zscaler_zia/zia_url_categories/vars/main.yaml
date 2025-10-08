@@ -27,6 +27,7 @@ zia_custom_url_categories:
       - swcdn.apple.com
       - updates.cdn-apple.com
       - xp.apple.com
+      - apple-relay.cloudflare.com  # Apple Intelligence
       - apple-relay.fastly-edge.com  # Apple Intelligence
     state: present
   - name: 'Custom URLs - Apple Music'
