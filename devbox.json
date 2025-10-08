@@ -24,7 +24,8 @@
   "shell": {
     "init_hook": [
       "source .venv/bin/activate",
-      "uv sync",
+      "export PASSWORD_STORE_DIR=~/.password-store",
+      "uv sync -U",
       "ansible-galaxy collection install -r requirements.yaml --upgrade",
     ],
     "scripts": {

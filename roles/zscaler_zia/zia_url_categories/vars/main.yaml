@@ -20,12 +20,14 @@ zia_custom_url_categories:
       - gs.apple.com
       - gsa.apple.com
       - gsp-ssl-ls.apple.com
+      - humb.apple.com
       - init.push.apple.com
       - iphone-ld.apple.com
       - mesu.apple.com
       - swcdn.apple.com
       - updates.cdn-apple.com
       - xp.apple.com
+      - apple-relay.fastly-edge.com  # Apple Intelligence
     state: present
   - name: 'Custom URLs - Apple Music'
     description: 'Custom URLs for Apple Music.'
