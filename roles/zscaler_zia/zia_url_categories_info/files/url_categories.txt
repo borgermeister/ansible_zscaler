@@ -526,3 +526,7 @@ ID: CUSTOM_22
 Type: URL_CATEGORY
 Configured Name: Custom URLs - Duo Security
 
+ID: CUSTOM_23
+Type: URL_CATEGORY
+Configured Name: Custom URLs - Netsecurity
+

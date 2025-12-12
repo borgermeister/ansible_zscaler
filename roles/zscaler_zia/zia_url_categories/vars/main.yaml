@@ -24,6 +24,7 @@ zia_custom_url_categories:
       - init.push.apple.com
       - iphone-ld.apple.com
       - mesu.apple.com
+      - sequoia.cdn-apple.com
       - swcdn.apple.com
       - updates.cdn-apple.com
       - xp.apple.com
@@ -121,6 +122,14 @@ zia_custom_url_categories:
     super_category: 'USER_DEFINED'
     db_categorized_urls:
       - iot-hub-mqtt-fra.ninebot.com
+    state: present
+  - name: 'Custom URLs - Netsecurity'
+    description: 'Custom URLs for Netsecurity.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - netsecurityas.atlassian.net
     state: present
   - name: 'Custom URLs - NixOS'
     description: 'Custom URLs for NixOS.'
