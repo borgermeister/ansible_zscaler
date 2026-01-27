@@ -470,10 +470,6 @@ ID: CUSTOM_08
 Type: URL_CATEGORY
 Configured Name: Custom URLs - FittenCode
 
-ID: CUSTOM_09
-Type: URL_CATEGORY
-Configured Name: Custom URLs - Borgermeister2
-
 ID: CUSTOM_10
 Type: URL_CATEGORY
 Configured Name: Custom URLs - NixOS
@@ -529,4 +525,8 @@ Configured Name: Custom URLs - Duo Security
 ID: CUSTOM_23
 Type: URL_CATEGORY
 Configured Name: Custom URLs - Netsecurity
+
+ID: CUSTOM_24
+Type: URL_CATEGORY
+Configured Name: Custom URLs - Apple Software Updates
 

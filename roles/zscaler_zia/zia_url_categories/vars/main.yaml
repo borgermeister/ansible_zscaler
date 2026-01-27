@@ -1,6 +1,7 @@
 ---
 
 # Dictionary of custom URL categories used for bypassing TLS inspection in Zscaler Internet Access.
+# Use Apple products on enterprise networks - https://support.apple.com/en-us/101555
 zia_custom_url_categories:
   - name: 'Custom URLs - Apple General'
     description: 'Custom URLs for Apple general services.'
@@ -8,28 +9,59 @@ zia_custom_url_categories:
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
     db_categorized_urls:
+      - .apps.apple.com
       - .cfn-apple.com
+      - .podcasts.apple.com
       - api.smoot.apple.com
       - app-site-association.cdn-apple.com
       - bpapi.apple.com
       - cabana-server.cdn-apple.com
-      - configuration.apple.com
       - courier.push.apple.com
       - cstat.cdn-apple.com
-      - gdmf.apple.com
-      - gs.apple.com
       - gsa.apple.com
+      - gsas.apple.com
       - gsp-ssl-ls.apple.com
       - humb.apple.com
+      - init.ess.apple.com
+      - identity.ess.apple.com
       - init.push.apple.com
       - iphone-ld.apple.com
-      - mesu.apple.com
+      - lcdn-locator.apple.com
+      - profile.ess.apple.com
       - sequoia.cdn-apple.com
-      - swcdn.apple.com
-      - updates.cdn-apple.com
-      - xp.apple.com
+      - smp-paymentservices.apple.com
+      - wps.apple.com
       - apple-relay.cloudflare.com  # Apple Intelligence
       - apple-relay.fastly-edge.com  # Apple Intelligence
+      - cp10.cloudflare.com  # Apple Intelligence
+    state: present
+  - name: 'Custom URLs - Apple Software Updates'
+    description: 'Custom URLs for Apple software updates.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - appldnld.apple.com
+      - configuration.apple.com
+      - fcs-keys-pub-prod.cdn-apple.com
+      - gdmf-ados.apple.com
+      - gdmf.apple.com
+      - gg.apple.com
+      - gs.apple.com
+      - gsra.apple.com
+      - ig.apple.com
+      - mesu.apple.com
+      - oscdn.apple.com
+      - osrecovery.apple.com
+      - skl.apple.com
+      - swcdn.apple.com
+      - swdist.apple.com
+      - swdownload.apple.com
+      - swscan.apple.com
+      - updates-http.cdn-apple.com
+      - updates.cdn-apple.com
+      - wkms-public.apple.com
+      - xp.apple.com
     state: present
   - name: 'Custom URLs - Apple Music'
     description: 'Custom URLs for Apple Music.'
@@ -72,8 +104,8 @@ zia_custom_url_categories:
   - name: 'Custom URLs - GitHub'
     description: 'Custom URLs for GitHub.'
     custom_category: true
-    type: URL_CATEGORY
-    super_category: USER_DEFINED
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
     db_categorized_urls:
       - github.com
       - api.github.com
