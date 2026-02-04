@@ -7,10 +7,10 @@
 
 - name: Register each Location ID as a separate variable
   ansible.builtin.set_fact:
-    location_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+    location_{{ item.name | regex_replace('[ _()-]', '') | lower }}: "{{ item.id }}"
   loop: "{{ id_locations.locations }}"
   loop_control:
-    label: "Location name: location_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
+    label: "Location name: location_{{ item.name | regex_replace('[ _()-]', '') | lower }}"
 
 - name: Delete file with all Locations
   ansible.builtin.file:
@@ -24,6 +24,6 @@
     mode: '0644'
     state: present
     line: |
-      Location name: location_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
+      Location name: location_{{ item.name | regex_replace('[ _()-]', '') | lower }}
       ID: {{ item.id }}
   loop: "{{ id_locations.locations }}"

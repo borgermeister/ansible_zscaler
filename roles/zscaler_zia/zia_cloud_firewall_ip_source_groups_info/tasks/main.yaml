@@ -7,10 +7,10 @@
 
 - name: Register each Source IP Group ID as a separate variable
   ansible.builtin.set_fact:
-    src_ip_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+    src_ip_group_{{ item.name | regex_replace('[ _()-]', '') | lower }}: "{{ item.id }}"
   loop: "{{ id_src_ip_groups.groups }}"
   loop_control:
-    label: "Source IP Group: src_ip_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
+    label: "Source IP Group: src_ip_group_{{ item.name | regex_replace('[ _()-]', '') | lower }}"
 
 - name: Delete file with all Source IP Groups
   ansible.builtin.file:
@@ -24,6 +24,6 @@
     mode: '0644'
     state: present
     line: |
-      Source IP Group: src_ip_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
+      Source IP Group: src_ip_group_{{ item.name | regex_replace('[ _()-]', '') | lower }}
       ID: {{ item.id }}
   loop: "{{ id_src_ip_groups.groups }}"

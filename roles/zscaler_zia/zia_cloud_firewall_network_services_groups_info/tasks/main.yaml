@@ -7,10 +7,10 @@
 
 - name: Register each Network Service Group ID as a separate variable
   ansible.builtin.set_fact:
-    nw_serivce_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}: "{{ item.id }}"
+    nw_service_group_{{ item.name | regex_replace('[ _()-]', '') | lower }}: "{{ item.id }}"
   loop: "{{ id_nw_service_groups.groups }}"
   loop_control:
-    label: "Network Service Group: nw_service_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}"
+    label: "Network Service Group: nw_service_group_{{ item.name | regex_replace('[ _()-]', '') | lower }}"
 
 - name: Delete file with all Network Services Groups
   ansible.builtin.file:
@@ -24,6 +24,6 @@
     mode: '0644'
     state: present
     line: |
-      Network Service Group: nw_service_group_{{ item.name | replace(' ', '') | replace('-', '') | replace('_', '') | lower }}
+      Network Service Group: nw_service_group_{{ item.name | regex_replace('[ _()-]', '') | lower }}
       ID: {{ item.id }}
   loop: "{{ id_nw_service_groups.groups }}"
