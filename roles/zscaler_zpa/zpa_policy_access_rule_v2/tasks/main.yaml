@@ -1,7 +1,7 @@
 ---
 
 - name: Create Policy Access Rule
-  zscaler.zpacloud.zpa_policy_access_rule:
+  zscaler.zpacloud.zpa_policy_access_rule_v2:
     provider: "{{ zscaler_zpa }}"
     name: '{{ item.name }}'
     description: '{{ item.description }}'
@@ -13,7 +13,6 @@
     conditions:
       - operator: '{{ item.operator | default("AND") }}'
         operands:
-          - idp_id: '{{ item.idp_id | default([]) }}'
-            object_type: '{{ item.object_type | default("SCIM_GROUP") }}'
+          - object_type: '{{ item.object_type | default("SCIM_GROUP") }}'
     state: '{{ item.state | default("present") }}'
   loop: '{{ zpa_policy_access_rules }}'

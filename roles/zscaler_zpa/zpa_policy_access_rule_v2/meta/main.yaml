@@ -2,7 +2,7 @@
 
 galaxy_info:
   author: 'Bjørn-Vegar Borge'
-  description: 'Zscaler Private Access - Create Server Groups'
+  description: 'Zscaler Private Access - Create Access Policy Rules'
   company: 'Netsecurity'
 
   license: 'GLWTPL'
