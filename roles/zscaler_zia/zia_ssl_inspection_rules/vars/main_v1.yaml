@@ -16,11 +16,11 @@ zia_ssl_inspection_rules:
     action:
       type: DO_NOT_DECRYPT
       do_not_decrypt_sub_actions:
-        block_ssl_traffic_with_no_sni_enabled: true
-        bypass_other_policies: false
-        min_tls_version: SERVER_TLS_1_2
-        ocsp_check: true
-        server_certificates: BLOCK
+        # block_ssl_traffic_with_no_sni_enabled: true
+        # bypass_other_policies: false
+        # min_tls_version: SERVER_TLS_1_2
+        # ocsp_check: true
+        # server_certificates: BLOCK
     state: present
   - name: 'DoNotInspect / Health'
     order: 2
@@ -37,11 +37,11 @@ zia_ssl_inspection_rules:
     action:
       type: DO_NOT_DECRYPT
       do_not_decrypt_sub_actions:
-        block_ssl_traffic_with_no_sni_enabled: true
-        bypass_other_policies: false
-        min_tls_version: SERVER_TLS_1_2
-        ocsp_check: true
-        server_certificates: BLOCK
+        # block_ssl_traffic_with_no_sni_enabled: true
+        # bypass_other_policies: false
+        # min_tls_version: SERVER_TLS_1_2
+        # ocsp_check: true
+        # server_certificates: BLOCK
     state: present
   - name: 'Inspect / Microsoft Apps'
     order: 3
@@ -60,17 +60,17 @@ zia_ssl_inspection_rules:
       - SHAREPOINTONLINE
     action:
       type: DECRYPT
-      override_default_certificate: false
-      show_eun: true
-      show_eunatp: true
-      decrypt_sub_actions:  # No need for this since the default values are already set - use defaults as a reference
-        block_ssl_traffic_with_no_sni_enabled: true
-        block_undecrypt: true
-        http2_enabled: true
-        min_client_tls_version: CLIENT_TLS_1_3
-        min_server_tls_version: SERVER_TLS_1_3
-        ocsp_check: true
-        server_certificates: BLOCK
+      # override_default_certificate: false
+      # show_eun: true
+      # show_eunatp: true
+      # decrypt_sub_actions:  # No need for this since the default values are already set - use defaults as a reference
+      #   block_ssl_traffic_with_no_sni_enabled: true
+      #   block_undecrypt: true
+      #   http2_enabled: true
+      #   min_client_tls_version: CLIENT_TLS_1_3
+      #   min_server_tls_version: SERVER_TLS_1_3
+      #   ocsp_check: true
+      #   server_certificates: BLOCK
     state: present
   - name: 'DoNotInspect /Cloud Apps'
     order: 4
@@ -104,11 +104,6 @@ zia_ssl_inspection_rules:
     action:
       type: DO_NOT_DECRYPT
       do_not_decrypt_sub_actions:
-        block_ssl_traffic_with_no_sni_enabled: true
-        bypass_other_policies: false
-        min_tls_version: SERVER_TLS_1_2
-        ocsp_check: true
-        server_certificates: BLOCK
     state: present
   - name: 'DoNotInspect / URL Categories'
     order: 5
@@ -147,11 +142,11 @@ zia_ssl_inspection_rules:
     action:
       type: DO_NOT_DECRYPT
       do_not_decrypt_sub_actions:
-        block_ssl_traffic_with_no_sni_enabled: true
-        bypass_other_policies: false
-        min_tls_version: SERVER_TLS_1_2
-        ocsp_check: true
-        server_certificates: BLOCK
+        # block_ssl_traffic_with_no_sni_enabled: true
+        # bypass_other_policies: false
+        # min_tls_version: SERVER_TLS_1_2
+        # ocsp_check: true
+        # server_certificates: BLOCK
     state: present
   - name: 'DoNotInspect / IoT'
     order: 10
@@ -171,11 +166,11 @@ zia_ssl_inspection_rules:
     action:
       type: DO_NOT_DECRYPT
       do_not_decrypt_sub_actions:
-        block_ssl_traffic_with_no_sni_enabled: false
+        # block_ssl_traffic_with_no_sni_enabled: false
         bypass_other_policies: true
-        min_tls_version: SERVER_TLS_1_2
-        ocsp_check: true
-        server_certificates: ALLOW
+        # min_tls_version: SERVER_TLS_1_2
+        # ocsp_check: true
+        # server_certificates: ALLOW
     state: present
   - name: 'DoNotInspect / Borgermeister'
     order: 11
@@ -212,15 +207,15 @@ zia_ssl_inspection_rules:
     cloud_applications: []
     action:
       type: DECRYPT
-      override_default_certificate: false
-      show_eun: true
-      show_eunatp: true
-      decrypt_sub_actions:  # No need for this since the default values are already set - use defaults as a reference
-        block_ssl_traffic_with_no_sni_enabled: true
-        block_undecrypt: true
-        http2_enabled: true
-        min_client_tls_version: CLIENT_TLS_1_3
-        min_server_tls_version: SERVER_TLS_1_3
-        ocsp_check: true
-        server_certificates: BLOCK
+      # override_default_certificate: false
+      # show_eun: true
+      # show_eunatp: true
+      # decrypt_sub_actions:  # No need for this since the default values are already set - use defaults as a reference
+      #   block_ssl_traffic_with_no_sni_enabled: true
+      #   block_undecrypt: true
+      #   http2_enabled: true
+      #   min_client_tls_version: CLIENT_TLS_1_3
+      #   min_server_tls_version: SERVER_TLS_1_3
+      #   ocsp_check: true
+      #   server_certificates: BLOCK
     state: present
