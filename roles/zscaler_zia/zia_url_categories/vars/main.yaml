@@ -16,8 +16,12 @@ zia_custom_url_categories:
       - app-site-association.cdn-apple.com
       - bpapi.apple.com
       - cabana-server.cdn-apple.com
+      - cl2.apple.com
+      - cl3.apple.com
+      - configuration.ls.apple.com
       - courier.push.apple.com
       - cstat.cdn-apple.com
+      - fbs.smoot.apple.com
       - gsa.apple.com
       - gsas.apple.com
       - gsp-ssl-ls.apple.com
@@ -30,6 +34,7 @@ zia_custom_url_categories:
       - profile.ess.apple.com
       - sequoia.cdn-apple.com
       - smp-paymentservices.apple.com
+      - weatherkit.apple.com
       - wps.apple.com
       - apple-relay.cloudflare.com  # Apple Intelligence
       - apple-relay.fastly-edge.com  # Apple Intelligence
@@ -109,6 +114,7 @@ zia_custom_url_categories:
     db_categorized_urls:
       - github.com
       - api.github.com
+      - codeload.github.com
       - .individual.githubcopilot.com
     state: present
   - name: 'Custom URLs - Gitlab'
@@ -128,6 +134,8 @@ zia_custom_url_categories:
       - accounts.google.com
       - clients1.google.com
       - firebaseinstallations.googleapis.com
+      - fonts.gstatic.com
+      - fonts.googleapis.com
       - ogs.google.com
       - play.google.com
       - play.googleapis.com
@@ -143,6 +151,9 @@ zia_custom_url_categories:
       - app-measurement.com
       - api.hoopit.io
       - cdn.rudderlabs.com
+      - downloads.ctfassets.net
+      - go.jetify.com  # DevBox
+      - images.ctfassets.net
       - prod.rudderstack.withings.net
       - scalews.withings.net
       - static.withings.com

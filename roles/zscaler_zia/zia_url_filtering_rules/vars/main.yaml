@@ -6,6 +6,7 @@ zia_url_filtering_rules:
     description: 'Block adult material'
     enabled: true
     url_categories:
+      - NUDITY
       - PORNOGRAPHY
     groups: []
     departments: []
