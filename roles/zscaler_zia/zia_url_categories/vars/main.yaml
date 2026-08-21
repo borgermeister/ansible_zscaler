@@ -3,6 +3,22 @@
 # Dictionary of custom URL categories used for bypassing TLS inspection in Zscaler Internet Access.
 # Use Apple products on enterprise networks - https://support.apple.com/en-us/101555
 zia_custom_url_categories:
+  - name: 'Custom URLs - Apple'
+    description: 'Custom URLs for Apple.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - .apple.com
+      - .apple-mapkit.com  # View the location of devices in Managed Lost Mode
+      - .appattest.apple.com  # App validation, Touch ID and Face ID authentication for websites
+      - .cdn-apple.com  # Content delivery for Apple services
+      - .icloud.com # iCloud services
+      - .mzstatic.com  # Store content such as apps, books, and music, and apps from websites and alternative marketplaces
+      - apple-relay.cloudflare.com  # Apple Intelligence
+      - apple-relay.fastly-edge.com  # Apple Intelligence
+      - cp4.cloudflare.com  # Apple Intelligence
+    state: present
   - name: 'Custom URLs - Apple General'
     description: 'Custom URLs for Apple general services.'
     custom_category: true
@@ -39,7 +55,7 @@ zia_custom_url_categories:
       - apple-relay.cloudflare.com  # Apple Intelligence
       - apple-relay.fastly-edge.com  # Apple Intelligence
       - cp10.cloudflare.com  # Apple Intelligence
-    state: present
+    state: absent
   - name: 'Custom URLs - Apple Software Updates'
     description: 'Custom URLs for Apple software updates.'
     custom_category: true
@@ -67,7 +83,7 @@ zia_custom_url_categories:
       - updates.cdn-apple.com
       - wkms-public.apple.com
       - xp.apple.com
-    state: present
+    state: absent
   - name: 'Custom URLs - Apple Music'
     description: 'Custom URLs for Apple Music.'
     custom_category: true
@@ -77,6 +93,14 @@ zia_custom_url_categories:
       - .music.apple.com
       - .mzstatic.com
       - .itunes.apple.com
+    state: absent
+  - name: 'Custom URLs - Claude AI API'
+    description: 'Custom URLs for Claude AI'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - claude.ai/api
     state: present
   - name: 'Custom URLs - Duo Security'
     description: 'Custom URLs for Duo Security.'
@@ -141,6 +165,15 @@ zia_custom_url_categories:
       - play.googleapis.com
       - www.googleadservices.com
     state: present
+  - name: 'Custom URLs - GPG Keyservers'
+    description: 'Custom URLs for GPG Keyservers.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - keys.openpgp.org
+      - keyserver.ubuntu.com
+    state: present
   - name: 'Custom URLs - Misc'
     description: 'Custom URLs for various other services.'
     custom_category: true
@@ -149,10 +182,12 @@ zia_custom_url_categories:
     db_categorized_urls:
       - analytics.revsure.cloud
       - app-measurement.com
-      - api.hoopit.io
+      - api.hoopit.io  # Hoopit
       - cdn.rudderlabs.com
+      - chat.stream-io-api.com  # Hoopit
       - downloads.ctfassets.net
       - go.jetify.com  # DevBox
+      - hoopit-media-production.s3.amazonaws.com  # Hoopit (App: Amazon S3)
       - images.ctfassets.net
       - prod.rudderstack.withings.net
       - scalews.withings.net
@@ -190,8 +225,6 @@ zia_custom_url_categories:
     super_category: 'USER_DEFINED'
     db_categorized_urls:
       - .pcpf.panasonic.com
-      - 20.27.125.158
-      - 20.191.171.212
       - accsmart.panasonic.com
       - afus.apc.panasonic.com
     state: present
@@ -201,6 +234,7 @@ zia_custom_url_categories:
     type: 'URL_CATEGORY'
     super_category: 'USER_DEFINED'
     db_categorized_urls:
+      - files.python.hosted.org
       - pypi.org
     state: present
   - name: 'Custom URLs - Ring.com'
@@ -258,6 +292,20 @@ zia_custom_url_categories:
       - auth.tesla.com
       - sentry-api.ops.na.vn.cloud.tesla.com
       - owner-api.teslamotors.com
+    state: present
+  - name: 'Custom URLs - Twitch'
+    description: 'Custom URLs for Twitch.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - .ads.twitch.tv
+      - .chat.twitch.tv
+      - assets.twitch.tv
+      - gql.twitch.tv
+      - hermes.twitch.tv
+      - passport.twitch.tv
+      - spade.twitch.tv
     state: present
   - name: 'Custom URLs - Vipps'
     description: 'Custom URLs for Vipps.'

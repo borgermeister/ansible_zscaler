@@ -1,0 +1,72 @@
+---
+- name: Provision Proxmox LXC for Zscaler App Connector
+  hosts: localhost
+
+  vars_files:
+    - ./main.yaml
+
+  module_defaults:
+    community.proxmox.proxmox:
+      api_host: "{{ proxmox_host }}"
+      api_user: "{{ proxmox_api_user }}"
+      api_token_id: "{{ proxmox_api_token_id }}"
+      api_token_secret: "{{ proxmox_api_token_secret }}"
+      node: "{{ proxmox_node }}"
+
+  tasks:
+    - name: Create LXC container on Proxmox
+      community.proxmox.proxmox:
+        vmid: "{{ item.lxc_vmid }}"
+        hostname: "{{ item.lxc_hostname }}"
+        ostemplate: "{{ proxmox_storage }}:vztmpl/{{ item.lxc_template }}"
+        storage: "{{ item.lxc_storage }}"
+        disk: "{{ item.lxc_storage }}:{{ item.lxc_disk_size }}"
+        cores: "{{ item.lxc_cores }}"
+        memory: "{{ item.lxc_memory }}"
+        swap: "{{ item.lxc_swap }}"
+        netif:
+          net0: "name=eth0,bridge={{ item.lxc_bridge }},ip={{ item.lxc_ip }}/{{ item.lxc_cidr }},gw={{ item.lxc_gateway }}{% if item.lxc_vlan_tag is defined and item.lxc_vlan_tag %},tag={{ item.lxc_vlan_tag }}{% endif %}"
+        nameserver: "{{ item.lxc_dns }}"
+        searchdomain: "{{ item.lxc_search_domain | default(omit) }}"
+        unprivileged: true
+        features:
+          - nesting=1
+        onboot: true
+        password: "{{ lxc_root_password }}"
+        pubkey: "{{ lxc_ssh_pubkey | default(omit) }}"
+        state: present
+      loop: "{{ lxc_containers }}"
+      loop_control:
+        label: "{{ item.lxc_hostname }}"
+      register: lxc_result
+
+    - name: Start LXC container
+      community.proxmox.proxmox:
+        vmid: "{{ item.lxc_vmid }}"
+        state: started
+      loop: "{{ lxc_containers }}"
+      loop_control:
+        label: "{{ item.lxc_hostname }}"
+        index_var: container_index
+      when: lxc_result.results[container_index].changed
+
+    - name: Wait for LXC SSH to become available
+      ansible.builtin.wait_for:
+        host: "{{ item.lxc_ip }}"
+        port: 22
+        delay: 10
+        timeout: 120
+      loop: "{{ lxc_containers }}"
+      loop_control:
+        label: "{{ item.lxc_hostname }}"
+
+    - name: Add LXC to dynamic inventory
+      ansible.builtin.add_host:
+        name: "{{ item.lxc_ip }}"
+        groups: zscaler_connectors
+        ansible_user: root
+        ansible_ssh_pass: "{{ lxc_root_password }}"
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+      loop: "{{ lxc_containers }}"
+      loop_control:
+        label: "{{ item.lxc_hostname }}"

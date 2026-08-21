@@ -9,10 +9,6 @@
     rule_order: '{{ item.rule_order }}'
     app_connector_group_ids: '{{ item.app_connector_group_ids | default([]) }}'
     app_server_group_ids: '{{ item.app_server_group_ids | default([]) }}'
-    operator: '{{ item.operator | default("AND") }}'
-    conditions:
-      - operator: '{{ item.operator | default("AND") }}'
-        operands:
-          - object_type: '{{ item.object_type | default("SCIM_GROUP") }}'
+    conditions: '{{ item.conditions | default([]) }}'
     state: '{{ item.state | default("present") }}'
   loop: '{{ zpa_policy_access_rules }}'

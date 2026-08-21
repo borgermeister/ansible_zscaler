@@ -17,6 +17,7 @@ dependencies = [
     "packaging>=25",
     "paramiko>=4.0",
     "passlib>=1.7",
+    "proxmoxer>=2.2.0",
     "pycountry>=24.6",
     "requests>=2.32",
     "requests-toolbelt>=1.0",

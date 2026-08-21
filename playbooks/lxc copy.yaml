@@ -1,0 +1,58 @@
+---
+- name: Provision Proxmox LXC for Zscaler App Connector
+  hosts: localhost
+
+  vars_files:
+    - ./main.yaml
+
+  module_defaults:
+    community.proxmox.proxmox:
+      api_host: "{{ proxmox_host }}"
+      api_user: "{{ proxmox_api_user }}"
+      api_token_id: "{{ proxmox_api_token_id }}"
+      api_token_secret: "{{ proxmox_api_token_secret }}"
+      node: "{{ proxmox_node }}"
+
+  tasks:
+    - name: Create LXC container on Proxmox
+      community.proxmox.proxmox:
+        vmid: "{{ lxc_vmid }}"
+        hostname: "{{ lxc_hostname }}"
+        ostemplate: "{{ proxmox_storage }}:vztmpl/{{ lxc_template }}"
+        storage: "{{ lxc_storage }}"
+        disk: "{{ lxc_storage }}:{{ lxc_disk_size }}"
+        cores: "{{ lxc_cores }}"
+        memory: "{{ lxc_memory }}"
+        swap: "{{ lxc_swap }}"
+        netif:
+          net0: "name=eth0,bridge={{ lxc_bridge }},ip={{ lxc_ip }}/{{ lxc_cidr }},gw={{ lxc_gateway }}{% if lxc_vlan_tag is defined and lxc_vlan_tag %},tag={{ lxc_vlan_tag }}{% endif %}"
+        nameserver: "{{ lxc_dns }}"
+        searchdomain: "{{ lxc_search_domain | default(omit) }}"
+        unprivileged: true
+        features:
+          - nesting=1
+        onboot: true
+        password: "{{ lxc_root_password }}"
+        pubkey: "{{ lxc_ssh_pubkey | default(omit) }}"
+        state: present
+      register: lxc_result
+
+    - name: Start LXC container
+      community.proxmox.proxmox:
+        vmid: "{{ lxc_vmid }}"
+        state: started
+
+    - name: Wait for LXC SSH to become available
+      ansible.builtin.wait_for:
+        host: "{{ lxc_ip }}"
+        port: 22
+        delay: 10
+        timeout: 120
+
+    - name: Add LXC to dynamic inventory
+      ansible.builtin.add_host:
+        name: "{{ lxc_ip }}"
+        groups: zscaler_connectors
+        ansible_user: root
+        ansible_ssh_pass: "{{ lxc_root_password }}"
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"

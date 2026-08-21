@@ -1,0 +1,49 @@
+---
+# =============================================================================
+# Proxmox Connection
+# =============================================================================
+proxmox_host: "pve04.home.borgermeister.cloud"        # Proxmox hostname or IP
+proxmox_api_user: "bvborge@pam"            # API user (e.g. ansible@pam or ansible@pve)
+proxmox_api_token_id: "bvborge"      # Token ID (the name part after the !)
+proxmox_api_token_secret: "2ac8d817-a8d5-48a4-9deb-acdd59b072aa"  # Token secret UUID - consider vaulting this
+proxmox_node: "pve04"                        # Proxmox node name
+proxmox_storage: "local"                   # Storage for OS templates
+
+# =============================================================================
+# LXC Container Settings
+# =============================================================================
+lxc_containers:
+  - lxc_vmid: 8888                              # Unique VM/CT ID on Proxmox
+    lxc_template: "ubuntu-25.04-standard_25.04-1.1_amd64.tar.zst"  # Proxmox LXC template to use (must be pre-uploaded)
+    lxc_hostname: "zscaler-connector-01"       # Hostname for the LXC
+    lxc_storage: "local-zfs"                   # Storage for container rootfs
+    lxc_disk_size: "20"                     # Disk size in GB
+    lxc_cores: 2                               # vCPU cores (Zscaler recommends min 2)
+    lxc_memory: 1024                           # RAM in MB (Zscaler recommends min 4GB)
+    lxc_swap: 256                              # Swap in MB
+    lxc_bridge: "vmbr0"                        # Proxmox bridge interface
+    lxc_ip: "10.100.1.5"                    # Static IP for the LXC
+    lxc_cidr: "24"                             # Subnet mask in CIDR notation
+    lxc_gateway: "10.100.1.1"                 # Default gateway
+    lxc_dns: "10.100.2.10"                         # DNS server
+    lxc_search_domain: "home.borgermeister.cloud"           # DNS search domain (optional)
+    lxc_vlan_tag: 10                       # Uncomment to set a VLAN tag
+
+# Credentials
+lxc_root_password: "CHANGEME"            # Root password - consider vaulting this
+# lxc_ssh_pubkey: "ssh-ed25519 AAAA..."   # Optional: SSH public key for root
+
+# =============================================================================
+# Zscaler ZPA Settings
+# =============================================================================
+# API credentials are sourced from environment variables (not stored here):
+#   ZPA_API_KEY        - Your ZPA API key
+#   ZPA_USERNAME       - ZPA admin username
+#   ZPA_PASSWORD       - ZPA admin password
+#   ZPA_CUSTOMER_ID    - Your ZPA Customer ID
+
+zpa_connector_group_name: "My-Connector-Group"    # Must match existing group in ZPA portal
+zpa_provisioning_key_name: "ansible-key-01"       # Name for the new provisioning key
+zpa_enrollment_cert_id: "CHANGE_ME"               # Enrollment cert ID from ZPA portal
+zpa_provisioning_key_max_usage: 2                  # How many connectors can use this key
+zpa_connector_repo_channel: "stable"               # apt repo channel: stable or beta

@@ -444,7 +444,7 @@ Configured Name: Custom URLs - iOS
 
 ID: CUSTOM_02
 Type: URL_CATEGORY
-Configured Name: Custom URLs - Apple Music
+Configured Name: Custom URLs - GPG Keyservers
 
 ID: CUSTOM_03
 Type: URL_CATEGORY
@@ -464,11 +464,15 @@ Configured Name: Custom URLs - Facebook
 
 ID: CUSTOM_07
 Type: URL_CATEGORY
-Configured Name: Custom URLs - Apple General
+Configured Name: Custom URLs - Twitch
 
 ID: CUSTOM_08
 Type: URL_CATEGORY
 Configured Name: Custom URLs - FittenCode
+
+ID: CUSTOM_09
+Type: URL_CATEGORY
+Configured Name: Custom URLs - Apple
 
 ID: CUSTOM_10
 Type: URL_CATEGORY
@@ -528,5 +532,5 @@ Configured Name: Custom URLs - Netsecurity
 
 ID: CUSTOM_24
 Type: URL_CATEGORY
-Configured Name: Custom URLs - Apple Software Updates
+Configured Name: Custom URLs - Claude AI API
 

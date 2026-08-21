@@ -5,4 +5,4 @@
 
   roles:
     - role: zscaler_zpa/zpa_policy_access_rule_info
-    - role: zscaler_zpa/zpa_policy_access_rule
+    - role: zscaler_zpa/zpa_policy_access_rule_v2
