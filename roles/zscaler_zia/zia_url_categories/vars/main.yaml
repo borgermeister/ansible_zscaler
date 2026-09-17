@@ -102,6 +102,17 @@ zia_custom_url_categories:
     db_categorized_urls:
       - claude.ai/api
     state: present
+  - name: 'Custom URLs - Citrix Cloud'
+    description: 'Custom URLs for Citrix Cloud.'
+    custom_category: true
+    type: 'URL_CATEGORY'
+    super_category: 'USER_DEFINED'
+    db_categorized_urls:
+      - .citrixnetworkapi.net
+      - .citrixworkspaceapi.net
+      - .cloud.com
+      - .nssvc.net
+    state: present
   - name: 'Custom URLs - Duo Security'
     description: 'Custom URLs for Duo Security.'
     custom_category: true
